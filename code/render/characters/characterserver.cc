@@ -68,7 +68,7 @@ CharacterServer::BeginFrame(IndexT frameIndex)
 {
     n_assert(this->isValid);
     n_assert(!this->inFrame);
-    //n_assert(this->curFrameIndex != frameIndex);//removed by xiongyouyi[27/05/2011]
+    n_assert(this->curFrameIndex != frameIndex);
     n_assert(this->visCharInstArray.IsEmpty());
 
     this->inFrame = true;

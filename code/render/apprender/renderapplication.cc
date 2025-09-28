@@ -202,12 +202,6 @@ RenderApplication::OnConfigureDisplay()
     {
         this->display->SetParentWindow((void*)this->args.GetInt("-parentwindow"));
     }
-	
-	// added by xiongyouyi
-	if (this->args.HasArg("-externalwindow"))
-	{
-		this->display->SetExternalWindow((void*)this->args.GetInt("-externalwindow"));
-	}
 
     // display mode
     DisplayMode displayMode;

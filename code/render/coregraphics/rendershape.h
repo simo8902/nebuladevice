@@ -35,7 +35,6 @@ public:
         Sphere,
         Cylinder,
         Torus,
-		Cone,
         Primitives,
         IndexedPrimitives,
 

@@ -26,7 +26,6 @@ using namespace GraphicsFeature;
 /**
 */
 FocusManager::FocusManager()
-: inputFocusType(Select)
 {
     __ConstructSingleton;
 }

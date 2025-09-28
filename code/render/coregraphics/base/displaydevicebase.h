@@ -59,6 +59,10 @@ public:
     void SetFullscreen(bool b);
     /// get windowed/fullscreen mode
     bool IsFullscreen() const;
+	/// set whether the size can be auto-adjusted to window's size
+	void SetAutoAdjustSize(bool b);
+	/// get whether the size can be auto-adjusted to window's size
+	bool IsAutoAdjustSize() const;
     /// enable display mode switch when running fullscreen (default is true);
     void SetDisplayModeSwitchEnabled(bool b);
     /// is display mode switch enabled for fullscreen?
@@ -84,11 +88,6 @@ public:
     /// get optional parent window handle
     void* GetParentWindow() const;
 
-	/// set optional external window handle
-	void SetExternalWindow(void* h);
-	/// get optional external window handle
-	void* GetExternalWindow() const;
-
     /// set window title string (can be changed anytime)
     void SetWindowTitle(const Util::String& t);
     /// get window title string
@@ -107,19 +106,19 @@ public:
     void AttachEventHandler(const Ptr<CoreGraphics::DisplayEventHandler>& h);
     /// remove a display event handler
     void RemoveEventHandler(const Ptr<CoreGraphics::DisplayEventHandler>& h);
-        
+    /// notify event handlers about an event
+    bool NotifyEventHandlers(const CoreGraphics::DisplayEvent& e);
+
 	/// adjust size to window's size
 	virtual void AdjustSize();
 
 protected:
-    /// notify event handlers about an event
-    bool NotifyEventHandlers(const CoreGraphics::DisplayEvent& e);
-
     CoreGraphics::Adapter::Code adapter;
     CoreGraphics::DisplayMode displayMode;
     CoreGraphics::AntiAliasQuality::Code antiAliasQuality;
 
     bool fullscreen;
+	bool autoAdjustSize;
     bool modeSwitchEnabled;
     bool tripleBufferingEnabled;
     bool alwaysOnTop;
@@ -129,7 +128,6 @@ protected:
     Util::String windowTitle;
     Util::String iconName;
     void* parentWindow;
-	void* externalWindow;
 
     Util::Array<Ptr<CoreGraphics::DisplayEventHandler> > eventHandlers;
     bool inNotifyEventHandlers;
@@ -214,6 +212,20 @@ inline bool
 DisplayDeviceBase::IsFullscreen() const
 {
     return this->fullscreen;
+}
+
+//------------------------------------------------------------------------------
+inline void
+DisplayDeviceBase::SetAutoAdjustSize(bool b)
+{
+	this->autoAdjustSize = b;
+}
+
+//------------------------------------------------------------------------------
+inline bool
+DisplayDeviceBase::IsAutoAdjustSize() const
+{
+	return this->autoAdjustSize;
 }
 
 //------------------------------------------------------------------------------
@@ -331,24 +343,6 @@ inline void*
 DisplayDeviceBase::GetParentWindow() const
 {
     return this->parentWindow;
-}
-
-//------------------------------------------------------------------------------
-/**
-*/
-inline void
-DisplayDeviceBase::SetExternalWindow(void* h)
-{
-	this->externalWindow = h;
-}
-
-//------------------------------------------------------------------------------
-/**
-*/
-inline void*
-DisplayDeviceBase::GetExternalWindow() const
-{
-	return this->externalWindow;
 }
 
 } // namespace Base

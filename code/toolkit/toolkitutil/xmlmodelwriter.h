@@ -35,8 +35,6 @@ public:
     virtual void BeginTag(const Util::String& name, Util::FourCC tagFourCC);
     /// write bool value
     virtual void WriteBool(bool b);
-	/// write 8-bit unsigned char
-	virtual void WriteUChar(unsigned char c);
     /// write int value
     virtual void WriteInt(int i);
     /// write float value

@@ -11,7 +11,6 @@
 #include "threading/thread.h"
 #include "coregraphics/shaderserver.h"
 #include "resources/resourceid.h"
-#include "renderutil/axisgizmoutil.h"
 
 namespace Win360
 {
@@ -56,7 +55,6 @@ D3D9ShapeRenderer::Open()
 
     // create D3DX shapes
     HRESULT hr;
-	RenderUtil::AxisGizmoUtil gizmoUtil;
     IDirect3DDevice9* d3d9Dev = RenderDevice::Instance()->GetDirect3DDevice();
     n_assert(0 != d3d9Dev);
     // extents (half width of these objects must be 1, like in the unit-circle the radius is 1)
@@ -68,18 +66,6 @@ D3D9ShapeRenderer::Open()
     n_assert(SUCCEEDED(hr));
     hr = D3DXCreateTorus(d3d9Dev, 0.5f, 0.5f, 10, 10, &this->shapeMeshes[RenderShape::Torus], NULL);
     n_assert(SUCCEEDED(hr));
-	// create cone geometry
-	hr = D3DXCreateMeshFVF(gizmoUtil.GetNumPrimitives(), gizmoUtil.GetNumVertices(), D3DXMESH_MANAGED, D3DFVF_XYZ, d3d9Dev, &this->shapeMeshes[RenderShape::Cone]);
-	n_assert(SUCCEEDED(hr));
-	float* vertexData;
-	ushort* indexData;
-	this->shapeMeshes[RenderShape::Cone]->LockVertexBuffer(0, (void**)&vertexData);
-	Memory::Copy(gizmoUtil.GetVertexData(), vertexData, 3 * gizmoUtil.GetNumVertices()* sizeof(float));
-	this->shapeMeshes[RenderShape::Cone]->UnlockVertexBuffer();
-
-	this->shapeMeshes[RenderShape::Cone]->LockIndexBuffer(0, (void**)&indexData);
-	Memory::Copy(gizmoUtil.GetIndexData(), indexData, gizmoUtil.GetNumIndices()* sizeof(ushort));
-	this->shapeMeshes[RenderShape::Cone]->UnlockIndexBuffer();
     
     // lookup ModelViewProjection shader variable
     this->modelViewProj = this->shapeShader->GetVariableBySemantic(ShaderVariable::Semantic("ModelViewProjection"));

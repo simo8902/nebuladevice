@@ -82,7 +82,7 @@ LoadAnimationTest::Run()
     if (this->SetupRuntime())
     {
         const Ptr<ResourceManager>& resManager = ResourceManager::Instance();
-        StringAtom animName("anims:characters/mensch_m_animations.nax3");
+        StringAtom animName("anim:characters/mensch_m_animations.nax2");
         this->Verify(!resManager->HasResource(animName));
 
         // test synchronous loading
@@ -98,7 +98,7 @@ LoadAnimationTest::Run()
         this->Verify(anim0->IsLoaded());
         if (anim0->IsLoaded())
         {
-           // this->VerifyAnimResource(anim0);
+            this->VerifyAnimResource(anim0);
         }
         resManager->UnregisterUnmanagedResource(anim0.upcast<Resource>());
         anim0 = 0;
@@ -122,7 +122,7 @@ LoadAnimationTest::Run()
         this->Verify(anim0->IsLoaded());
         if (anim0->IsLoaded())
         {
-            //this->VerifyAnimResource(anim0);
+            this->VerifyAnimResource(anim0);
         }
         resManager->UnregisterUnmanagedResource(anim0.upcast<Resource>());
         anim0 = 0;

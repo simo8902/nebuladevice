@@ -39,7 +39,7 @@ void
 D3D9VertexBuffer::Unload()
 {
 	this->Discard();
-	VertexBufferBase::Unload();
+    VertexBufferBase::Unload();
 }
 
 //------------------------------------------------------------------------------

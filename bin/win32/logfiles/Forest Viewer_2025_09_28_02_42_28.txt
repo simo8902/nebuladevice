@@ -1,0 +1,3 @@
+ListenerThread started!
+ListenerThread listening...
+[ERROR] ShaderServerBase: Failed to open shader dictionary!

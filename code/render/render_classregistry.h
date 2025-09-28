@@ -15,8 +15,6 @@
 #include "models/nodes/animatornodeinstance.h"
 #include "particles/particlesystemnode.h"
 #include "frame/framepass.h"
-#include "terrain/terrainnode.h"
-#include "terrain/terrainnodeinstance.h"
 
 #if __WII__
 #include "frame/wii/wiifsaaframepass.h"
@@ -42,12 +40,6 @@ namespace Particles
 namespace Frame
 {
     __RegisterClass(FramePass);
-}
-
-namespace Terrain
-{
-	__RegisterClass(TerrainNode);
-	__RegisterClass(TerrainNodeInstance);
 }
 
 #if __WII__

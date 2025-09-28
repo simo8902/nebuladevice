@@ -48,14 +48,14 @@ __StaticHandler(GetAvailableDisplayModes)
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 __StaticHandler(AdjustDisplaySize)
 {
 	DisplayDevice::Instance()->AdjustSize();
 }
 
 //------------------------------------------------------------------------------
-/**
-*/
 __StaticHandler(GetCurrentAdapterDisplayMode)
 {
     Adapter::Code adapter = msg->GetAdapter();

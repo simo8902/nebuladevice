@@ -6,8 +6,6 @@
     Implements a simple text renderer for Direct3D9. This is only intended
     for outputting debug text, not for high-quality text rendering!
 
-    FIXME: Need to handle Lost Device (ID3DXFont)
-    
     (C) 2007 Radon Labs GmbH
 */    
 #include "coregraphics/base/textrendererbase.h"

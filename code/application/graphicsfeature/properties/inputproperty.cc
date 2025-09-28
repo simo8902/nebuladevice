@@ -16,7 +16,7 @@
 
 namespace Attr
 {
-    DefineBoolWithDefault(InputFocus, 'IFOC', ReadWrite, false);
+    DefineBoolWithDefault(InputFocus, 'IFOC', ReadWrite, true);
 };
 
 namespace GraphicsFeature

@@ -19,8 +19,7 @@ MouseBase::MouseBase() :
     buttonStates(MouseButton::NumMouseButtons),
     wheelForward(false),
     wheelBackward(false),
-    initialMouseMovement(false),
-	dragging(false)
+    initialMouseMovement(false)
 {
     // empty
 }
@@ -123,7 +122,6 @@ MouseBase::OnEvent(const InputEvent& inputEvent)
 
         case InputEvent::MouseMove:
             this->UpdateMousePositions(inputEvent.GetAbsMousePos(), inputEvent.GetNormMousePos());
-			this->dragging = inputEvent.GetDragging();
             break;
 
         case InputEvent::RawMouseMove:

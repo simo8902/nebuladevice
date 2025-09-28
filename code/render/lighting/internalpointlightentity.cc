@@ -84,7 +84,7 @@ InternalPointLightEntity::OnRenderDebug()
     ShapeRenderer::Instance()->AddShape(RenderShape(Thread::GetMyThreadId(), RenderShape::Sphere, this->GetTransform(), color));
     // mark position
     color.w() = 1.0f;
-    matrix44 centerTransform = matrix44::scaling(0.1, 0.1, 0.1);
+    matrix44 centerTransform = matrix44::scaling(0.1f, 0.1f, 0.1f);
     centerTransform.set_position(this->GetTransform().get_position());
     ShapeRenderer::Instance()->AddShape(RenderShape(Thread::GetMyThreadId(), RenderShape::Sphere, centerTransform, color));
 

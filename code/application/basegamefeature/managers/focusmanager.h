@@ -33,18 +33,6 @@ class FocusManager : public Game::Manager
     __DeclareSingleton(FocusManager);
 
 public:
-	/// types for input focus
-	enum InputFocusType
-	{
-		Select,
-		Move,
-		Rotate,
-		Scale,
-
-		NumInputFocusTypes,
-		InvalidInputFocusType
-	};
-
     /// constructor
     FocusManager();
     /// destructor
@@ -65,10 +53,6 @@ public:
     virtual const Ptr<Game::Entity>& GetInputFocusEntity() const;
     /// set input focus to next entity
     virtual void SetInputFocusToNextEntity();
-	/// set the input focus type
-	void SetInputFocusType(InputFocusType type);
-	/// get the input focus type
-	InputFocusType GetInputFocusType();
 
     /// set the current camera focus entity, null ptr allowed
     virtual void SetCameraFocusEntity(const Ptr<Game::Entity>& entity);
@@ -89,26 +73,7 @@ private:
     Ptr<Game::Entity> cameraFocusEntity;
     Ptr<Game::Entity> newInputFocusEntity;
     Ptr<Game::Entity> newCameraFocusEntity;
-	InputFocusType    inputFocusType;
 };
-
-//------------------------------------------------------------------------------
-/**
-*/
-inline void
-FocusManager::SetInputFocusType(InputFocusType type)
-{
-	this->inputFocusType = type;
-}
-
-//------------------------------------------------------------------------------
-/**
-*/
-inline FocusManager::InputFocusType
-FocusManager::GetInputFocusType()
-{
-	return this->inputFocusType;
-}
 
 }; // namespace BaseGameFeature
 //------------------------------------------------------------------------------

@@ -88,7 +88,6 @@ Win32InputDisplayEventHandler::HandleEvent(const DisplayEvent& displayEvent)
             inputEvent.SetType(InputEvent::MouseMove);
             inputEvent.SetAbsMousePos(displayEvent.GetAbsMousePos());
             inputEvent.SetNormMousePos(displayEvent.GetNormMousePos());
-			inputEvent.SetDragging(displayEvent.Dragging());
             inputServer->PutEvent(inputEvent);
             return true;
 

@@ -235,7 +235,7 @@ D3D9RenderTarget::Setup()
 		// recreate d3d9 texture object inside of Texture object only
 		if (!this->resolveTexture.isvalid())
 		{
-	        this->resolveTexture = ResourceManager::Instance()->CreateUnmanagedResource(this->resolveTextureResId, Texture::RTTI).downcast<Texture>();  
+        this->resolveTexture = ResourceManager::Instance()->CreateUnmanagedResource(this->resolveTextureResId, Texture::RTTI).downcast<Texture>();  
 		}
         this->resolveTexture->SetupFromD3D9Texture(this->d3d9ResolveTexture);
         this->d3d9ResolveTexture->AddRef();
@@ -266,7 +266,7 @@ D3D9RenderTarget::Discard()
 {
 	if (!this->isLosted)
 	{
-	    RenderTargetBase::Discard();
+    RenderTargetBase::Discard();
 	}
 	else
 	{

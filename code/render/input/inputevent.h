@@ -81,10 +81,6 @@ public:
     const Math::float2& GetNormMousePos() const;
     /// convert type to string
     static const char* TypeToString(Type t);
-	/// set dragging flag
-	void SetDragging(bool drag);
-	/// get dragging flag
-	const bool GetDragging() const;
 
 private:
     Type type;
@@ -94,7 +90,6 @@ private:
     MouseButton::Code mouseButton;
     Math::float2 absMousePos;
     Math::float2 normMousePos;
-	bool dragging;
 };
 
 //------------------------------------------------------------------------------
@@ -106,8 +101,7 @@ InputEvent::InputEvent() :
     keyCode(Key::InvalidKey),
     character(0),
     deviceIndex(0),
-    mouseButton(MouseButton::InvalidMouseButton),
-	dragging(false)
+    mouseButton(MouseButton::InvalidMouseButton)
 {
     // empty
 }
@@ -270,24 +264,6 @@ InputEvent::TypeToString(Type t)
             n_error("InputEvent::TypeToString(): invalid type!\n");
             return "<INVALID>";
     }
-}
-
-//------------------------------------------------------------------------------
-/**
-*/
-inline void
-InputEvent::SetDragging(bool drag)
-{
-	this->dragging = drag;
-}
-
-//------------------------------------------------------------------------------
-/**
-*/
-inline const bool
-InputEvent::GetDragging() const
-{
-	return this->dragging;
 }
 
 } // namespace Input

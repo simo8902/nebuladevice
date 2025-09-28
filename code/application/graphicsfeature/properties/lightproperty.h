@@ -64,7 +64,6 @@ private:
 
     Ptr<Graphics::AbstractLightEntity> lightEntity;
     LightFlickerUtil lightFlickerUtil;
-	Math::matrix44	 lightTransform;
 };
 __RegisterClass(LightProperty);
 

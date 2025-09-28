@@ -341,14 +341,13 @@ void
 TimeManager::OnRenderDebug()
 {
     #ifdef _DEBUG
-	// removed by xiongyouyi[05/16/2011]
     //if (this->GetTimeFactor() != 1.0)
-    //{
-        //Util::String txt = "mainThread - TimeFactor : ";
-        //txt.Append(Util::String::FromFloat(this->GetTimeFactor()));
-        //_debug_text(txt, Math::float2(0.03f, 0.1f), Math::float4(1,0,1,1));
+    {
+        Util::String txt = "mainThread - TimeFactor : ";
+        txt.Append(Util::String::FromFloat(this->GetTimeFactor()));
+        _debug_text(txt, Math::float2(0.03f, 0.1f), Math::float4(1,0,1,1));
         //IO::Console::Instance()->Print("Time Factor is %i%%.", this->GetTimeFactor()); 
-    //}
+    }
     #endif
     
     // call parrent

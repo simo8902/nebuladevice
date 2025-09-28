@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="raknet_win32"
-	ProjectGUID="{C09843C0-3EF8-4D9A-B55E-47C6EF4AFD90}"
+	ProjectGUID="{6FA24A98-A49A-4233-8289-F8EEF929C299}"
 	>
 	<Platforms>
 		<Platform
@@ -44,13 +44,13 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/EHsc "
 				Optimization="0"
-				AdditionalIncludeDirectories="..;../extlibs/raknet/DependentExtensions/openssl-0.9.8g;../extlibs/raknet/DependentExtensions/udt4/src; ;"
+				AdditionalIncludeDirectories="..;../extlibs/raknet/DependentExtensions/openssl-0.9.8g;../extlibs/raknet/DependentExtensions/udt4/src; ;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Include"
 				PreprocessorDefinitions="__WIN32__;WIN32;_DEBUG;NT_PLUGIN;_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_DEPRECATE=1;_RAKNET_LIB;_CRT_NONSTDC_NO_DEPRECATE=1;_VC80_UPGRADE=0x0710;_MBCS;_HAS_EXCEPTIONS=1 "
 				StringPooling="true"
 				MinimalRebuild="true"
 				ExceptionHandling="0"
 				BasicRuntimeChecks="3"
-				RuntimeLibrary="1"
+				RuntimeLibrary="3"
 				BufferSecurityCheck="true"
 				EnableFunctionLevelLinking="true"
 				EnableEnhancedInstructionSet="0"
@@ -129,11 +129,11 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="..;../extlibs/raknet/DependentExtensions/openssl-0.9.8g;../extlibs/raknet/DependentExtensions/udt4/src; ;"
+				AdditionalIncludeDirectories="..;../extlibs/raknet/DependentExtensions/openssl-0.9.8g;../extlibs/raknet/DependentExtensions/udt4/src; ;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Include"
 				PreprocessorDefinitions="__WIN32__;WIN32;NT_PLUGIN;_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_DEPRECATE=1;_RAKNET_LIB;_CRT_NONSTDC_NO_DEPRECATE=1;_VC80_UPGRADE=0x0710;_MBCS;_HAS_EXCEPTIONS=1 "
 				StringPooling="true"
 				ExceptionHandling="0"
-				RuntimeLibrary="0"
+				RuntimeLibrary="2"
 				BufferSecurityCheck="false"
 				EnableFunctionLevelLinking="true"
 				EnableEnhancedInstructionSet="0"
@@ -162,255 +162,6 @@
 			<Tool
 				Name="VCLibrarianTool"
 				OutputFile=".\Win32\raknet_win32.release.lib"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Programming|Win32"
-			OutputDirectory=".\Win32\Programming"
-			IntermediateDirectory=".\Win32\Programming\raknet_win32"
-			ConfigurationType="4"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			WholeProgramOptimization="0"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions="/EHsc "
-				Optimization="4"
-				InlineFunctionExpansion="2"
-				EnableIntrinsicFunctions="true"
-				FavorSizeOrSpeed="1"
-				OmitFramePointers="true"
-				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="..;../extlibs/raknet/DependentExtensions/openssl-0.9.8g;../extlibs/raknet/DependentExtensions/udt4/src; ;"
-				PreprocessorDefinitions="__WIN32__;WIN32;NT_PLUGIN;_HAS_EXCEPTIONS=0;_CRT_SECURE_NO_DEPRECATE=1;_RAKNET_LIB;_CRT_NONSTDC_NO_DEPRECATE=1;_VC80_UPGRADE=0x0710;_MBCS;_HAS_EXCEPTIONS=1 "
-				StringPooling="true"
-				ExceptionHandling="0"
-				RuntimeLibrary="0"
-				BufferSecurityCheck="false"
-				EnableFunctionLevelLinking="true"
-				EnableEnhancedInstructionSet="0"
-				FloatingPointModel="2"
-				RuntimeTypeInfo="false"
-				WarningLevel="3"
-				WarnAsError="true"
-				SuppressStartupBanner="true"
-				Detect64BitPortabilityProblems="false"
-				DebugInformationFormat="3"
-				CallingConvention="0"
-				CompileAs="0"
-				UsePrecompiledHeader="0"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile=".\Win32\raknet_win32.programming.lib"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Public_Build|Win32"
-			OutputDirectory=".\Win32\Public_Build"
-			IntermediateDirectory=".\Win32\Public_Build\raknet_win32"
-			ConfigurationType="4"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			WholeProgramOptimization="1"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions="/EHsc "
-				Optimization="4"
-				InlineFunctionExpansion="2"
-				EnableIntrinsicFunctions="true"
-				FavorSizeOrSpeed="1"
-				OmitFramePointers="true"
-				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="..;../extlibs/raknet/DependentExtensions/openssl-0.9.8g;../extlibs/raknet/DependentExtensions/udt4/src; ;"
-				PreprocessorDefinitions="__WIN32__;WIN32;NT_PLUGIN;_HAS_EXCEPTIONS=0;PUBLIC_BUILD=1;_CRT_SECURE_NO_DEPRECATE=1;_RAKNET_LIB;_CRT_NONSTDC_NO_DEPRECATE=1;_VC80_UPGRADE=0x0710;_MBCS;_HAS_EXCEPTIONS=1 "
-				StringPooling="true"
-				ExceptionHandling="0"
-				RuntimeLibrary="0"
-				BufferSecurityCheck="false"
-				EnableFunctionLevelLinking="true"
-				EnableEnhancedInstructionSet="0"
-				FloatingPointModel="2"
-				RuntimeTypeInfo="false"
-				WarningLevel="3"
-				WarnAsError="true"
-				SuppressStartupBanner="true"
-				Detect64BitPortabilityProblems="false"
-				DebugInformationFormat="3"
-				CallingConvention="0"
-				CompileAs="0"
-				UsePrecompiledHeader="0"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile=".\Win32\raknet_win32.public_build.lib"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Securom|Win32"
-			OutputDirectory=".\Win32\Securom"
-			IntermediateDirectory=".\Win32\Securom\raknet_win32"
-			ConfigurationType="4"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			WholeProgramOptimization="1"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions="/EHsc "
-				Optimization="4"
-				InlineFunctionExpansion="2"
-				EnableIntrinsicFunctions="true"
-				FavorSizeOrSpeed="1"
-				OmitFramePointers="true"
-				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="..;../extlibs/raknet/DependentExtensions/openssl-0.9.8g;../extlibs/raknet/DependentExtensions/udt4/src; ;"
-				PreprocessorDefinitions="__WIN32__;WIN32;NT_PLUGIN;_HAS_EXCEPTIONS=0;PUBLIC_BUILD=1;SECUROM=1;_CRT_SECURE_NO_DEPRECATE=1;_RAKNET_LIB;_CRT_NONSTDC_NO_DEPRECATE=1;_VC80_UPGRADE=0x0710;_MBCS;_HAS_EXCEPTIONS=1 "
-				StringPooling="true"
-				ExceptionHandling="0"
-				RuntimeLibrary="0"
-				BufferSecurityCheck="false"
-				EnableFunctionLevelLinking="true"
-				EnableEnhancedInstructionSet="0"
-				FloatingPointModel="2"
-				RuntimeTypeInfo="false"
-				WarningLevel="3"
-				WarnAsError="true"
-				SuppressStartupBanner="true"
-				Detect64BitPortabilityProblems="false"
-				DebugInformationFormat="3"
-				CallingConvention="0"
-				CompileAs="0"
-				UsePrecompiledHeader="0"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile=".\Win32\raknet_win32.securom.lib"
 			/>
 			<Tool
 				Name="VCALinkTool"

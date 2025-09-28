@@ -48,7 +48,7 @@ using namespace Characters;
 using namespace FrameSync;
 using namespace Particles;
 using namespace Visibility;
-using namespace Terrain;
+
 
 //------------------------------------------------------------------------------
 /**
@@ -140,7 +140,6 @@ GraphicsHandler::Open()
     this->characterServer = Characters::CharacterServer::Create();
     this->mouseRenderDevice = MouseRenderDevice::Create();
     this->particleServer = ParticleServer::Create();
-	this->terrainServer  = TerrainServer::Create();
 
     // setup debug timers and counters
     _setup_timer(GraphicsFrameTime);
@@ -161,7 +160,6 @@ GraphicsHandler::Close()
         this->ShutdownGraphicsRuntime();
     }
 
-	this->terrainServer = 0;
     this->particleServer = 0;
     this->mouseRenderDevice = 0;
     this->characterServer = 0;
@@ -265,8 +263,7 @@ GraphicsHandler::SetupGraphicsRuntime(const Ptr<SetupGraphics>& msg)
     this->lightServer->Open();
     this->shadowServer->Open();    
     this->attachmentServer->Open();
-    this->particleServer->Open();    
-	this->terrainServer->Open();
+    this->particleServer->Open();  
 
     // HACK - pin placeholders and system stuff so they will not be automatically
     // removed or replaced on LOD-management
@@ -289,7 +286,6 @@ GraphicsHandler::ShutdownGraphicsRuntime()
     n_assert(this->isGraphicsRuntimeValid);
     this->isGraphicsRuntimeValid = false;
 
-	this->terrainServer->Close();
     this->particleServer->Close();      
     this->mouseRenderDevice->Discard();
     this->characterServer->Discard();
@@ -319,11 +315,6 @@ GraphicsHandler::HandleMessage(const Ptr<Message>& msg)
     if (msg->IsA(Graphics::GraphicsEntityMessage::RTTI))
     {
         // handle graphics entity message
-		if (!msg.cast<GraphicsEntityMessage>()->GetObjectRef()->IsValid())// add by xiongyouyi[05/27/2011]
-		{
-			return false;
-		}
-
         Ptr<InternalGraphicsEntity> entity = msg.cast<GraphicsEntityMessage>()->GetObjectRef()->Ref<InternalGraphicsEntity>();
         entity->HandleMessage(msg);
         return true;
@@ -429,6 +420,7 @@ GraphicsHandler::OnSetupGraphics(const Ptr<SetupGraphics>& msg)
     disp->SetDisplayMode(msg->GetDisplayMode());
     disp->SetAntiAliasQuality(msg->GetAntiAliasQuality());
     disp->SetFullscreen(msg->GetFullscreen());
+	disp->SetAutoAdjustSize(msg->GetAutoAdjustSize());
     disp->SetDisplayModeSwitchEnabled(msg->GetDisplayModeSwitchEnabled());
     disp->SetTripleBufferingEnabled(msg->GetTripleBufferingEnabled());
     disp->SetAlwaysOnTop(msg->GetAlwaysOnTop());
@@ -436,7 +428,6 @@ GraphicsHandler::OnSetupGraphics(const Ptr<SetupGraphics>& msg)
     disp->SetIconName(msg->GetIconName());
     disp->SetWindowTitle(msg->GetWindowTitle());
     disp->SetParentWindow(msg->GetParentWindow());
-	disp->SetExternalWindow(msg->GetExternalWindow());
     this->SetupGraphicsRuntime(msg);
 
     msg->SetActualDisplayMode(disp->GetDisplayMode());

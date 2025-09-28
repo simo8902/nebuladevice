@@ -1,0 +1,2 @@
+Win360Socket::Connect(): connect() failed with 'Connection refused.'!
+StdTcpClient: failed to connect to host 'localhost(127.0.0.1)' port '2352'!.

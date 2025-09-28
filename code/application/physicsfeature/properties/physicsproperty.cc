@@ -83,7 +83,7 @@ PhysicsProperty::GetPhysicsEntity() const
 void
 PhysicsProperty::SetupCallbacks()
 {
-    //this->entity->RegisterPropertyCallback(this, MoveAfter);
+    this->entity->RegisterPropertyCallback(this, MoveAfter);
 }
 
 //------------------------------------------------------------------------------
@@ -93,7 +93,6 @@ void
 PhysicsProperty::SetupDefaultAttributes()
 {
     TransformableProperty::SetupDefaultAttributes();
-	SetupAttr(Attr::Physics);
     SetupAttr(Attr::VelocityVector);
 }
 

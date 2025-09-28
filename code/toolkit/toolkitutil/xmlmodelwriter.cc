@@ -144,17 +144,6 @@ XmlModelWriter::EndTag()
 /**
 */
 void
-XmlModelWriter::WriteUChar(unsigned char c)
-{
-	this->writer->BeginNode("c");
-	this->writer->WriteContent(String::FromInt(c));
-	this->writer->EndNode();
-}
-
-//------------------------------------------------------------------------------
-/**
-*/
-void
 XmlModelWriter::WriteInt(int i)
 {
     this->writer->BeginNode("i");

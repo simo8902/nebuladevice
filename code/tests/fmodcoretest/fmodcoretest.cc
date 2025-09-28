@@ -18,8 +18,8 @@
 
 #include "audio2/fmodcoreaudio/fmodaudiodevice.h"
 #include "audio2/fmodcoreaudio/fmoderror.h"
-//#include <../../code/extlibs/fmod/ps3/fmod.hpp>
-//#include <../../code/extlibs/fmoddesignerapi/ps3/fmod_event.hpp>
+#include <../../code/extlibs/fmod/ps3/fmod.hpp>
+#include <../../code/extlibs/fmoddesignerapi/ps3/fmod_event.hpp>
 
 #define INPUT_PAD   0
 

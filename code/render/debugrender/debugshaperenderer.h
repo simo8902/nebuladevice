@@ -37,8 +37,6 @@ public:
     void DrawCylinder(const Math::matrix44& modelTransform, const Math::float4& color);
     /// draw a torus
     void DrawTorus(const Math::matrix44& modelTransform, const Math::float4& color);
-	/// draw a cone
-	void DrawCone(const Math::matrix44& modelTransform, const Math::float4& color);
     /// draw primitives
     void DrawPrimitives(const Math::matrix44& modelTransform, CoreGraphics::PrimitiveTopology::Code topology, SizeT numPrimitives, const void* vertices, SizeT vertexWidth, const Math::float4& color);
     /// draw indexed primitives

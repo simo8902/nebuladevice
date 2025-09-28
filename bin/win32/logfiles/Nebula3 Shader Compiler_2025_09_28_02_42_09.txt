@@ -1,0 +1,16 @@
+Parsing fragment 'phonglighting.xml'.
+Parsing fragment 'pointlight.xml'.
+Parsing fragment 'texture2d.xml'.
+Parsing fragment 'texturecube.xml'.
+Parsing sampler file 'samplers.xml'
+Parsing shader file 'test.xml'.
+Compiling shader: test...
+WARNING: input slot 'Lighting.shadowValue' is not connected!
+WARNING: input slot 'Lighting.tangentSurfaceNormal' is not connected!
+WARNING: input slot 'Lighting.shadowValue' is not connected!
+WARNING: input slot 'Lighting.tangentSurfaceNormal' is not connected!
+Compiling shader: test...
+WARNING: input slot 'Lighting.shadowValue' is not connected!
+WARNING: input slot 'Lighting.tangentSurfaceNormal' is not connected!
+WARNING: input slot 'Lighting.shadowValue' is not connected!
+WARNING: input slot 'Lighting.tangentSurfaceNormal' is not connected!

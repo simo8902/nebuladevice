@@ -74,15 +74,6 @@ DebugShapeRenderer::DrawTorus(const matrix44& modelTransform, const float4& colo
 
 //------------------------------------------------------------------------------
 /**
-*/
-void
-DebugShapeRenderer::DrawCone(const matrix44& modelTransform, const float4& color)
-{
-	this->shapes.Append(RenderShape(Thread::GetMyThreadId(), RenderShape::Cone, modelTransform, color));
-}
-
-//------------------------------------------------------------------------------
-/**
     NOTE: this method copies the vertex data to a temporary buffer.
 */
 void

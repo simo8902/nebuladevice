@@ -14,10 +14,6 @@
 #include "coreanimation/managedanimresource.h"
 #include "resources/d3d9streaming/d3d9texturestreamer.h"
 #include "resources/streaming/poolresourcemapper.h"
-#include "resources/streaming/texturecreator.h"
-#include "resources/streaming/texturestreamer.h"
-
-
 
 namespace Test
 {
@@ -97,9 +93,7 @@ CoreGraphicsTest::SetupRuntime()
     Ptr<PoolResourceMapper> texMapper = PoolResourceMapper::Create();
     texMapper->SetPlaceholderResourceId(ResourceId("tex:system/placeholder.dds"));
     texMapper->SetAsyncEnabled(true);
-	texMapper->SetResourceLoaderClass(Resources::TextureStreamer::RTTI);
-	texMapper->SetResourceCreatorClass(Resources::TextureCreator::RTTI);
-    texMapper->InitResourceDict(IO::URI("tex:resources.dic"));//resdict.dic
+    texMapper->InitResourceDict(IO::URI("tex:resdict.dic"));
     this->resManager->AttachMapper(texMapper.upcast<ResourceMapper>());
 
     Ptr<SimpleResourceMapper> meshMapper = SimpleResourceMapper::Create();
@@ -110,7 +104,7 @@ CoreGraphicsTest::SetupRuntime()
     this->resManager->AttachMapper(meshMapper.upcast<ResourceMapper>());
 
     Ptr<SimpleResourceMapper> animMapper = SimpleResourceMapper::Create();
-    animMapper->SetPlaceholderResourceId(ResourceId("anims:characters/mensch_m_variations.nax3"));
+    animMapper->SetPlaceholderResourceId(ResourceId("anim:characters/mensch_m_variations.nax2"));
     animMapper->SetResourceClass(AnimResource::RTTI);
     animMapper->SetResourceLoaderClass(StreamAnimationLoader::RTTI);
     animMapper->SetManagedResourceClass(ManagedAnimResource::RTTI);

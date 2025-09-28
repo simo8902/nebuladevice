@@ -50,7 +50,7 @@ public:
     /// constructor with event code
     DisplayEvent(Code c);
     /// constructor with event code and mouse pos
-    DisplayEvent(Code c, const Math::float2& absPos, const Math::float2& normPos, bool drag = false);
+    DisplayEvent(Code c, const Math::float2& absPos, const Math::float2& normPos);
     /// constructor with key code
     DisplayEvent(Code c, Input::Key::Code k);
     /// constructor with character
@@ -70,8 +70,6 @@ public:
     Input::Char GetChar() const;
     /// get mouse button code
     Input::MouseButton::Code GetMouseButton() const;
-	/// True if a button is down and the mouse is moving
-	bool Dragging() const;
 
 private:
     Code code;
@@ -80,7 +78,6 @@ private:
     Input::Key::Code keyCode;
     Input::Char charCode;
     Input::MouseButton::Code mouseButtonCode;
-	bool dragging;
 };
 
 //------------------------------------------------------------------------------
@@ -93,8 +90,7 @@ DisplayEvent::DisplayEvent() :
     normMousePos(0.0f, 0.0f),
     keyCode(Input::Key::InvalidKey),
     charCode(0),
-    mouseButtonCode(Input::MouseButton::InvalidMouseButton),
-	dragging(false)
+    mouseButtonCode(Input::MouseButton::InvalidMouseButton)
 {
     // empty
 }
@@ -109,8 +105,7 @@ DisplayEvent::DisplayEvent(Code c) :
     normMousePos(0.0f, 0.0f),
     keyCode(Input::Key::InvalidKey),
     charCode(0),
-    mouseButtonCode(Input::MouseButton::InvalidMouseButton),
-	dragging(false)
+    mouseButtonCode(Input::MouseButton::InvalidMouseButton)
 {
     // empty
 }
@@ -119,14 +114,13 @@ DisplayEvent::DisplayEvent(Code c) :
 /**
 */
 inline
-DisplayEvent::DisplayEvent(Code c, const Math::float2& absPos, const Math::float2& normPos, bool drag) :
+DisplayEvent::DisplayEvent(Code c, const Math::float2& absPos, const Math::float2& normPos) :
     code(c),
     absMousePos(absPos),
     normMousePos(normPos),
     keyCode(Input::Key::InvalidKey),
     charCode(0),
-    mouseButtonCode(Input::MouseButton::InvalidMouseButton),
-	dragging(drag)
+    mouseButtonCode(Input::MouseButton::InvalidMouseButton)
 {
     // empty
 }
@@ -141,8 +135,7 @@ DisplayEvent::DisplayEvent(Code c, Input::Key::Code k) :
     normMousePos(0.0f, 0.0f),
     keyCode(k),
     charCode(0),
-    mouseButtonCode(Input::MouseButton::InvalidMouseButton),
-	dragging(false)
+    mouseButtonCode(Input::MouseButton::InvalidMouseButton)
 {
     // empty
 }
@@ -157,8 +150,7 @@ DisplayEvent::DisplayEvent(Code c, Input::Char chr) :
     normMousePos(0.0f, 0.0f),
     keyCode(Input::Key::InvalidKey),
     charCode(chr),
-    mouseButtonCode(Input::MouseButton::InvalidMouseButton),
-	dragging(false)
+    mouseButtonCode(Input::MouseButton::InvalidMouseButton)
 {
     // empty
 }
@@ -173,8 +165,7 @@ DisplayEvent::DisplayEvent(Code c, Input::MouseButton::Code b, const Math::float
     normMousePos(normPos),
     keyCode(Input::Key::InvalidKey),
     charCode(0),
-    mouseButtonCode(b),
-	dragging(false)
+    mouseButtonCode(b)
 {
     // empty
 }
@@ -231,15 +222,6 @@ inline Input::MouseButton::Code
 DisplayEvent::GetMouseButton() const
 {
     return this->mouseButtonCode;
-}
-
-//------------------------------------------------------------------------------
-/**
-*/
-inline bool
-DisplayEvent::Dragging() const
-{
-	return this->dragging;
 }
 
 } // namespace CoreGraphics

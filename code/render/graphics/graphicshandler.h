@@ -36,7 +36,6 @@
 #include "coregraphics/mouserenderdevice.h"
 #include "framesync/framesynctimer.h"
 #include "particles/particleserver.h"
-#include "terrain/terrainserver.h"
 
 //------------------------------------------------------------------------------
 namespace Graphics
@@ -138,7 +137,6 @@ private:
     Ptr<Animation::AnimEventServer> animEventServer;
     Ptr<Characters::CharacterServer> characterServer;
     Ptr<Particles::ParticleServer> particleServer;
-	Ptr<Terrain::TerrainServer>    terrainServer;
     
     _declare_timer(GraphicsFrameTime);
 

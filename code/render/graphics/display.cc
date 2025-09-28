@@ -21,8 +21,7 @@ using namespace Messaging;
 */
 Display::Display() :
     isOpen(false),
-    parentWindow(0),
-	externalWindow(0)
+    parentWindow(0)
 {
     __ConstructSingleton;
 }
@@ -50,6 +49,7 @@ Display::Open()
     msg->SetDisplayMode(this->settings.DisplayMode());
     msg->SetAntiAliasQuality(this->settings.GetAntiAliasQuality());
     msg->SetFullscreen(this->settings.IsFullscreen());
+	msg->SetAutoAdjustSize(this->settings.IsAutoAdjustSize());
     msg->SetDisplayModeSwitchEnabled(this->settings.IsDisplayModeSwitchEnabled());
     msg->SetTripleBufferingEnabled(this->settings.IsTripleBufferingEnabled());
     msg->SetAlwaysOnTop(this->settings.IsAlwaysOnTop());
@@ -57,7 +57,6 @@ Display::Open()
     msg->SetIconName(this->settings.GetIconName());
     msg->SetWindowTitle(this->settings.GetWindowTitle());
     msg->SetParentWindow(this->parentWindow);
-	msg->SetExternalWindow(this->externalWindow);
     msg->SetResourceMappers(this->resourceMappers);
 
     // clear resource mappers array, so there's no danger of accessing them
@@ -129,6 +128,16 @@ Display::SupportsDisplayMode(Adapter::Code adapter, const DisplayMode& requested
 }
 
 //------------------------------------------------------------------------------
+void
+Display::AdjustSize()
+{
+	Ptr<Graphics::AdjustDisplaySize> msg = Graphics::AdjustDisplaySize::Create();
+	GraphicsInterface::Instance()->Send(msg.cast<Message>());
+}
+
+//------------------------------------------------------------------------------
+/**
+*/
 /**
 */
 DisplayMode
@@ -200,14 +209,6 @@ Display::RemoveRenderEventHandler(const Ptr<ThreadSafeRenderEventHandler>& handl
     Ptr<Graphics::RemoveRenderEventHandler> msg = Graphics::RemoveRenderEventHandler::Create();
     msg->SetHandler(handler);
     GraphicsInterface::Instance()->Send(msg.cast<Message>());
-}
-
-//------------------------------------------------------------------------------
-void
-Display::AdjustSize()
-{
-	Ptr<Graphics::AdjustDisplaySize> msg = Graphics::AdjustDisplaySize::Create();
-	GraphicsInterface::Instance()->Send(msg.cast<Message>());
 }
 
 } // namespace Graphics

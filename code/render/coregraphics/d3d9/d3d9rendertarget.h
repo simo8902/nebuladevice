@@ -42,7 +42,7 @@ private:
 
     /// setup compatible multisample type
     void SetupMultiSampleType();
-
+                                                      
 private:
     friend class D3D9RenderDevice;
                                                       

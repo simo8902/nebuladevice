@@ -32,7 +32,6 @@
 #include "audio2/audio2server.h"
 #include "audio2/audio2interface.h"
 #include "audio2/audio2player.h"
-#include "debug/debugcounter.h"
 
 #if __USE_PHYSICS__
 #include "managers/envquerymanager.h"
@@ -130,9 +129,6 @@ protected:
 #endif
 
     Math::bbox worldBox;
-	// debug counters/timers for perf-hud
-	Ptr<Debug::DebugCounter> numPrimitives;
-	Ptr<Debug::DebugCounter> numDrawCalls;
 };
 
 //------------------------------------------------------------------------------

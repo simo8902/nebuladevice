@@ -49,6 +49,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IDirect3DVertexBuffer9*
 D3D9VertexBuffer::GetD3D9VertexBuffer() const
 {

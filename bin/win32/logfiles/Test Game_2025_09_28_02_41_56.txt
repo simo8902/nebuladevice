@@ -1,0 +1,6 @@
+ListenerThread started!
+ListenerThread listening...
+ListenerThread started!
+ListenerThread listening...
+RemoteMessageHandler::OnAttachCommandHandler() called!
+[ERROR] ShaderServerBase: Failed to open shader dictionary!

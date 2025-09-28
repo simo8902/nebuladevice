@@ -20,6 +20,7 @@ DisplayDeviceBase::DisplayDeviceBase() :
     displayMode(0, 0, 1024, 768, PixelFormat::X8R8G8B8),
     antiAliasQuality(AntiAliasQuality::None),
     fullscreen(false),
+	autoAdjustSize(true),
     modeSwitchEnabled(true),
     tripleBufferingEnabled(false),
     alwaysOnTop(false),
@@ -28,7 +29,6 @@ DisplayDeviceBase::DisplayDeviceBase() :
     windowTitle("Nebula3 Application Window"),
     iconName("NebulaIcon"),
     parentWindow(0),
-	externalWindow(0),
     inNotifyEventHandlers(false)
 {
     __ConstructSingleton;

@@ -1,0 +1,1801 @@
+ benchmarkfoundation_win32
+
+ Timestamp is 68d87585 (Sun Sep 28 02:38:45 2025)
+
+ Preferred load address is 00400000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0001f331H .text                   CODE
+ 0001:0001f340 0000044fH .text$yc                CODE
+ 0001:0001f790 00000543H .text$yd                CODE
+ 0002:00000000 000001f8H .idata$5                DATA
+ 0002:000001f8 00000004H .CRT$XCA                DATA
+ 0002:000001fc 00000004H .CRT$XCAA               DATA
+ 0002:00000200 00000048H .CRT$XCU                DATA
+ 0002:00000248 00000004H .CRT$XCZ                DATA
+ 0002:0000024c 00000004H .CRT$XIA                DATA
+ 0002:00000250 00000004H .CRT$XIAA               DATA
+ 0002:00000254 00000004H .CRT$XIC                DATA
+ 0002:00000258 00000004H .CRT$XIY                DATA
+ 0002:0000025c 00000004H .CRT$XIZ                DATA
+ 0002:00000260 00000004H .CRT$XLA                DATA
+ 0002:00000264 00000004H .CRT$XLZ                DATA
+ 0002:00000270 00002e98H .rdata                  DATA
+ 0002:00003108 00000018H .rdata$T                DATA
+ 0002:00003120 0000004bH .rdata$debug            DATA
+ 0002:00003170 00000008H .rdata$sxdata           DATA
+ 0002:00003178 00000004H .rtc$IAA                DATA
+ 0002:0000317c 00000004H .rtc$IZZ                DATA
+ 0002:00003180 00000004H .rtc$TAA                DATA
+ 0002:00003184 00000004H .rtc$TZZ                DATA
+ 0002:00003188 0000008cH .xdata$x                DATA
+ 0002:00003214 00000064H .idata$2                DATA
+ 0002:00003278 00000014H .idata$3                DATA
+ 0002:0000328c 000001f8H .idata$4                DATA
+ 0002:00003484 00000694H .idata$6                DATA
+ 0002:00003b18 00000000H .edata                  DATA
+ 0003:00000000 00000060H .data                   DATA
+ 0003:00000060 0000078cH .bss                    DATA
+ 0004:00000000 00000001H .tls                    DATA
+ 0004:00000004 0000000cH .stls                   DATA
+ 0004:00000010 00000001H .tls$ZZZ                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000002       ___safe_se_handler_count   00000002     <absolute>
+ 0000:0000002c       __tls_array                0000002c     <absolute>
+ 0000:00009876       __ldused                   00009876     <absolute>
+ 0000:00009876       __fltused                  00009876     <absolute>
+ 0000:00000000       ___ImageBase               00400000     <linker-defined>
+ 0001:00000000       _IXACT3SoundBank_Destroy@4 00401000 f i stdneb.obj
+ 0001:00000020       _IXACT3SoundBank_GetCueIndex@8 00401020 f i stdneb.obj
+ 0001:00000040       _IXACT3SoundBank_GetNumCues@8 00401040 f i stdneb.obj
+ 0001:00000060       _IXACT3SoundBank_GetCueProperties@12 00401060 f i stdneb.obj
+ 0001:00000080       _IXACT3SoundBank_Prepare@20 00401080 f i stdneb.obj
+ 0001:000000b0       _IXACT3SoundBank_Play@20   004010b0 f i stdneb.obj
+ 0001:000000e0       _IXACT3SoundBank_Stop@12   004010e0 f i stdneb.obj
+ 0001:00000100       _IXACT3SoundBank_GetState@8 00401100 f i stdneb.obj
+ 0001:00000120       _IXACT3WaveBank_Destroy@4  00401120 f i stdneb.obj
+ 0001:00000140       _IXACT3WaveBank_GetNumWaves@8 00401140 f i stdneb.obj
+ 0001:00000160       _IXACT3WaveBank_GetWaveIndex@8 00401160 f i stdneb.obj
+ 0001:00000180       _IXACT3WaveBank_GetWaveProperties@12 00401180 f i stdneb.obj
+ 0001:000001a0       _IXACT3WaveBank_Prepare@24 004011a0 f i stdneb.obj
+ 0001:000001d0       _IXACT3WaveBank_Play@24    004011d0 f i stdneb.obj
+ 0001:00000200       _IXACT3WaveBank_Stop@12    00401200 f i stdneb.obj
+ 0001:00000220       _IXACT3WaveBank_GetState@8 00401220 f i stdneb.obj
+ 0001:00000240       _IXACT3Wave_Destroy@4      00401240 f i stdneb.obj
+ 0001:00000260       _IXACT3Wave_Play@4         00401260 f i stdneb.obj
+ 0001:00000280       _IXACT3Wave_Stop@8         00401280 f i stdneb.obj
+ 0001:000002a0       _IXACT3Wave_Pause@8        004012a0 f i stdneb.obj
+ 0001:000002c0       _IXACT3Wave_GetState@8     004012c0 f i stdneb.obj
+ 0001:000002e0       _IXACT3Wave_SetPitch@8     004012e0 f i stdneb.obj
+ 0001:00000300       _IXACT3Wave_SetVolume@8    00401300 f i stdneb.obj
+ 0001:00000320       _IXACT3Wave_SetMatrixCoefficients@16 00401320 f i stdneb.obj
+ 0001:00000350       _IXACT3Wave_GetProperties@8 00401350 f i stdneb.obj
+ 0001:00000370       _IXACT3Cue_Play@4          00401370 f i stdneb.obj
+ 0001:00000390       _IXACT3Cue_Stop@8          00401390 f i stdneb.obj
+ 0001:000003b0       _IXACT3Cue_GetState@8      004013b0 f i stdneb.obj
+ 0001:000003d0       _IXACT3Cue_Destroy@4       004013d0 f i stdneb.obj
+ 0001:000003f0       _IXACT3Cue_SetMatrixCoefficients@16 004013f0 f i stdneb.obj
+ 0001:00000420       _IXACT3Cue_GetVariableIndex@8 00401420 f i stdneb.obj
+ 0001:00000440       _IXACT3Cue_SetVariable@12  00401440 f i stdneb.obj
+ 0001:00000470       _IXACT3Cue_GetVariable@12  00401470 f i stdneb.obj
+ 0001:00000490       _IXACT3Cue_Pause@8         00401490 f i stdneb.obj
+ 0001:000004b0       _IXACT3Cue_GetProperties@8 004014b0 f i stdneb.obj
+ 0001:000004d0       _IXACT3Cue_SetOutputVoices@8 004014d0 f i stdneb.obj
+ 0001:000004f0       _IXACT3Cue_SetOutputVoiceMatrix@20 004014f0 f i stdneb.obj
+ 0001:00000520       _IXACT3Engine_AddRef@4     00401520 f i stdneb.obj
+ 0001:00000540       _IXACT3Engine_Release@4    00401540 f i stdneb.obj
+ 0001:00000560       _IXACT3Engine_GetRendererCount@8 00401560 f i stdneb.obj
+ 0001:00000580       _IXACT3Engine_GetRendererDetails@12 00401580 f i stdneb.obj
+ 0001:000005a0       _IXACT3Engine_GetFinalMixFormat@8 004015a0 f i stdneb.obj
+ 0001:000005c0       _IXACT3Engine_Initialize@8 004015c0 f i stdneb.obj
+ 0001:000005e0       _IXACT3Engine_ShutDown@4   004015e0 f i stdneb.obj
+ 0001:00000600       _IXACT3Engine_DoWork@4     00401600 f i stdneb.obj
+ 0001:00000620       _IXACT3Engine_CreateSoundBank@24 00401620 f i stdneb.obj
+ 0001:00000650       _IXACT3Engine_CreateInMemoryWaveBank@24 00401650 f i stdneb.obj
+ 0001:00000680       _IXACT3Engine_CreateStreamingWaveBank@12 00401680 f i stdneb.obj
+ 0001:000006a0       _IXACT3Engine_PrepareWave@32 004016a0 f i stdneb.obj
+ 0001:000006e0       _IXACT3Engine_PrepareInMemoryWave@52 004016e0 f i stdneb.obj
+ 0001:00000740       _IXACT3Engine_PrepareStreamingWave@68 00401740 f i stdneb.obj
+ 0001:000007c0       _IXACT3Engine_RegisterNotification@8 004017c0 f i stdneb.obj
+ 0001:000007e0       _IXACT3Engine_UnRegisterNotification@8 004017e0 f i stdneb.obj
+ 0001:00000800       _IXACT3Engine_GetCategory@8 00401800 f i stdneb.obj
+ 0001:00000820       _IXACT3Engine_Stop@12      00401820 f i stdneb.obj
+ 0001:00000840       _IXACT3Engine_SetVolume@12 00401840 f i stdneb.obj
+ 0001:00000870       _IXACT3Engine_Pause@12     00401870 f i stdneb.obj
+ 0001:00000890       _IXACT3Engine_GetGlobalVariableIndex@8 00401890 f i stdneb.obj
+ 0001:000008b0       _IXACT3Engine_SetGlobalVariable@12 004018b0 f i stdneb.obj
+ 0001:000008e0       _IXACT3Engine_GetGlobalVariable@12 004018e0 f i stdneb.obj
+ 0001:00000900       ?Increment@Win360Interlocked@Win360@@SAHACH@Z 00401900 f i createobjects.obj
+ 0001:00000920       ?Decrement@Win360Interlocked@Win360@@SAHACH@Z 00401920 f i createobjects.obj
+ 0001:00000940       ??2@YAPAXI@Z               00401940 f i createobjects.obj
+ 0001:00000960       ??3@YAXPAX@Z               00401960 f i createobjects.obj
+ 0001:00000980       ??_V@YAXPAX@Z              00401980 f i createobjects.obj
+ 0001:000009a0       ??3String@Util@@SAXPAX@Z   004019a0 f i createobjects.obj
+ 0001:000009c0       ?Delete@String@Util@@AAEXXZ 004019c0 f i createobjects.obj
+ 0001:00000a10       ??1String@Util@@QAE@XZ     00401a10 f i createobjects.obj
+ 0001:00000a60       ??0String@Util@@QAE@PBD@Z  00401a60 f i createobjects.obj
+ 0001:00000aa0       ??0FourCC@Util@@QAE@I@Z    00401aa0 f i createobjects.obj
+ 0001:00000ac0       ??3RefCounted@Core@@SAXPAX@Z 00401ac0 f i createobjects.obj
+ 0001:00000ae0       ??0RefCounted@Core@@QAE@XZ 00401ae0 f i createobjects.obj
+ 0001:00000b10       ??_ERefCounted@Core@@MAEPAXI@Z 00401b10 f i  CIL library: CIL module
+ 0001:00000b10       ??_GRefCounted@Core@@MAEPAXI@Z 00401b10 f i createobjects.obj
+ 0001:00000b40       ?AddRef@RefCounted@Core@@QAEXXZ 00401b40 f i createobjects.obj
+ 0001:00000b60       ?Release@RefCounted@Core@@QAEXXZ 00401b60 f i createobjects.obj
+ 0001:00000bb0       ??3Benchmark@Benchmarking@@SAXPAX@Z 00401bb0 f i createobjects.obj
+ 0001:00000bd0       ??2CreateObjects@Benchmarking@@SAPAXI@Z 00401bd0 f i createobjects.obj
+ 0001:00000be0       ??3CreateObjects@Benchmarking@@SAXPAX@Z 00401be0 f i createobjects.obj
+ 0001:00000c00       ??1Rtti@Core@@QAE@XZ       00401c00 f i createobjects.obj
+ 0001:00000c50       ?GetRtti@CreateObjects@Benchmarking@@UBEPAVRtti@Core@@XZ 00401c50 f   createobjects.obj
+ 0001:00000c60       ?FactoryCreator@CreateObjects@Benchmarking@@SAPAVRefCounted@Core@@XZ 00401c60 f   createobjects.obj
+ 0001:00000c70       ?Create@CreateObjects@Benchmarking@@SAPAV12@XZ 00401c70 f   createobjects.obj
+ 0001:00000cd0       ??0CreateObjects@Benchmarking@@QAE@XZ 00401cd0 f i createobjects.obj
+ 0001:00000d10       ??_GCreateObjects@Benchmarking@@UAEPAXI@Z 00401d10 f i createobjects.obj
+ 0001:00000d10       ??_ECreateObjects@Benchmarking@@UAEPAXI@Z 00401d10 f i  CIL library: CIL module
+ 0001:00000d40       ??0Benchmark@Benchmarking@@QAE@XZ 00401d40 f i createobjects.obj
+ 0001:00000d70       ??1Benchmark@Benchmarking@@UAE@XZ 00401d70 f i createobjects.obj
+ 0001:00000d90       ??1CreateObjects@Benchmarking@@UAE@XZ 00401d90 f i createobjects.obj
+ 0001:00000db0       ??_GBenchmark@Benchmarking@@UAEPAXI@Z 00401db0 f i createobjects.obj
+ 0001:00000db0       ??_EBenchmark@Benchmarking@@UAEPAXI@Z 00401db0 f i  CIL library: CIL module
+ 0001:00000de0       ?RegisterWithFactory@CreateObjects@Benchmarking@@SA_NXZ 00401de0 f   createobjects.obj
+ 0001:00000ee0       ?Run@CreateObjects@Benchmarking@@UAEXAAVTimer@Timing@@@Z 00401ee0 f   createobjects.obj
+ 0001:00000f50       ??0?$Ptr@VRefCounted@Core@@@@QAE@XZ 00401f50 f i createobjects.obj
+ 0001:00000f70       ??1?$Ptr@VRefCounted@Core@@@@QAE@XZ 00401f70 f i createobjects.obj
+ 0001:00000fa0       ??4?$Ptr@VRefCounted@Core@@@@QAEXPAVRefCounted@Core@@@Z 00401fa0 f i createobjects.obj
+ 0001:00001000       ??_EString@Util@@QAEPAXI@Z 00402000 f i createobjects.obj
+ 0001:00001110       ??_H@YGXPAXIHP6EPAX0@Z@Z   00402110 f i createobjects.obj
+ 0001:00001140       ??_I@YGXPAXIHP6EX0@Z@Z     00402140 f i createobjects.obj
+ 0001:00001170       ??2CreateObjectsByClassName@Benchmarking@@SAPAXI@Z 00402170 f i createobjectsbyclassname.obj
+ 0001:00001180       ??3CreateObjectsByClassName@Benchmarking@@SAXPAX@Z 00402180 f i createobjectsbyclassname.obj
+ 0001:000011a0       ?GetRtti@CreateObjectsByClassName@Benchmarking@@UBEPAVRtti@Core@@XZ 004021a0 f   createobjectsbyclassname.obj
+ 0001:000011b0       ?FactoryCreator@CreateObjectsByClassName@Benchmarking@@SAPAVRefCounted@Core@@XZ 004021b0 f   createobjectsbyclassname.obj
+ 0001:000011c0       ?Create@CreateObjectsByClassName@Benchmarking@@SAPAV12@XZ 004021c0 f   createobjectsbyclassname.obj
+ 0001:00001220       ??0CreateObjectsByClassName@Benchmarking@@QAE@XZ 00402220 f i createobjectsbyclassname.obj
+ 0001:00001260       ??_GCreateObjectsByClassName@Benchmarking@@UAEPAXI@Z 00402260 f i createobjectsbyclassname.obj
+ 0001:00001260       ??_ECreateObjectsByClassName@Benchmarking@@UAEPAXI@Z 00402260 f i  CIL library: CIL module
+ 0001:00001290       ??1CreateObjectsByClassName@Benchmarking@@UAE@XZ 00402290 f i createobjectsbyclassname.obj
+ 0001:000012b0       ?RegisterWithFactory@CreateObjectsByClassName@Benchmarking@@SA_NXZ 004022b0 f   createobjectsbyclassname.obj
+ 0001:000013b0       ?Run@CreateObjectsByClassName@Benchmarking@@UAEXAAVTimer@Timing@@@Z 004023b0 f   createobjectsbyclassname.obj
+ 0001:00001450       ??2CreateObjectsByFourCC@Benchmarking@@SAPAXI@Z 00402450 f i createobjectsbyfourcc.obj
+ 0001:00001460       ??3CreateObjectsByFourCC@Benchmarking@@SAXPAX@Z 00402460 f i createobjectsbyfourcc.obj
+ 0001:00001480       ?GetRtti@CreateObjectsByFourCC@Benchmarking@@UBEPAVRtti@Core@@XZ 00402480 f   createobjectsbyfourcc.obj
+ 0001:00001490       ?FactoryCreator@CreateObjectsByFourCC@Benchmarking@@SAPAVRefCounted@Core@@XZ 00402490 f   createobjectsbyfourcc.obj
+ 0001:000014a0       ?Create@CreateObjectsByFourCC@Benchmarking@@SAPAV12@XZ 004024a0 f   createobjectsbyfourcc.obj
+ 0001:00001500       ??0CreateObjectsByFourCC@Benchmarking@@QAE@XZ 00402500 f i createobjectsbyfourcc.obj
+ 0001:00001540       ??_ECreateObjectsByFourCC@Benchmarking@@UAEPAXI@Z 00402540 f i  CIL library: CIL module
+ 0001:00001540       ??_GCreateObjectsByFourCC@Benchmarking@@UAEPAXI@Z 00402540 f i createobjectsbyfourcc.obj
+ 0001:00001570       ??1CreateObjectsByFourCC@Benchmarking@@UAE@XZ 00402570 f i createobjectsbyfourcc.obj
+ 0001:00001590       ?RegisterWithFactory@CreateObjectsByFourCC@Benchmarking@@SA_NXZ 00402590 f   createobjectsbyfourcc.obj
+ 0001:00001690       ?Run@CreateObjectsByFourCC@Benchmarking@@UAEXAAVTimer@Timing@@@Z 00402690 f   createobjectsbyfourcc.obj
+ 0001:00001710       ??_U@YAPAXI@Z              00402710 f i float4math.obj
+ 0001:00001730       ??0float4@Math@@QAE@XZ     00402730 f i float4math.obj
+ 0001:00001740       ??0float4@Math@@QAE@MMMM@Z 00402740 f i float4math.obj
+ 0001:00001790       ??0float4@Math@@QAE@T__m128@@@Z 00402790 f i float4math.obj
+ 0001:000017c0       ??4float4@Math@@QAEXABV01@@Z 004027c0 f i float4math.obj
+ 0001:000017e0       ??Dfloat4@Math@@QBE?AV01@M@Z 004027e0 f i float4math.obj
+ 0001:00001840       ??Yfloat4@Math@@QAEXABV01@@Z 00402840 f i float4math.obj
+ 0001:00001890       ??Hfloat4@Math@@QBE?AV01@ABV01@@Z 00402890 f i float4math.obj
+ 0001:000018f0       ??Gfloat4@Math@@QBE?AV01@ABV01@@Z 004028f0 f i float4math.obj
+ 0001:00001950       ?cross3@float4@Math@@SA?AV12@ABV12@0@Z 00402950 f i float4math.obj
+ 0001:00001ac0       ?dot3@float4@Math@@SAMABV12@0@Z 00402ac0 f i float4math.obj
+ 0001:00001bd0       ?lerp@float4@Math@@SA?AV12@ABV12@0M@Z 00402bd0 f i float4math.obj
+ 0001:00001c80       ?maximize@float4@Math@@SA?AV12@ABV12@0@Z 00402c80 f i float4math.obj
+ 0001:00001cd0       ?minimize@float4@Math@@SA?AV12@ABV12@0@Z 00402cd0 f i float4math.obj
+ 0001:00001d20       ?normalize@float4@Math@@SA?AV12@ABV12@@Z 00402d20 f i float4math.obj
+ 0001:00002160       ?equal3_all@float4@Math@@SA_NABV12@0@Z 00403160 f i float4math.obj
+ 0001:000021f0       ?unpack_x@float4@Math@@SAMT__m128@@@Z 004031f0 f i float4math.obj
+ 0001:00002220       ??2Float4Math@Benchmarking@@SAPAXI@Z 00403220 f i float4math.obj
+ 0001:00002230       ??3Float4Math@Benchmarking@@SAXPAX@Z 00403230 f i float4math.obj
+ 0001:00002250       ?GetRtti@Float4Math@Benchmarking@@UBEPAVRtti@Core@@XZ 00403250 f   float4math.obj
+ 0001:00002260       ?FactoryCreator@Float4Math@Benchmarking@@SAPAVRefCounted@Core@@XZ 00403260 f   float4math.obj
+ 0001:00002270       ?Create@Float4Math@Benchmarking@@SAPAV12@XZ 00403270 f   float4math.obj
+ 0001:000022d0       ??0Float4Math@Benchmarking@@QAE@XZ 004032d0 f i float4math.obj
+ 0001:00002310       ??_EFloat4Math@Benchmarking@@UAEPAXI@Z 00403310 f i  CIL library: CIL module
+ 0001:00002310       ??_GFloat4Math@Benchmarking@@UAEPAXI@Z 00403310 f i float4math.obj
+ 0001:00002340       ??1Float4Math@Benchmarking@@UAE@XZ 00403340 f i float4math.obj
+ 0001:00002360       ?RegisterWithFactory@Float4Math@Benchmarking@@SA_NXZ 00403360 f   float4math.obj
+ 0001:00002460       ?Run@Float4Math@Benchmarking@@UAEXAAVTimer@Timing@@@Z 00403460 f   float4math.obj
+ 0001:00003560       ?XMVectorGetXPtr@@YAXPAMT__m128@@@Z 00404560 f i float4math.obj
+ 0001:00003580       ?XMVector3EqualR@@YAIT__m128@@0@Z 00404580 f i float4math.obj
+ 0001:000035f0       ?XMVector4Normalize@@YA?AT__m128@@T1@@Z 004045f0 f i float4math.obj
+ 0001:000038a0       ?XMVectorMin@@YA?AT__m128@@T1@0@Z 004048a0 f i float4math.obj
+ 0001:000038d0       ?XMVectorMax@@YA?AT__m128@@T1@0@Z 004048d0 f i float4math.obj
+ 0001:00003900       ?XMVectorLerp@@YA?AT__m128@@T1@0M@Z 00404900 f i float4math.obj
+ 0001:00003990       ?XMVector3Dot@@YA?AT__m128@@T1@0@Z 00404990 f i float4math.obj
+ 0001:00003a60       ??BXMVECTORI32@@QBE?AT__m128@@XZ 00404a60 f i float4math.obj
+ 0001:00003a90       ?XMVector3Cross@@YA?AT__m128@@T1@0@Z 00404a90 f i float4math.obj
+ 0001:00003be0       ?XMVectorSubtract@@YA?AT__m128@@T1@0@Z 00404be0 f i float4math.obj
+ 0001:00003c10       ?XMVectorAdd@@YA?AT__m128@@T1@0@Z 00404c10 f i float4math.obj
+ 0001:00003c40       ?XMVectorScale@@YA?AT__m128@@T1@M@Z 00404c40 f i float4math.obj
+ 0001:00003c80       ?XMVectorSet@@YA?AT__m128@@MMMM@Z 00404c80 f i float4math.obj
+ 0001:00003cc0       ??0StringAtom@Util@@QAE@PBD@Z 00404cc0 f i main.obj
+ 0001:00003cf0       ??4StringAtom@Util@@QAEXABV01@@Z 00404cf0 f i main.obj
+ 0001:00003d10       ?SetAppName@CoreServer@Core@@QAEXABVStringAtom@Util@@@Z 00404d10 f i main.obj
+ 0001:00003d30       _main                      00404d30 f   main.obj
+ 0001:00003e40       ??0?$Ptr@VCoreServer@Core@@@@QAE@PAVCoreServer@Core@@@Z 00404e40 f i main.obj
+ 0001:00003e80       ??1?$Ptr@VCoreServer@Core@@@@QAE@XZ 00404e80 f i main.obj
+ 0001:00003eb0       ??4?$Ptr@VCoreServer@Core@@@@QAEXPAVCoreServer@Core@@@Z 00404eb0 f i main.obj
+ 0001:00003f10       ??C?$Ptr@VCoreServer@Core@@@@QBEPAVCoreServer@Core@@XZ 00404f10 f i main.obj
+ 0001:00003f50       ??0?$Ptr@VBenchmarkRunner@Benchmarking@@@@QAE@PAVBenchmarkRunner@Benchmarking@@@Z 00404f50 f i main.obj
+ 0001:00003f90       ??1?$Ptr@VBenchmarkRunner@Benchmarking@@@@QAE@XZ 00404f90 f i main.obj
+ 0001:00003fc0       ??4?$Ptr@VBenchmarkRunner@Benchmarking@@@@QAEXPAVBenchmarkRunner@Benchmarking@@@Z 00404fc0 f i main.obj
+ 0001:00004020       ??C?$Ptr@VBenchmarkRunner@Benchmarking@@@@QBEPAVBenchmarkRunner@Benchmarking@@XZ 00405020 f i main.obj
+ 0001:00004060       ??_E?$Ptr@VConsoleHandler@IO@@@@QAEPAXI@Z 00405060 f i main.obj
+ 0001:00004100       ??1?$Ptr@VConsoleHandler@IO@@@@QAE@XZ 00405100 f i main.obj
+ 0001:00004130       ??0matrix44@Math@@QAE@XZ   00405130 f i matrix44inverse.obj
+ 0001:000041d0       ??0matrix44@Math@@QAE@ABVfloat4@1@000@Z 004051d0 f i matrix44inverse.obj
+ 0001:00004220       ??0matrix44@Math@@QAE@ABU_XMMATRIX@@@Z 00405220 f i matrix44inverse.obj
+ 0001:00004250       ??4matrix44@Math@@QAEXABV01@@Z 00405250 f i matrix44inverse.obj
+ 0001:000042a0       ?inverse@matrix44@Math@@SA?AV12@ABV12@@Z 004052a0 f i matrix44inverse.obj
+ 0001:000042e0       ??2Matrix44Inverse@Benchmarking@@SAPAXI@Z 004052e0 f i matrix44inverse.obj
+ 0001:000042f0       ??3Matrix44Inverse@Benchmarking@@SAXPAX@Z 004052f0 f i matrix44inverse.obj
+ 0001:00004310       ?GetRtti@Matrix44Inverse@Benchmarking@@UBEPAVRtti@Core@@XZ 00405310 f   matrix44inverse.obj
+ 0001:00004320       ?FactoryCreator@Matrix44Inverse@Benchmarking@@SAPAVRefCounted@Core@@XZ 00405320 f   matrix44inverse.obj
+ 0001:00004330       ?Create@Matrix44Inverse@Benchmarking@@SAPAV12@XZ 00405330 f   matrix44inverse.obj
+ 0001:00004390       ??0Matrix44Inverse@Benchmarking@@QAE@XZ 00405390 f i matrix44inverse.obj
+ 0001:000043d0       ??_EMatrix44Inverse@Benchmarking@@UAEPAXI@Z 004053d0 f i  CIL library: CIL module
+ 0001:000043d0       ??_GMatrix44Inverse@Benchmarking@@UAEPAXI@Z 004053d0 f i matrix44inverse.obj
+ 0001:00004400       ??1Matrix44Inverse@Benchmarking@@UAE@XZ 00405400 f i matrix44inverse.obj
+ 0001:00004420       ?RegisterWithFactory@Matrix44Inverse@Benchmarking@@SA_NXZ 00405420 f   matrix44inverse.obj
+ 0001:00004520       ?Run@Matrix44Inverse@Benchmarking@@UAEXAAVTimer@Timing@@@Z 00405520 f   matrix44inverse.obj
+ 0001:00004bc0       ?XMMatrixTranspose@@YA?AU_XMMATRIX@@ABU1@@Z 00405bc0 f i matrix44inverse.obj
+ 0001:00004d20       ?XMMatrixInverse@@YA?AU_XMMATRIX@@PAT__m128@@ABU1@@Z 00405d20 f i matrix44inverse.obj
+ 0001:00005f40       ??4_XMMATRIX@@QAEAAU0@ABU0@@Z 00406f40 f i matrix44inverse.obj
+ 0001:00005fa0       ??0_XMMATRIX@@QAE@XZ       00406fa0 f i matrix44inverse.obj
+ 0001:00005fb0       ?XMMatrixIdentity@@YA?AU_XMMATRIX@@XZ 00406fb0 f i matrix44inverse.obj
+ 0001:00006040       ??BXMVECTORF32@@QBE?AT__m128@@XZ 00407040 f i matrix44inverse.obj
+ 0001:00006070       ?XMVector4Dot@@YA?AT__m128@@T1@0@Z 00407070 f i matrix44inverse.obj
+ 0001:00006150       ?multiply@matrix44@Math@@SA?AV12@ABV12@0@Z 00407150 f i matrix44multiply.obj
+ 0001:00006950       ??2Matrix44Multiply@Benchmarking@@SAPAXI@Z 00407950 f i matrix44multiply.obj
+ 0001:00006960       ??3Matrix44Multiply@Benchmarking@@SAXPAX@Z 00407960 f i matrix44multiply.obj
+ 0001:00006980       ?GetRtti@Matrix44Multiply@Benchmarking@@UBEPAVRtti@Core@@XZ 00407980 f   matrix44multiply.obj
+ 0001:00006990       ?FactoryCreator@Matrix44Multiply@Benchmarking@@SAPAVRefCounted@Core@@XZ 00407990 f   matrix44multiply.obj
+ 0001:000069a0       ?Create@Matrix44Multiply@Benchmarking@@SAPAV12@XZ 004079a0 f   matrix44multiply.obj
+ 0001:00006a00       ??0Matrix44Multiply@Benchmarking@@QAE@XZ 00407a00 f i matrix44multiply.obj
+ 0001:00006a40       ??_EMatrix44Multiply@Benchmarking@@UAEPAXI@Z 00407a40 f i  CIL library: CIL module
+ 0001:00006a40       ??_GMatrix44Multiply@Benchmarking@@UAEPAXI@Z 00407a40 f i matrix44multiply.obj
+ 0001:00006a70       ??1Matrix44Multiply@Benchmarking@@UAE@XZ 00407a70 f i matrix44multiply.obj
+ 0001:00006a90       ?RegisterWithFactory@Matrix44Multiply@Benchmarking@@SA_NXZ 00407a90 f   matrix44multiply.obj
+ 0001:00006b90       ?Run@Matrix44Multiply@Benchmarking@@UAEXAAVTimer@Timing@@@Z 00407b90 f   matrix44multiply.obj
+ 0001:0000a820       ?XMMatrixMultiply@@YA?AU_XMMATRIX@@ABU1@0@Z 0040b820 f i matrix44multiply.obj
+ 0001:0000b000       ??2MemPoolBenchmark@Benchmarking@@SAPAXI@Z 0040c000 f i mempoolbenchmark.obj
+ 0001:0000b010       ??3MemPoolBenchmark@Benchmarking@@SAXPAX@Z 0040c010 f i mempoolbenchmark.obj
+ 0001:0000b030       ?GetRtti@MemPoolBenchmark@Benchmarking@@UBEPAVRtti@Core@@XZ 0040c030 f   mempoolbenchmark.obj
+ 0001:0000b040       ?FactoryCreator@MemPoolBenchmark@Benchmarking@@SAPAVRefCounted@Core@@XZ 0040c040 f   mempoolbenchmark.obj
+ 0001:0000b050       ?Create@MemPoolBenchmark@Benchmarking@@SAPAV12@XZ 0040c050 f   mempoolbenchmark.obj
+ 0001:0000b0b0       ??0MemPoolBenchmark@Benchmarking@@QAE@XZ 0040c0b0 f i mempoolbenchmark.obj
+ 0001:0000b0f0       ??_EMemPoolBenchmark@Benchmarking@@UAEPAXI@Z 0040c0f0 f i  CIL library: CIL module
+ 0001:0000b0f0       ??_GMemPoolBenchmark@Benchmarking@@UAEPAXI@Z 0040c0f0 f i mempoolbenchmark.obj
+ 0001:0000b120       ??1MemPoolBenchmark@Benchmarking@@UAE@XZ 0040c120 f i mempoolbenchmark.obj
+ 0001:0000b140       ?RegisterWithFactory@MemPoolBenchmark@Benchmarking@@SA_NXZ 0040c140 f   mempoolbenchmark.obj
+ 0001:0000b240       ?Run@MemPoolBenchmark@Benchmarking@@UAEXAAVTimer@Timing@@@Z 0040c240 f   mempoolbenchmark.obj
+ 0001:0000b4b0       ??0Timer@Timing@@QAE@XZ    0040c4b0 f i mempoolbenchmark.obj
+ 0001:0000b4d0       ??2Benchmark@Benchmarking@@SAPAXI@Z 0040c4d0 f i benchmarkbase_win32.release:benchmark.obj
+ 0001:0000b4e0       ?GetRtti@Benchmark@Benchmarking@@UBEPAVRtti@Core@@XZ 0040c4e0 f   benchmarkbase_win32.release:benchmark.obj
+ 0001:0000b4f0       ?FactoryCreator@Benchmark@Benchmarking@@SAPAVRefCounted@Core@@XZ 0040c4f0 f   benchmarkbase_win32.release:benchmark.obj
+ 0001:0000b500       ?Create@Benchmark@Benchmarking@@SAPAV12@XZ 0040c500 f   benchmarkbase_win32.release:benchmark.obj
+ 0001:0000b550       ?RegisterWithFactory@Benchmark@Benchmarking@@SA_NXZ 0040c550 f   benchmarkbase_win32.release:benchmark.obj
+ 0001:0000b650       ?Run@Benchmark@Benchmarking@@UAEXAAVTimer@Timing@@@Z 0040c650 f   benchmarkbase_win32.release:benchmark.obj
+ 0001:0000b670       ?AsCharPtr@String@Util@@QBEPBDXZ 0040c670 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000b6a0       ?GetName@Rtti@Core@@QBEABVString@Util@@XZ 0040c6a0 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000b6b0       ?GetClassNameA@RefCounted@Core@@QBEABVString@Util@@XZ 0040c6b0 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000b6d0       ??2BenchmarkRunner@Benchmarking@@SAPAXI@Z 0040c6d0 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000b6e0       ??3BenchmarkRunner@Benchmarking@@SAXPAX@Z 0040c6e0 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000b700       ?GetRtti@BenchmarkRunner@Benchmarking@@UBEPAVRtti@Core@@XZ 0040c700 f   benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000b710       ?FactoryCreator@BenchmarkRunner@Benchmarking@@SAPAVRefCounted@Core@@XZ 0040c710 f   benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000b720       ?Create@BenchmarkRunner@Benchmarking@@SAPAV12@XZ 0040c720 f   benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000b780       ??0BenchmarkRunner@Benchmarking@@QAE@XZ 0040c780 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000b7c0       ??_GBenchmarkRunner@Benchmarking@@UAEPAXI@Z 0040c7c0 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000b7c0       ??_EBenchmarkRunner@Benchmarking@@UAEPAXI@Z 0040c7c0 f i  CIL library: CIL module
+ 0001:0000b800       ??1BenchmarkRunner@Benchmarking@@UAE@XZ 0040c800 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000b820       ?RegisterWithFactory@BenchmarkRunner@Benchmarking@@SA_NXZ 0040c820 f   benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000b920       ?AttachBenchmark@BenchmarkRunner@Benchmarking@@QAEXPAVBenchmark@2@@Z 0040c920 f   benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000b970       ?Run@BenchmarkRunner@Benchmarking@@QAEXXZ 0040c970 f   benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000bb30       ??1?$Array@VString@Util@@@Util@@QAE@XZ 0040cb30 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000bb50       ??A?$Array@VString@Util@@@Util@@QBEAAVString@1@H@Z 0040cb50 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000bba0       ?Size@?$Array@VString@Util@@@Util@@QBEHXZ 0040cba0 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000bbc0       ??0?$Array@V?$Ptr@VBenchmark@Benchmarking@@@@@Util@@QAE@XZ 0040cbc0 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000bc00       ??1?$Array@V?$Ptr@VBenchmark@Benchmarking@@@@@Util@@QAE@XZ 0040cc00 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000bc20       ??A?$Array@V?$Ptr@VBenchmark@Benchmarking@@@@@Util@@QBEAAV?$Ptr@VBenchmark@Benchmarking@@@@H@Z 0040cc20 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000bc70       ?Append@?$Array@V?$Ptr@VBenchmark@Benchmarking@@@@@Util@@QAEXABV?$Ptr@VBenchmark@Benchmarking@@@@@Z 0040cc70 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000bcf0       ?Size@?$Array@V?$Ptr@VBenchmark@Benchmarking@@@@@Util@@QBEHXZ 0040ccf0 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000bd10       ??0?$Ptr@VBenchmark@Benchmarking@@@@QAE@PAVBenchmark@Benchmarking@@@Z 0040cd10 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000bd50       ??1?$Ptr@VBenchmark@Benchmarking@@@@QAE@XZ 0040cd50 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000bd80       ??B?$Ptr@VBenchmark@Benchmarking@@@@QBEPAVBenchmark@Benchmarking@@XZ 0040cd80 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000bdc0       ?Delete@?$Array@VString@Util@@@Util@@AAEXXZ 0040cdc0 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000be30       ?Delete@?$Array@V?$Ptr@VBenchmark@Benchmarking@@@@@Util@@AAEXXZ 0040ce30 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000bea0       ?Grow@?$Array@V?$Ptr@VBenchmark@Benchmarking@@@@@Util@@AAEXXZ 0040cea0 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000bf20       ??4?$Ptr@VBenchmark@Benchmarking@@@@QAEXABV0@@Z 0040cf20 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000bf80       ??_E?$Ptr@VBenchmark@Benchmarking@@@@QAEPAXI@Z 0040cf80 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000c020       ?GrowTo@?$Array@V?$Ptr@VBenchmark@Benchmarking@@@@@Util@@AAEXH@Z 0040d020 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000c140       ??0?$Ptr@VBenchmark@Benchmarking@@@@QAE@XZ 0040d140 f i benchmarkbase_win32.release:benchmarkrunner.obj
+ 0001:0000c160       ?__HeapAlignPointerAndWritePadding16@Memory@@YAPAEPAE@Z 0040d160 f i foundation_win32.release:win360memory.obj
+ 0001:0000c190       ?__HeapUnalignPointer16@Memory@@YAPAEPAE@Z 0040d190 f i foundation_win32.release:win360memory.obj
+ 0001:0000c1b0       ?__HeapAlloc16@Memory@@YAPAXPAXKK@Z 0040d1b0 f i foundation_win32.release:win360memory.obj
+ 0001:0000c200       ?__HeapReAlloc16@Memory@@YAPAXPAXK0K@Z 0040d200 f i foundation_win32.release:win360memory.obj
+ 0001:0000c320       ?__HeapFree16@Memory@@YAHPAXK0@Z 0040d320 f i foundation_win32.release:win360memory.obj
+ 0001:0000c360       ?Copy@Memory@@YAXPBXPAXI@Z 0040d360 f i foundation_win32.release:win360memory.obj
+ 0001:0000c3d0       ?Alloc@Memory@@YAPAXW4HeapType@1@I@Z 0040d3d0 f   foundation_win32.release:win360memory.obj
+ 0001:0000c4c0       ?Realloc@Memory@@YAPAXW4HeapType@1@PAXI@Z 0040d4c0 f   foundation_win32.release:win360memory.obj
+ 0001:0000c670       ?Free@Memory@@YAXW4HeapType@1@PAX@Z 0040d670 f   foundation_win32.release:win360memory.obj
+ 0001:0000c700       ?DuplicateCString@Memory@@YAPADPBD@Z 0040d700 f   foundation_win32.release:win360memory.obj
+ 0001:0000c7e0       ?IsOverlapping@Memory@@YA_NPBEI0I@Z 0040d7e0 f   foundation_win32.release:win360memory.obj
+ 0001:0000c820       ?GetTotalMemoryStatus@Memory@@YA?AUTotalMemoryStatus@1@XZ 0040d820 f   foundation_win32.release:win360memory.obj
+ 0001:0000c890       ?DumpTotalMemoryStatus@Memory@@YAXXZ 0040d890 f   foundation_win32.release:win360memory.obj
+ 0001:0000c8b0       ??0String@Util@@QAE@XZ     0040d8b0 f i foundation_win32.release:string.obj
+ 0001:0000c8f0       ?Alloc@String@Util@@AAEXH@Z 0040d8f0 f i foundation_win32.release:string.obj
+ 0001:0000c990       ?Realloc@String@Util@@AAEXH@Z 0040d990 f i foundation_win32.release:string.obj
+ 0001:0000cae0       ?Reserve@String@Util@@QAEXH@Z 0040dae0 f i foundation_win32.release:string.obj
+ 0001:0000cb10       ??0String@Util@@QAE@ABV01@@Z 0040db10 f i foundation_win32.release:string.obj
+ 0001:0000cb70       ??4String@Util@@QAEXABV01@@Z 0040db70 f i foundation_win32.release:string.obj
+ 0001:0000cbb0       ??4String@Util@@QAEXPBD@Z  0040dbb0 f i foundation_win32.release:string.obj
+ 0001:0000cbd0       ?Append@String@Util@@QAEXABV12@@Z 0040dbd0 f i foundation_win32.release:string.obj
+ 0001:0000cc10       ??AString@Util@@QBEDH@Z    0040dc10 f i foundation_win32.release:string.obj
+ 0001:0000cc70       ??AString@Util@@QAEAADH@Z  0040dc70 f i foundation_win32.release:string.obj
+ 0001:0000ccd0       ?Length@String@Util@@QBEHXZ 0040dcd0 f i foundation_win32.release:string.obj
+ 0001:0000ccf0       ?IsValid@String@Util@@QBE_NXZ 0040dcf0 f i foundation_win32.release:string.obj
+ 0001:0000cdb0       ?CopyToBuffer@String@Util@@QBE_NPADH@Z 0040ddb0 f   foundation_win32.release:string.obj
+ 0001:0000ce60       ?Format@String@Util@@QAAXPBDZZ 0040de60 f   foundation_win32.release:string.obj
+ 0001:0000cef0       ?FormatArgList@String@Util@@QAAXPBDPAD@Z 0040def0 f   foundation_win32.release:string.obj
+ 0001:0000cf60       ?Set@String@Util@@QAEXPBDH@Z 0040df60 f   foundation_win32.release:string.obj
+ 0001:0000d1d0       ?AppendRange@String@Util@@QAEXPBDH@Z 0040e1d0 f   foundation_win32.release:string.obj
+ 0001:0000d3f0       ?Tokenize@String@Util@@QBEHABV12@AAV?$Array@VString@Util@@@2@@Z 0040e3f0 f   foundation_win32.release:string.obj
+ 0001:0000d520       ?Tokenize@String@Util@@QBE?AV?$Array@VString@Util@@@2@ABV12@@Z 0040e520 f   foundation_win32.release:string.obj
+ 0001:0000d560       ?Tokenize@String@Util@@QBEHABV12@DAAV?$Array@VString@Util@@@2@@Z 0040e560 f   foundation_win32.release:string.obj
+ 0001:0000d8b0       ?Tokenize@String@Util@@QBE?AV?$Array@VString@Util@@@2@ABV12@D@Z 0040e8b0 f   foundation_win32.release:string.obj
+ 0001:0000d900       ?ExtractRange@String@Util@@QBE?AV12@HH@Z 0040e900 f   foundation_win32.release:string.obj
+ 0001:0000d9c0       ?ExtractToEnd@String@Util@@QBE?AV12@H@Z 0040e9c0 f   foundation_win32.release:string.obj
+ 0001:0000d9f0       ?Strip@String@Util@@QAEXABV12@@Z 0040e9f0 f   foundation_win32.release:string.obj
+ 0001:0000dab0       ?FindStringIndex@String@Util@@QBEHABV12@H@Z 0040eab0 f   foundation_win32.release:string.obj
+ 0001:0000dba0       ?FindCharIndex@String@Util@@QBEHDH@Z 0040eba0 f   foundation_win32.release:string.obj
+ 0001:0000dc50       ?TrimLeft@String@Util@@QAEXABV12@@Z 0040ec50 f   foundation_win32.release:string.obj
+ 0001:0000de30       ?TrimRight@String@Util@@QAEXABV12@@Z 0040ee30 f   foundation_win32.release:string.obj
+ 0001:0000e010       ?Trim@String@Util@@QAEXABV12@@Z 0040f010 f   foundation_win32.release:string.obj
+ 0001:0000e040       ?SubstituteString@String@Util@@QAEXABV12@0@Z 0040f040 f   foundation_win32.release:string.obj
+ 0001:0000e190       ?ExtractLastDirName@String@Util@@QBE?AV12@XZ 0040f190 f   foundation_win32.release:string.obj
+ 0001:0000e2c0       ?ExtractDirName@String@Util@@QBE?AV12@XZ 0040f2c0 f   foundation_win32.release:string.obj
+ 0001:0000e3b0       ?MatchPattern@String@Util@@SA_NABV12@0@Z 0040f3b0 f   foundation_win32.release:string.obj
+ 0001:0000e6c0       ?ReplaceChars@String@Util@@QAEXABV12@D@Z 0040f6c0 f   foundation_win32.release:string.obj
+ 0001:0000e770       ?AsMatrix44@String@Util@@QBE?AVmatrix44@Math@@XZ 0040f770 f   foundation_win32.release:string.obj
+ 0001:0000ebc0       ?Concatenate@String@Util@@SA?AV12@ABV?$Array@VString@Util@@@2@ABV12@@Z 0040fbc0 f   foundation_win32.release:string.obj
+ 0001:0000ecc0       ?SetCharPtr@String@Util@@QAEXPBD@Z 0040fcc0 f   foundation_win32.release:string.obj
+ 0001:0000ed20       ?Append@String@Util@@QAEXPBD@Z 0040fd20 f   foundation_win32.release:string.obj
+ 0001:0000ed90       ?TerminateAtIndex@String@Util@@QAEXH@Z 0040fd90 f   foundation_win32.release:string.obj
+ 0001:0000ee20       ?StripFileExtension@String@Util@@QAEXXZ 0040fe20 f   foundation_win32.release:string.obj
+ 0001:0000eec0       ??8Util@@YA_NABVString@0@0@Z 0040fec0 f   foundation_win32.release:string.obj
+ 0001:0000ef70       ??8Util@@YA_NABVString@0@PBD@Z 0040ff70 f   foundation_win32.release:string.obj
+ 0001:0000f020       ??8Util@@YA_NPBDABVString@0@@Z 00410020 f   foundation_win32.release:string.obj
+ 0001:0000f0d0       ??9Util@@YA_NABVString@0@0@Z 004100d0 f   foundation_win32.release:string.obj
+ 0001:0000f180       ??MUtil@@YA_NABVString@0@0@Z 00410180 f   foundation_win32.release:string.obj
+ 0001:0000f230       ??OUtil@@YA_NABVString@0@0@Z 00410230 f   foundation_win32.release:string.obj
+ 0001:0000f2e0       ??NUtil@@YA_NABVString@0@0@Z 004102e0 f   foundation_win32.release:string.obj
+ 0001:0000f390       ??PUtil@@YA_NABVString@0@0@Z 00410390 f   foundation_win32.release:string.obj
+ 0001:0000f440       ?ToLower@String@Util@@QAEXXZ 00410440 f   foundation_win32.release:string.obj
+ 0001:0000f4a0       ?ToUpper@String@Util@@QAEXXZ 004104a0 f   foundation_win32.release:string.obj
+ 0001:0000f500       ?FirstCharToUpper@String@Util@@QAEXXZ 00410500 f   foundation_win32.release:string.obj
+ 0001:0000f540       ?ContainsCharFromSet@String@Util@@QBE_NABV12@@Z 00410540 f   foundation_win32.release:string.obj
+ 0001:0000f5b0       ?GetFileExtension@String@Util@@QBE?AV12@XZ 004105b0 f   foundation_win32.release:string.obj
+ 0001:0000f670       ?GetLastSlash@String@Util@@ABEPADXZ 00410670 f   foundation_win32.release:string.obj
+ 0001:0000f6e0       ?IsValidBool@String@Util@@QBE_NXZ 004106e0 f   foundation_win32.release:string.obj
+ 0001:0000f750       ?AsInt@String@Util@@QBEHXZ 00410750 f   foundation_win32.release:string.obj
+ 0001:0000f790       ?AsFloat@String@Util@@QBEMXZ 00410790 f   foundation_win32.release:string.obj
+ 0001:0000f7d0       ?AsBool@String@Util@@QBE_NXZ 004107d0 f   foundation_win32.release:string.obj
+ 0001:0000f860       ?IsDigit@String@Util@@SA_ND@Z 00410860 f   foundation_win32.release:string.obj
+ 0001:0000f880       ?IsAlpha@String@Util@@SA_ND@Z 00410880 f   foundation_win32.release:string.obj
+ 0001:0000f8a0       ?IsAlNum@String@Util@@SA_ND@Z 004108a0 f   foundation_win32.release:string.obj
+ 0001:0000f8c0       ?IsLower@String@Util@@SA_ND@Z 004108c0 f   foundation_win32.release:string.obj
+ 0001:0000f8e0       ?IsUpper@String@Util@@SA_ND@Z 004108e0 f   foundation_win32.release:string.obj
+ 0001:0000f900       ?StrCmp@String@Util@@SAHPBD0@Z 00410900 f   foundation_win32.release:string.obj
+ 0001:0000f990       ?StrLen@String@Util@@SAHPBD@Z 00410990 f   foundation_win32.release:string.obj
+ 0001:0000f9f0       ?StrChr@String@Util@@SAPBDPBDH@Z 004109f0 f   foundation_win32.release:string.obj
+ 0001:0000fa30       ?ParseKeyValuePairs@String@Util@@SA?AV?$Dictionary@VString@Util@@V12@@2@ABV12@@Z 00410a30 f   foundation_win32.release:string.obj
+ 0001:0000fb30       ??1?$Dictionary@VString@Util@@V12@@Util@@QAE@XZ 00410b30 f i foundation_win32.release:string.obj
+ 0001:0000fb50       ?ChangeFileExtension@String@Util@@QAEXABV12@@Z 00410b50 f   foundation_win32.release:string.obj
+ 0001:0000fc30       ??0?$Array@VString@Util@@@Util@@QAE@ABV01@@Z 00410c30 f i foundation_win32.release:string.obj
+ 0001:0000fc80       ??0?$Array@VString@Util@@@Util@@QAE@HH@Z 00410c80 f i foundation_win32.release:string.obj
+ 0001:0000fd90       ??0?$Array@VString@Util@@@Util@@QAE@XZ 00410d90 f i foundation_win32.release:string.obj
+ 0001:0000fdd0       ?Append@?$Array@VString@Util@@@Util@@QAEXABVString@2@@Z 00410dd0 f i foundation_win32.release:string.obj
+ 0001:0000fe70       ?Clear@?$Array@VString@Util@@@Util@@QAEXXZ 00410e70 f i foundation_win32.release:string.obj
+ 0001:0000fec0       ??1?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@QAE@XZ 00410ec0 f i foundation_win32.release:string.obj
+ 0001:0000fee0       ??0?$Dictionary@VString@Util@@V12@@Util@@QAE@ABV01@@Z 00410ee0 f i foundation_win32.release:string.obj
+ 0001:0000ff30       ??0?$Dictionary@VString@Util@@V12@@Util@@QAE@XZ 00410f30 f i foundation_win32.release:string.obj
+ 0001:0000ff50       ?Add@?$Dictionary@VString@Util@@V12@@Util@@QAEXABVString@2@0@Z 00410f50 f i foundation_win32.release:string.obj
+ 0001:0000ffa0       ??1?$KeyValuePair@VString@Util@@V12@@Util@@QAE@XZ 00410fa0 f i foundation_win32.release:string.obj
+ 0001:00010030       ?Destroy@?$Array@VString@Util@@@Util@@AAEXPAVString@2@@Z 00411030 f i foundation_win32.release:string.obj
+ 0001:00010050       ?Copy@?$Array@VString@Util@@@Util@@AAEXABV12@@Z 00411050 f i foundation_win32.release:string.obj
+ 0001:000101d0       ?Grow@?$Array@VString@Util@@@Util@@AAEXXZ 004111d0 f i foundation_win32.release:string.obj
+ 0001:00010250       ??0?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@QAE@ABV01@@Z 00411250 f i foundation_win32.release:string.obj
+ 0001:000102a0       ??0?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@QAE@XZ 004112a0 f i foundation_win32.release:string.obj
+ 0001:000102e0       ?Append@?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@QAEXABV?$KeyValuePair@VString@Util@@V12@@2@@Z 004112e0 f i foundation_win32.release:string.obj
+ 0001:00010360       ?InsertSorted@?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@QAEHABV?$KeyValuePair@VString@Util@@V12@@2@@Z 00411360 f i foundation_win32.release:string.obj
+ 0001:000105d0       ?Delete@?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@AAEXXZ 004115d0 f i foundation_win32.release:string.obj
+ 0001:00010640       ??0?$KeyValuePair@VString@Util@@V12@@Util@@QAE@ABVString@1@0@Z 00411640 f i foundation_win32.release:string.obj
+ 0001:00010700       ??_GString@Util@@QAEPAXI@Z 00411700 f i foundation_win32.release:string.obj
+ 0001:00010770       ??_E?$KeyValuePair@VString@Util@@V12@@Util@@QAEPAXI@Z 00411770 f i foundation_win32.release:string.obj
+ 0001:00010810       ?GrowTo@?$Array@VString@Util@@@Util@@AAEXH@Z 00411810 f i foundation_win32.release:string.obj
+ 0001:00010980       ?Size@?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@QBEHXZ 00411980 f i foundation_win32.release:string.obj
+ 0001:000109a0       ?Insert@?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@QAEXHABV?$KeyValuePair@VString@Util@@V12@@2@@Z 004119a0 f i foundation_win32.release:string.obj
+ 0001:00010a10       ?InsertAtEndOfIdenticalRange@?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@QAEHHABV?$KeyValuePair@VString@Util@@V12@@2@@Z 00411a10 f i foundation_win32.release:string.obj
+ 0001:00010a90       ?Copy@?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@AAEXABV12@@Z 00411a90 f i foundation_win32.release:string.obj
+ 0001:00010bc0       ?Grow@?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@AAEXXZ 00411bc0 f i foundation_win32.release:string.obj
+ 0001:00010c40       ??4?$KeyValuePair@VString@Util@@V12@@Util@@QAEXABV01@@Z 00411c40 f i foundation_win32.release:string.obj
+ 0001:00010cd0       ??O?$KeyValuePair@VString@Util@@V12@@Util@@QBE_NABV01@@Z 00411cd0 f i foundation_win32.release:string.obj
+ 0001:00010cf0       ??M?$KeyValuePair@VString@Util@@V12@@Util@@QBE_NABV01@@Z 00411cf0 f i foundation_win32.release:string.obj
+ 0001:00010d10       ?GrowTo@?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@AAEXH@Z 00411d10 f i foundation_win32.release:string.obj
+ 0001:00010e30       ?Move@?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@AAEXHH@Z 00411e30 f i foundation_win32.release:string.obj
+ 0001:00010fc0       ??0?$KeyValuePair@VString@Util@@V12@@Util@@QAE@XZ 00411fc0 f i foundation_win32.release:string.obj
+ 0001:00011030       ??9?$KeyValuePair@VString@Util@@V12@@Util@@QBE_NABV01@@Z 00412030 f i foundation_win32.release:string.obj
+ 0001:00011050       ?Destroy@?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@AAEXPAV?$KeyValuePair@VString@Util@@V12@@2@@Z 00412050 f i foundation_win32.release:string.obj
+ 0001:00011080       ??_G?$KeyValuePair@VString@Util@@V12@@Util@@QAEPAXI@Z 00412080 f i foundation_win32.release:string.obj
+ 0001:000110b0       ?strrchr@@YAPADPADH@Z      004120b0 f i foundation_win32.release:string.obj
+ 0001:000110d0       ?strpbrk@@YAPADPADPBD@Z    004120d0 f i foundation_win32.release:string.obj
+ 0001:000110f0       ?strchr@@YAPADPADH@Z       004120f0 f i foundation_win32.release:string.obj
+ 0001:000111c0       ?StringCchVPrintfA@@YGJPADIPBD0@Z 004121c0 f i foundation_win32.release:string.obj
+ 0001:000113e0       ?StringCchCopyA@@YGJPADIPBD@Z 004123e0 f i foundation_win32.release:string.obj
+ 0001:00011430       ??0FourCC@Util@@QAE@XZ     00412430 f i foundation_win32.release:rtti.obj
+ 0001:00011450       ??8FourCC@Util@@QBE_NABV01@@Z 00412450 f i foundation_win32.release:rtti.obj
+ 0001:00011470       ?IsValid@FourCC@Util@@QBE_NXZ 00412470 f i foundation_win32.release:rtti.obj
+ 0001:00011490       ?GetParent@Rtti@Core@@QBEPBV12@XZ 00412490 f i foundation_win32.release:rtti.obj
+ 0001:000114b0       ?Construct@Rtti@Core@@AAEXPBDVFourCC@Util@@P6APAVRefCounted@2@XZPBV12@H@Z 004124b0 f   foundation_win32.release:rtti.obj
+ 0001:000115a0       ??0Rtti@Core@@QAE@PBDVFourCC@Util@@P6APAVRefCounted@1@XZPBV01@H@Z 004125a0 f   foundation_win32.release:rtti.obj
+ 0001:00011610       ??0Rtti@Core@@QAE@PBDP6APAVRefCounted@1@XZPBV01@H@Z 00412610 f   foundation_win32.release:rtti.obj
+ 0001:00011680       ?Create@Rtti@Core@@QBEPAVRefCounted@2@XZ 00412680 f   foundation_win32.release:rtti.obj
+ 0001:000116e0       ?IsDerivedFrom@Rtti@Core@@QBE_NABV12@@Z 004126e0 f   foundation_win32.release:rtti.obj
+ 0001:00011720       ?IsDerivedFrom@Rtti@Core@@QBE_NABVString@Util@@@Z 00412720 f   foundation_win32.release:rtti.obj
+ 0001:00011770       ?IsDerivedFrom@Rtti@Core@@QBE_NABVFourCC@Util@@@Z 00412770 f   foundation_win32.release:rtti.obj
+ 0001:000117c0       ?AllocInstanceMemory@Rtti@Core@@QAEPAXXZ 004127c0 f   foundation_win32.release:rtti.obj
+ 0001:000117f0       ?FreeInstanceMemory@Rtti@Core@@QAEXPAX@Z 004127f0 f   foundation_win32.release:rtti.obj
+ 0001:00011810       ??2RefCounted@Core@@SAPAXI@Z 00412810 f i foundation_win32.release:refcounted.obj
+ 0001:00011820       ?GetRtti@RefCounted@Core@@UBEPAVRtti@2@XZ 00412820 f   foundation_win32.release:refcounted.obj
+ 0001:00011830       ?FactoryCreator@RefCounted@Core@@SAPAV12@XZ 00412830 f   foundation_win32.release:refcounted.obj
+ 0001:00011840       ?Create@RefCounted@Core@@SAPAV12@XZ 00412840 f   foundation_win32.release:refcounted.obj
+ 0001:00011890       ?RegisterWithFactory@RefCounted@Core@@SA_NXZ 00412890 f   foundation_win32.release:refcounted.obj
+ 0001:00011990       ??1RefCounted@Core@@MAE@XZ 00412990 f   foundation_win32.release:refcounted.obj
+ 0001:000119d0       ?DumpRefCountingLeaks@RefCounted@Core@@SAXXZ 004129d0 f   foundation_win32.release:refcounted.obj
+ 0001:000119e0       ?Setup@Blob@Util@@SAXXZ    004129e0 f i foundation_win32.release:win32sysfunc.obj
+ 0001:00011a50       ?Shutdown@Blob@Util@@SAXXZ 00412a50 f i foundation_win32.release:win32sysfunc.obj
+ 0001:00011ad0       ??_GWin360Heap@Win360@@QAEPAXI@Z 00412ad0 f i foundation_win32.release:win32sysfunc.obj
+ 0001:00011b00       ??0SystemInfo@System@@QAE@XZ 00412b00 f i foundation_win32.release:win32sysfunc.obj
+ 0001:00011b20       ?Setup@SysFunc@Win32@@SAXXZ 00412b20 f   foundation_win32.release:win32sysfunc.obj
+ 0001:00011be0       ?Exit@SysFunc@Win32@@SAXH@Z 00412be0 f   foundation_win32.release:win32sysfunc.obj
+ 0001:00011cc0       ??_GGlobalStringAtomTable@Util@@QAEPAXI@Z 00412cc0 f i foundation_win32.release:win32sysfunc.obj
+ 0001:00011cf0       ??_GLocalStringAtomTable@Util@@QAEPAXI@Z 00412cf0 f i foundation_win32.release:win32sysfunc.obj
+ 0001:00011d20       ?Error@SysFunc@Win32@@SAXPBD@Z 00412d20 f   foundation_win32.release:win32sysfunc.obj
+ 0001:00011d50       ?MessageBoxA@SysFunc@Win32@@SAXPBD@Z 00412d50 f   foundation_win32.release:win32sysfunc.obj
+ 0001:00011d90       ?Sleep@SysFunc@Win32@@SAXN@Z 00412d90 f   foundation_win32.release:win32sysfunc.obj
+ 0001:00011dc0       ?DebugOut@SysFunc@Win32@@SAXPBD@Z 00412dc0 f   foundation_win32.release:win32sysfunc.obj
+ 0001:00011dd0       ?RegisterExitHandler@SysFunc@Win32@@CAPBVExitHandler@Core@@PBV34@@Z 00412dd0 f   foundation_win32.release:win32sysfunc.obj
+ 0001:00011df0       ?GetSystemInfo@SysFunc@Win32@@SAPBVSystemInfo@System@@XZ 00412df0 f   foundation_win32.release:win32sysfunc.obj
+ 0001:00011e00       ?XMVerifyCPUSupport@@YAHXZ 00412e00 f i foundation_win32.release:win32sysfunc.obj
+ 0001:00011e40       ?HashCode@String@Util@@QBEHXZ 00412e40 f i foundation_win32.release:factory.obj
+ 0001:00011ef0       ??9FourCC@Util@@QBE_NABV01@@Z 00412ef0 f i foundation_win32.release:factory.obj
+ 0001:00011f10       ??OFourCC@Util@@QBE_NABV01@@Z 00412f10 f i foundation_win32.release:factory.obj
+ 0001:00011f30       ??MFourCC@Util@@QBE_NABV01@@Z 00412f30 f i foundation_win32.release:factory.obj
+ 0001:00011f50       ?AsString@FourCC@Util@@QBE?AVString@2@XZ 00412f50 f i foundation_win32.release:factory.obj
+ 0001:00011f80       ?ToString@FourCC@Util@@SA?AVString@2@ABV12@@Z 00412f80 f i foundation_win32.release:factory.obj
+ 0001:00012110       ?Instance@Factory@Core@@SAPAV12@XZ 00413110 f   foundation_win32.release:factory.obj
+ 0001:00012180       ?Destroy@Factory@Core@@SAXXZ 00413180 f   foundation_win32.release:factory.obj
+ 0001:000121e0       ??_GFactory@Core@@AAEPAXI@Z 004131e0 f i foundation_win32.release:factory.obj
+ 0001:00012210       ??0Factory@Core@@AAE@XZ    00413210 f   foundation_win32.release:factory.obj
+ 0001:00012240       ??1?$HashTable@VString@Util@@PBVRtti@Core@@@Util@@QAE@XZ 00413240 f i foundation_win32.release:factory.obj
+ 0001:00012260       ??1?$Dictionary@VFourCC@Util@@PBVRtti@Core@@@Util@@QAE@XZ 00413260 f i foundation_win32.release:factory.obj
+ 0001:00012280       ??1Factory@Core@@AAE@XZ    00413280 f   foundation_win32.release:factory.obj
+ 0001:000122c0       ?Register@Factory@Core@@QAEXPBVRtti@2@ABVString@Util@@ABVFourCC@5@@Z 004132c0 f   foundation_win32.release:factory.obj
+ 0001:000124b0       ?Register@Factory@Core@@QAEXPBVRtti@2@ABVString@Util@@@Z 004134b0 f   foundation_win32.release:factory.obj
+ 0001:00012580       ?ClassExists@Factory@Core@@QBE_NABVString@Util@@@Z 00413580 f   foundation_win32.release:factory.obj
+ 0001:000125d0       ?ClassExists@Factory@Core@@QBE_NVFourCC@Util@@@Z 004135d0 f   foundation_win32.release:factory.obj
+ 0001:00012620       ?GetClassRtti@Factory@Core@@QBEPBVRtti@2@ABVString@Util@@@Z 00413620 f   foundation_win32.release:factory.obj
+ 0001:00012690       ?GetClassRtti@Factory@Core@@QBEPBVRtti@2@ABVFourCC@Util@@@Z 00413690 f   foundation_win32.release:factory.obj
+ 0001:00012710       ?Create@Factory@Core@@QBEPAVRefCounted@2@ABVString@Util@@@Z 00413710 f   foundation_win32.release:factory.obj
+ 0001:00012820       ?Create@Factory@Core@@QBEPAVRefCounted@2@VFourCC@Util@@@Z 00413820 f   foundation_win32.release:factory.obj
+ 0001:00012970       ??1?$FixedArray@V?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@@Util@@QAE@XZ 00413970 f i foundation_win32.release:factory.obj
+ 0001:00012990       ??0?$HashTable@VString@Util@@PBVRtti@Core@@@Util@@QAE@H@Z 00413990 f i foundation_win32.release:factory.obj
+ 0001:000129c0       ??A?$HashTable@VString@Util@@PBVRtti@Core@@@Util@@QBEAAPBVRtti@Core@@ABVString@1@@Z 004139c0 f i foundation_win32.release:factory.obj
+ 0001:00012ac0       ?Clear@?$HashTable@VString@Util@@PBVRtti@Core@@@Util@@QAEXXZ 00413ac0 f i foundation_win32.release:factory.obj
+ 0001:00012b20       ?Add@?$HashTable@VString@Util@@PBVRtti@Core@@@Util@@QAEXABVString@2@ABQBVRtti@Core@@@Z 00413b20 f i foundation_win32.release:factory.obj
+ 0001:00012b60       ?Contains@?$HashTable@VString@Util@@PBVRtti@Core@@@Util@@QBE_NABVString@2@@Z 00413b60 f i foundation_win32.release:factory.obj
+ 0001:00012c00       ??1?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@QAE@XZ 00413c00 f i foundation_win32.release:factory.obj
+ 0001:00012c20       ??0?$Dictionary@VFourCC@Util@@PBVRtti@Core@@@Util@@QAE@XZ 00413c20 f i foundation_win32.release:factory.obj
+ 0001:00012c40       ??A?$Dictionary@VFourCC@Util@@PBVRtti@Core@@@Util@@QBEABQBVRtti@Core@@ABVFourCC@1@@Z 00413c40 f i foundation_win32.release:factory.obj
+ 0001:00012c90       ?Clear@?$Dictionary@VFourCC@Util@@PBVRtti@Core@@@Util@@QAEXXZ 00413c90 f i foundation_win32.release:factory.obj
+ 0001:00012cd0       ?Add@?$Dictionary@VFourCC@Util@@PBVRtti@Core@@@Util@@QAEXABVFourCC@2@ABQBVRtti@Core@@@Z 00413cd0 f i foundation_win32.release:factory.obj
+ 0001:00012d20       ?Contains@?$Dictionary@VFourCC@Util@@PBVRtti@Core@@@Util@@QBE_NABVFourCC@2@@Z 00413d20 f i foundation_win32.release:factory.obj
+ 0001:00012d80       ??1?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@QAE@XZ 00413d80 f i foundation_win32.release:factory.obj
+ 0001:00012dd0       ??0?$FixedArray@V?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@@Util@@QAE@H@Z 00413dd0 f i foundation_win32.release:factory.obj
+ 0001:00012e00       ??A?$FixedArray@V?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@@Util@@QBEAAV?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@1@H@Z 00413e00 f i foundation_win32.release:factory.obj
+ 0001:00012e50       ?Size@?$FixedArray@V?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@@Util@@QBEHXZ 00413e50 f i foundation_win32.release:factory.obj
+ 0001:00012e60       ?Delete@?$FixedArray@V?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@@Util@@AAEXXZ 00413e60 f i foundation_win32.release:factory.obj
+ 0001:00012ec0       ?Add@?$HashTable@VString@Util@@PBVRtti@Core@@@Util@@QAEXABV?$KeyValuePair@VString@Util@@PBVRtti@Core@@@2@@Z 00413ec0 f i foundation_win32.release:factory.obj
+ 0001:00012f50       ??A?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@QBEAAV?$KeyValuePair@VString@Util@@PBVRtti@Core@@@1@H@Z 00413f50 f i foundation_win32.release:factory.obj
+ 0001:00012fa0       ?Size@?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@QBEHXZ 00413fa0 f i foundation_win32.release:factory.obj
+ 0001:00012fc0       ?Clear@?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@QAEXXZ 00413fc0 f i foundation_win32.release:factory.obj
+ 0001:00013010       ?BinarySearchIndex@?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@QBEHABV?$KeyValuePair@VString@Util@@PBVRtti@Core@@@2@@Z 00414010 f i foundation_win32.release:factory.obj
+ 0001:00013140       ??0?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@QAE@ABVString@1@@Z 00414140 f i foundation_win32.release:factory.obj
+ 0001:000131a0       ??0?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@QAE@ABVString@1@ABQBVRtti@Core@@@Z 004141a0 f i foundation_win32.release:factory.obj
+ 0001:00013210       ?Value@?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@QAEAAPBVRtti@Core@@XZ 00414210 f i foundation_win32.release:factory.obj
+ 0001:00013230       ??0?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@QAE@XZ 00414230 f i foundation_win32.release:factory.obj
+ 0001:00013270       ??A?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@QBEAAV?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@1@H@Z 00414270 f i foundation_win32.release:factory.obj
+ 0001:000132c0       ?Append@?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@QAEXABV?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@2@@Z 004142c0 f i foundation_win32.release:factory.obj
+ 0001:00013340       ?InsertSorted@?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@QAEHABV?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@2@@Z 00414340 f i foundation_win32.release:factory.obj
+ 0001:000135b0       ?Clear@?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@QAEXXZ 004145b0 f i foundation_win32.release:factory.obj
+ 0001:00013600       ?BinarySearchIndex@?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@QBEHABV?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@2@@Z 00414600 f i foundation_win32.release:factory.obj
+ 0001:00013730       ?Delete@?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@AAEXXZ 00414730 f i foundation_win32.release:factory.obj
+ 0001:00013790       ?FindIndex@?$Dictionary@VFourCC@Util@@PBVRtti@Core@@@Util@@QBEHABVFourCC@2@@Z 00414790 f i foundation_win32.release:factory.obj
+ 0001:000137e0       ??0?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@QAE@ABVFourCC@1@@Z 004147e0 f i foundation_win32.release:factory.obj
+ 0001:00013800       ??0?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@QAE@ABVFourCC@1@ABQBVRtti@Core@@@Z 00414800 f i foundation_win32.release:factory.obj
+ 0001:00013830       ?Value@?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@QAEAAPBVRtti@Core@@XZ 00414830 f i foundation_win32.release:factory.obj
+ 0001:00013850       ??_E?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@QAEPAXI@Z 00414850 f i foundation_win32.release:factory.obj
+ 0001:000138f0       ?Alloc@?$FixedArray@V?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@@Util@@AAEXH@Z 004148f0 f i foundation_win32.release:factory.obj
+ 0001:000139c0       ??1?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@QAE@XZ 004149c0 f i foundation_win32.release:factory.obj
+ 0001:000139e0       ?InsertSorted@?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@QAEHABV?$KeyValuePair@VString@Util@@PBVRtti@Core@@@2@@Z 004149e0 f i foundation_win32.release:factory.obj
+ 0001:00013c50       ?Destroy@?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@AAEXPAV?$KeyValuePair@VString@Util@@PBVRtti@Core@@@2@@Z 00414c50 f i foundation_win32.release:factory.obj
+ 0001:00013c70       ??9?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@QBE_NABV01@@Z 00414c70 f i foundation_win32.release:factory.obj
+ 0001:00013c90       ??O?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@QBE_NABV01@@Z 00414c90 f i foundation_win32.release:factory.obj
+ 0001:00013cb0       ??M?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@QBE_NABV01@@Z 00414cb0 f i foundation_win32.release:factory.obj
+ 0001:00013cd0       ?Key@?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@QBEABVString@2@XZ 00414cd0 f i foundation_win32.release:factory.obj
+ 0001:00013ce0       ?Size@?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@QBEHXZ 00414ce0 f i foundation_win32.release:factory.obj
+ 0001:00013d00       ?Insert@?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@QAEXHABV?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@2@@Z 00414d00 f i foundation_win32.release:factory.obj
+ 0001:00013d70       ?InsertAtEndOfIdenticalRange@?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@QAEHHABV?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@2@@Z 00414d70 f i foundation_win32.release:factory.obj
+ 0001:00013df0       ?Destroy@?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@AAEXPAV?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@2@@Z 00414df0 f i foundation_win32.release:factory.obj
+ 0001:00013e00       ?Grow@?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@AAEXXZ 00414e00 f i foundation_win32.release:factory.obj
+ 0001:00013e80       ??4?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@QAEXABV01@@Z 00414e80 f i foundation_win32.release:factory.obj
+ 0001:00013eb0       ??9?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@QBE_NABV01@@Z 00414eb0 f i foundation_win32.release:factory.obj
+ 0001:00013ed0       ??O?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@QBE_NABV01@@Z 00414ed0 f i foundation_win32.release:factory.obj
+ 0001:00013ef0       ??M?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@QBE_NABV01@@Z 00414ef0 f i foundation_win32.release:factory.obj
+ 0001:00013f10       ??_G?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@QAEPAXI@Z 00414f10 f i foundation_win32.release:factory.obj
+ 0001:00013f80       ??0?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@QAE@XZ 00414f80 f i foundation_win32.release:factory.obj
+ 0001:00013fc0       ?Append@?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@QAEXABV?$KeyValuePair@VString@Util@@PBVRtti@Core@@@2@@Z 00414fc0 f i foundation_win32.release:factory.obj
+ 0001:00014040       ?Insert@?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@QAEXHABV?$KeyValuePair@VString@Util@@PBVRtti@Core@@@2@@Z 00415040 f i foundation_win32.release:factory.obj
+ 0001:000140b0       ?InsertAtEndOfIdenticalRange@?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@QAEHHABV?$KeyValuePair@VString@Util@@PBVRtti@Core@@@2@@Z 004150b0 f i foundation_win32.release:factory.obj
+ 0001:00014130       ?Delete@?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@AAEXXZ 00415130 f i foundation_win32.release:factory.obj
+ 0001:000141a0       ?GrowTo@?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@AAEXH@Z 004151a0 f i foundation_win32.release:factory.obj
+ 0001:00014290       ?Move@?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@AAEXHH@Z 00415290 f i foundation_win32.release:factory.obj
+ 0001:00014420       ??_E?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@QAEPAXI@Z 00415420 f i foundation_win32.release:factory.obj
+ 0001:00014530       ?Grow@?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@AAEXXZ 00415530 f i foundation_win32.release:factory.obj
+ 0001:000145b0       ?Move@?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@AAEXHH@Z 004155b0 f i foundation_win32.release:factory.obj
+ 0001:00014740       ??4?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@QAEXABV01@@Z 00415740 f i foundation_win32.release:factory.obj
+ 0001:00014790       ??0?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@QAE@XZ 00415790 f i foundation_win32.release:factory.obj
+ 0001:000147b0       ?GrowTo@?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@AAEXH@Z 004157b0 f i foundation_win32.release:factory.obj
+ 0001:000148d0       ??0?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@QAE@XZ 004158d0 f i foundation_win32.release:factory.obj
+ 0001:00014910       ??0Win360Timer@Win360@@QAE@XZ 00415910 f   foundation_win32.release:win360timer.obj
+ 0001:00014950       ?Start@Win360Timer@Win360@@QAEXXZ 00415950 f   foundation_win32.release:win360timer.obj
+ 0001:000149c0       ?Stop@Win360Timer@Win360@@QAEXXZ 004159c0 f   foundation_win32.release:win360timer.obj
+ 0001:00014a00       ?Reset@Win360Timer@Win360@@QAEXXZ 00415a00 f   foundation_win32.release:win360timer.obj
+ 0001:00014a60       ?Running@Win360Timer@Win360@@QBE_NXZ 00415a60 f   foundation_win32.release:win360timer.obj
+ 0001:00014a70       ?InternalTime@Win360Timer@Win360@@ABE_JXZ 00415a70 f   foundation_win32.release:win360timer.obj
+ 0001:00014ac0       ?GetTime@Win360Timer@Win360@@QBENXZ 00415ac0 f   foundation_win32.release:win360timer.obj
+ 0001:00014af0       ?GetTicks@Win360Timer@Win360@@QBEHXZ 00415af0 f   foundation_win32.release:win360timer.obj
+ 0001:00014b50       ?Instance@LocalStringAtomTable@Util@@SAPAV12@XZ 00415b50 f i foundation_win32.release:stringatom.obj
+ 0001:00014b90       ?Instance@GlobalStringAtomTable@Util@@SAPAV12@XZ 00415b90 f i foundation_win32.release:stringatom.obj
+ 0001:00014bc0       ?Setup@StringAtom@Util@@AAEXPBD@Z 00415bc0 f   foundation_win32.release:stringatom.obj
+ 0001:00014c90       ??8StringAtom@Util@@QBE_NPBD@Z 00415c90 f   foundation_win32.release:stringatom.obj
+ 0001:00014d10       ??9StringAtom@Util@@QBE_NPBD@Z 00415d10 f   foundation_win32.release:stringatom.obj
+ 0001:00014d90       ??2CoreServer@Core@@SAPAXI@Z 00415d90 f i foundation_win32.release:coreserver.obj
+ 0001:00014da0       ??3CoreServer@Core@@SAXPAX@Z 00415da0 f i foundation_win32.release:coreserver.obj
+ 0001:00014dc0       ?IsOpen@CoreServer@Core@@QBE_NXZ 00415dc0 f i foundation_win32.release:coreserver.obj
+ 0001:00014de0       ?GetRtti@CoreServer@Core@@UBEPAVRtti@2@XZ 00415de0 f   foundation_win32.release:coreserver.obj
+ 0001:00014df0       ?FactoryCreator@CoreServer@Core@@SAPAVRefCounted@2@XZ 00415df0 f   foundation_win32.release:coreserver.obj
+ 0001:00014e00       ?Create@CoreServer@Core@@SAPAV12@XZ 00415e00 f   foundation_win32.release:coreserver.obj
+ 0001:00014e40       ?RegisterWithFactory@CoreServer@Core@@SA_NXZ 00415e40 f   foundation_win32.release:coreserver.obj
+ 0001:00014f40       ??0CoreServer@Core@@QAE@XZ 00415f40 f   foundation_win32.release:coreserver.obj
+ 0001:00015030       ??_GCoreServer@Core@@UAEPAXI@Z 00416030 f i foundation_win32.release:coreserver.obj
+ 0001:00015030       ??_ECoreServer@Core@@UAEPAXI@Z 00416030 f i  CIL library: CIL module
+ 0001:00015060       ??1CoreServer@Core@@UAE@XZ 00416060 f   foundation_win32.release:coreserver.obj
+ 0001:000150e0       ?Open@CoreServer@Core@@QAEXXZ 004160e0 f   foundation_win32.release:coreserver.obj
+ 0001:00015140       ?Close@CoreServer@Core@@QAEXXZ 00416140 f   foundation_win32.release:coreserver.obj
+ 0001:00015190       ?Trigger@CoreServer@Core@@QAEXXZ 00416190 f   foundation_win32.release:coreserver.obj
+ 0001:000151b0       ??0?$Ptr@VConsole@IO@@@@QAE@XZ 004161b0 f i foundation_win32.release:coreserver.obj
+ 0001:000151d0       ??1?$Ptr@VConsole@IO@@@@QAE@XZ 004161d0 f i foundation_win32.release:coreserver.obj
+ 0001:00015200       ??4?$Ptr@VConsole@IO@@@@QAEXPAVConsole@IO@@@Z 00416200 f i foundation_win32.release:coreserver.obj
+ 0001:00015260       ??C?$Ptr@VConsole@IO@@@@QBEPAVConsole@IO@@XZ 00416260 f i foundation_win32.release:coreserver.obj
+ 0001:000152a0       ?Instance@Console@IO@@SAPAV12@XZ 004162a0 f i foundation_win32.release:debug.obj
+ 0001:000152d0       ?HasInstance@Console@IO@@SA_NXZ 004162d0 f i foundation_win32.release:debug.obj
+ 0001:000152f0       ?n_barf@@YAXPBD0H@Z        004162f0 f   foundation_win32.release:debug.obj
+ 0001:00015390       ?n_barf2@@YAXPBD00H@Z      00416390 f   foundation_win32.release:debug.obj
+ 0001:00015430       ?n_error@@YAXPBDZZ         00416430 f   foundation_win32.release:debug.obj
+ 0001:000154f0       ?n_warning@@YAXPBDZZ       004164f0 f   foundation_win32.release:debug.obj
+ 0001:000155b0       ?n_confirm@@YAXPBDZZ       004165b0 f   foundation_win32.release:debug.obj
+ 0001:00015670       ?n_printf@@YAXPBDZZ        00416670 f   foundation_win32.release:debug.obj
+ 0001:000156c0       ?n_dbgout@@YAXPBDZZ        004166c0 f   foundation_win32.release:debug.obj
+ 0001:00015710       ?n_sleep@@YAXN@Z           00416710 f   foundation_win32.release:debug.obj
+ 0001:00015730       ?Clear@Memory@@YAXPAXI@Z   00416730 f i foundation_win32.release:win360memorypool.obj
+ 0001:00015750       ?ComputeAlignedBlockSize@Win360MemoryPool@Win360@@SAII@Z 00416750 f i foundation_win32.release:win360memorypool.obj
+ 0001:00015790       ??0Win360MemoryPool@Win360@@QAE@XZ 00416790 f   foundation_win32.release:win360memorypool.obj
+ 0001:000157f0       ??1Win360MemoryPool@Win360@@QAE@XZ 004167f0 f   foundation_win32.release:win360memorypool.obj
+ 0001:00015830       ?Setup@Win360MemoryPool@Win360@@QAEXW4HeapType@Memory@@II@Z 00416830 f   foundation_win32.release:win360memorypool.obj
+ 0001:00015970       ?Alloc@Win360MemoryPool@Win360@@QAEPAXXZ 00416970 f   foundation_win32.release:win360memorypool.obj
+ 0001:000159b0       ?Free@Win360MemoryPool@Win360@@QAEXPAX@Z 004169b0 f   foundation_win32.release:win360memorypool.obj
+ 0001:000159e0       ?SetupHeaps@Memory@@YAXXZ  004169e0 f   foundation_win32.release:win360memoryconfig.obj
+ 0001:00015b40       ?GetHeapTypeName@Memory@@YAPBDW4HeapType@1@@Z 00416b40 f   foundation_win32.release:win360memoryconfig.obj
+ 0001:00015c00       ?BinaryCompare@Blob@Util@@ABEHABV12@@Z 00416c00 f   foundation_win32.release:blob.obj
+ 0001:00015cb0       ?Setup@Win360Heap@Win360@@SAXXZ 00416cb0 f   foundation_win32.release:win360heap.obj
+ 0001:00015cc0       ??0Win360Heap@Win360@@QAE@PBDII@Z 00416cc0 f   foundation_win32.release:win360heap.obj
+ 0001:00015d50       ??1Win360Heap@Win360@@QAE@XZ 00416d50 f   foundation_win32.release:win360heap.obj
+ 0001:00015d90       ??0Win32SystemInfo@Win32@@QAE@XZ 00416d90 f   foundation_win32.release:win32systeminfo.obj
+ 0001:00015e10       ??0Win360Event@Win360@@QAE@_N@Z 00416e10 f i foundation_win32.release:win360thread.obj
+ 0001:00015e60       ??1Win360Event@Win360@@QAE@XZ 00416e60 f i foundation_win32.release:win360thread.obj
+ 0001:00015e80       ?Signal@Win360Event@Win360@@QAEXXZ 00416e80 f i foundation_win32.release:win360thread.obj
+ 0001:00015ea0       ?Wait@Win360Event@Win360@@QBEXXZ 00416ea0 f i foundation_win32.release:win360thread.obj
+ 0001:00015ec0       ??2Win360Thread@Win360@@SAPAXI@Z 00416ec0 f i foundation_win32.release:win360thread.obj
+ 0001:00015ed0       ??3Win360Thread@Win360@@SAXPAX@Z 00416ed0 f i foundation_win32.release:win360thread.obj
+ 0001:00015ef0       ?GetName@Win360Thread@Win360@@QBEABVString@Util@@XZ 00416ef0 f i foundation_win32.release:win360thread.obj
+ 0001:00015f10       ?GetRtti@Win360Thread@Win360@@UBEPAVRtti@Core@@XZ 00416f10 f   foundation_win32.release:win360thread.obj
+ 0001:00015f20       ?FactoryCreator@Win360Thread@Win360@@SAPAVRefCounted@Core@@XZ 00416f20 f   foundation_win32.release:win360thread.obj
+ 0001:00015f30       ?Create@Win360Thread@Win360@@SAPAV12@XZ 00416f30 f   foundation_win32.release:win360thread.obj
+ 0001:00015f70       ?RegisterWithFactory@Win360Thread@Win360@@SA_NXZ 00416f70 f   foundation_win32.release:win360thread.obj
+ 0001:00016070       ??0Win360Thread@Win360@@QAE@XZ 00417070 f   foundation_win32.release:win360thread.obj
+ 0001:00016170       ??_EWin360Thread@Win360@@UAEPAXI@Z 00417170 f i  CIL library: CIL module
+ 0001:00016170       ??_GWin360Thread@Win360@@UAEPAXI@Z 00417170 f i foundation_win32.release:win360thread.obj
+ 0001:000161a0       ??1Win360Thread@Win360@@UAE@XZ 004171a0 f   foundation_win32.release:win360thread.obj
+ 0001:00016260       ?Start@Win360Thread@Win360@@QAEXXZ 00417260 f   foundation_win32.release:win360thread.obj
+ 0001:00016360       ?EmitWakeupSignal@Win360Thread@Win360@@MAEXXZ 00417360 f   foundation_win32.release:win360thread.obj
+ 0001:00016370       ?Stop@Win360Thread@Win360@@QAEXXZ 00417370 f   foundation_win32.release:win360thread.obj
+ 0001:00016410       ?IsRunning@Win360Thread@Win360@@QBE_NXZ 00417410 f   foundation_win32.release:win360thread.obj
+ 0001:00016460       ?DoWork@Win360Thread@Win360@@MAEXXZ 00417460 f   foundation_win32.release:win360thread.obj
+ 0001:00016470       ?ThreadProc@Win360Thread@Win360@@CGKPAX@Z 00417470 f   foundation_win32.release:win360thread.obj
+ 0001:00016510       ?SetMyThreadName@Win360Thread@Win360@@SAXPBD@Z 00417510 f   foundation_win32.release:win360thread.obj
+ 0001:000165b0       ?GetMyThreadName@Win360Thread@Win360@@SAPBDXZ 004175b0 f   foundation_win32.release:win360thread.obj
+ 0001:000165c0       ?GetMyThreadId@Win360Thread@Win360@@SAKXZ 004175c0 f   foundation_win32.release:win360thread.obj
+ 0001:000165d0       ?YieldThread@Win360Thread@Win360@@SAXXZ 004175d0 f   foundation_win32.release:win360thread.obj
+ 0001:000165e0       ??2Win360Socket@Win360@@SAPAXI@Z 004175e0 f i foundation_win32.release:win360socket.obj
+ 0001:000165f0       ??3Win360Socket@Win360@@SAXPAX@Z 004175f0 f i foundation_win32.release:win360socket.obj
+ 0001:00016610       ?IsOpen@Win360Socket@Win360@@QBE_NXZ 00417610 f i foundation_win32.release:win360socket.obj
+ 0001:00016630       ?IsBound@Win360Socket@Win360@@QBE_NXZ 00417630 f i foundation_win32.release:win360socket.obj
+ 0001:00016650       ?SetAddress@Win360Socket@Win360@@QAEXABVWin360IpAddress@2@@Z 00417650 f i foundation_win32.release:win360socket.obj
+ 0001:00016670       ??4Win360IpAddress@Win360@@QAEAAV01@ABV01@@Z 00417670 f i foundation_win32.release:win360socket.obj
+ 0001:00016720       ?GetBlocking@Win360Socket@Win360@@QBE_NXZ 00417720 f i foundation_win32.release:win360socket.obj
+ 0001:00016740       ?GetRtti@Win360Socket@Win360@@UBEPAVRtti@Core@@XZ 00417740 f   foundation_win32.release:win360socket.obj
+ 0001:00016750       ?FactoryCreator@Win360Socket@Win360@@SAPAVRefCounted@Core@@XZ 00417750 f   foundation_win32.release:win360socket.obj
+ 0001:00016760       ?Create@Win360Socket@Win360@@SAPAV12@XZ 00417760 f   foundation_win32.release:win360socket.obj
+ 0001:000167a0       ?RegisterWithFactory@Win360Socket@Win360@@SA_NXZ 004177a0 f   foundation_win32.release:win360socket.obj
+ 0001:000168a0       ??0Win360Socket@Win360@@QAE@XZ 004178a0 f   foundation_win32.release:win360socket.obj
+ 0001:00016920       ??_GWin360Socket@Win360@@UAEPAXI@Z 00417920 f i foundation_win32.release:win360socket.obj
+ 0001:00016920       ??_EWin360Socket@Win360@@UAEPAXI@Z 00417920 f i  CIL library: CIL module
+ 0001:00016950       ??1Win360IpAddress@Win360@@QAE@XZ 00417950 f i foundation_win32.release:win360socket.obj
+ 0001:000169e0       ??1Win360Socket@Win360@@UAE@XZ 004179e0 f   foundation_win32.release:win360socket.obj
+ 0001:00016a30       ?InitNetwork@Win360Socket@Win360@@SAXXZ 00417a30 f   foundation_win32.release:win360socket.obj
+ 0001:00016b30       ?Open@Win360Socket@Win360@@QAE_NW4Protocol@12@@Z 00417b30 f   foundation_win32.release:win360socket.obj
+ 0001:00016c00       ?OpenWithExistingSocket@Win360Socket@Win360@@AAEXI@Z 00417c00 f   foundation_win32.release:win360socket.obj
+ 0001:00016c60       ?Close@Win360Socket@Win360@@QAEXXZ 00417c60 f   foundation_win32.release:win360socket.obj
+ 0001:00016de0       ?SetBoolOption@Win360Socket@Win360@@AAEXH_N@Z 00417de0 f   foundation_win32.release:win360socket.obj
+ 0001:00016ee0       ?GetBoolOption@Win360Socket@Win360@@AAE_NH@Z 00417ee0 f   foundation_win32.release:win360socket.obj
+ 0001:00017010       ?SetIntOption@Win360Socket@Win360@@AAEXHH@Z 00418010 f   foundation_win32.release:win360socket.obj
+ 0001:000170f0       ?GetIntOption@Win360Socket@Win360@@AAEHH@Z 004180f0 f   foundation_win32.release:win360socket.obj
+ 0001:00017200       ?SetBlocking@Win360Socket@Win360@@QAEX_N@Z 00418200 f   foundation_win32.release:win360socket.obj
+ 0001:000172f0       ?Bind@Win360Socket@Win360@@QAE_NXZ 004182f0 f   foundation_win32.release:win360socket.obj
+ 0001:00017400       ?Listen@Win360Socket@Win360@@QAE_NXZ 00418400 f   foundation_win32.release:win360socket.obj
+ 0001:00017500       ?Accept@Win360Socket@Win360@@QAE_NAAV?$Ptr@VSocket@Net@@@@@Z 00418500 f   foundation_win32.release:win360socket.obj
+ 0001:000176d0       ?Connect@Win360Socket@Win360@@QAE?AW4Result@12@XZ 004186d0 f   foundation_win32.release:win360socket.obj
+ 0001:00017840       ?IsConnected@Win360Socket@Win360@@QAE_NXZ 00418840 f   foundation_win32.release:win360socket.obj
+ 0001:000179a0       ?Send@Win360Socket@Win360@@QAE?AW4Result@12@PBXHAAH@Z 004189a0 f   foundation_win32.release:win360socket.obj
+ 0001:00017ad0       ?HasRecvData@Win360Socket@Win360@@QAE_NXZ 00418ad0 f   foundation_win32.release:win360socket.obj
+ 0001:00017c30       ?Recv@Win360Socket@Win360@@QAE?AW4Result@12@PAXHAAH@Z 00418c30 f   foundation_win32.release:win360socket.obj
+ 0001:00017da0       ?SendTo@Win360Socket@Win360@@QAE?AW4Result@12@PBXHIGAAH@Z 00418da0 f   foundation_win32.release:win360socket.obj
+ 0001:00017dc0       ?RecvFrom@Win360Socket@Win360@@QAE?AW4Result@12@PAXHIGAAH@Z 00418dc0 f   foundation_win32.release:win360socket.obj
+ 0001:00017de0       ?ClearError@Win360Socket@Win360@@AAEXXZ 00418de0 f   foundation_win32.release:win360socket.obj
+ 0001:00017e00       ?SetToLastWSAError@Win360Socket@Win360@@AAEXXZ 00418e00 f   foundation_win32.release:win360socket.obj
+ 0001:00017e20       ?SetWSAError@Win360Socket@Win360@@AAEXH@Z 00418e20 f   foundation_win32.release:win360socket.obj
+ 0001:00017e40       ?WSAErrorToErrorCode@Win360Socket@Win360@@CA?AW4ErrorCode@12@H@Z 00418e40 f   foundation_win32.release:win360socket.obj
+ 0001:00018200       ?ErrorAsString@Win360Socket@Win360@@CA?AVString@Util@@W4ErrorCode@12@@Z 00419200 f   foundation_win32.release:win360socket.obj
+ 0001:00018c60       ?WSAErrorToString@Win360Socket@Win360@@CA?AVString@Util@@H@Z 00419c60 f   foundation_win32.release:win360socket.obj
+ 0001:00018c90       ?GetErrorString@Win360Socket@Win360@@QBE?AVString@Util@@XZ 00419c90 f   foundation_win32.release:win360socket.obj
+ 0001:00018cc0       ?IsNetworkInitialized@Win360Socket@Win360@@SA_NXZ 00419cc0 f   foundation_win32.release:win360socket.obj
+ 0001:00018cd0       ??4?$Ptr@VSocket@Net@@@@QAEXPAVSocket@Net@@@Z 00419cd0 f i foundation_win32.release:win360socket.obj
+ 0001:00018d30       ??C?$Ptr@VSocket@Net@@@@QBEPAVSocket@Net@@XZ 00419d30 f i foundation_win32.release:win360socket.obj
+ 0001:00018d70       ?ExtractFileName@String@Util@@QBE?AV12@XZ 00419d70 f i foundation_win32.release:win32minidump.obj
+ 0001:00018e10       ?ExtractToLastSlash@String@Util@@QBE?AV12@XZ 00419e10 f i foundation_win32.release:win32minidump.obj
+ 0001:00018ea0       ?Setup@Win32MiniDump@Win32@@SAXXZ 00419ea0 f   foundation_win32.release:win32minidump.obj
+ 0001:00018eb0       ?WriteMiniDump@Win32MiniDump@Win32@@SA_NXZ 00419eb0 f   foundation_win32.release:win32minidump.obj
+ 0001:00018ec0       ?WriteMiniDumpInternal@Win32MiniDump@Win32@@CA_NPAU_EXCEPTION_POINTERS@@@Z 00419ec0 f   foundation_win32.release:win32minidump.obj
+ 0001:00018fe0       ?BuildMiniDumpFilename@Win32MiniDump@Win32@@CA?AVString@Util@@XZ 00419fe0 f   foundation_win32.release:win32minidump.obj
+ 0001:00019280       ?ExceptionCallback@Win32MiniDump@Win32@@CGJPAU_EXCEPTION_POINTERS@@@Z 0041a280 f   foundation_win32.release:win32minidump.obj
+ 0001:000192a0       ?WaiterPlus@Win360CriticalSection@Win360@@ABEXXZ 0041a2a0 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:000192c0       ?WaiterMinus@Win360CriticalSection@Win360@@ABEXXZ 0041a2c0 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:000192e0       ?PerfLockImmediate@Win360CriticalSection@Win360@@ABE_NK@Z 0041a2e0 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019310       ?Enter@Win360CriticalSection@Win360@@QBEXXZ 0041a310 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019380       ?AllocateKernelSemaphore@Win360CriticalSection@Win360@@ABEXXZ 0041a380 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:000193f0       ?PerfLock@Win360CriticalSection@Win360@@ABE_NK@Z 0041a3f0 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019470       ?PerfLockKernel@Win360CriticalSection@Win360@@ABE_NK@Z 0041a470 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019510       ?Leave@Win360CriticalSection@Win360@@QBEXXZ 0041a510 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019540       ?PerfUnlock@Win360CriticalSection@Win360@@ABEXXZ 0041a540 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019580       ?GetNumChunks@StringBuffer@Util@@QBEHXZ 0041a580 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:000195a0       ??0GlobalStringAtomTable@Util@@QAE@XZ 0041a5a0 f   foundation_win32.release:globalstringatomtable.obj
+ 0001:00019610       ??0CriticalSection@Threading@@QAE@XZ 0041a610 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019630       ??1CriticalSection@Threading@@QAE@XZ 0041a630 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019650       ??1GlobalStringAtomTable@Util@@QAE@XZ 0041a650 f   foundation_win32.release:globalstringatomtable.obj
+ 0001:000196f0       ?Lock@GlobalStringAtomTable@Util@@AAEXXZ 0041a6f0 f   foundation_win32.release:globalstringatomtable.obj
+ 0001:00019710       ?Unlock@GlobalStringAtomTable@Util@@AAEXXZ 0041a710 f   foundation_win32.release:globalstringatomtable.obj
+ 0001:00019750       ?Add@GlobalStringAtomTable@Util@@AAEPBDPBD@Z 0041a750 f   foundation_win32.release:globalstringatomtable.obj
+ 0001:00019780       ?GetDebugInfo@GlobalStringAtomTable@Util@@QBE?AUDebugInfo@12@XZ 0041a780 f   foundation_win32.release:globalstringatomtable.obj
+ 0001:000198a0       ??0DebugInfo@GlobalStringAtomTable@Util@@QAE@XZ 0041a8a0 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:000198c0       ??1DebugInfo@GlobalStringAtomTable@Util@@QAE@XZ 0041a8c0 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:000198e0       ??0DebugInfo@GlobalStringAtomTable@Util@@QAE@ABU012@@Z 0041a8e0 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019940       ??A?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@QBEAAUStaticString@StringAtomTableBase@1@H@Z 0041a940 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019990       ?Size@?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@QBEHXZ 0041a990 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:000199b0       ?InsertSorted@?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@QAEHABUStaticString@StringAtomTableBase@2@@Z 0041a9b0 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019c20       ?Size@?$Array@PAD@Util@@QBEHXZ 0041ac20 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019c40       ??0?$Array@PBD@Util@@QAE@ABV01@@Z 0041ac40 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019c90       ??0?$Array@PBD@Util@@QAE@XZ 0041ac90 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019cd0       ??1?$Array@PBD@Util@@QAE@XZ 0041acd0 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019cf0       ?Append@?$Array@PBD@Util@@QAEXABQBD@Z 0041acf0 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019d60       ?Reserve@?$Array@PBD@Util@@QAEXH@Z 0041ad60 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019db0       ?Append@?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@QAEXABUStaticString@StringAtomTableBase@2@@Z 0041adb0 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019e20       ?Insert@?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@QAEXHABUStaticString@StringAtomTableBase@2@@Z 0041ae20 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019e90       ?InsertAtEndOfIdenticalRange@?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@QAEHHABUStaticString@StringAtomTableBase@2@@Z 0041ae90 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019f10       ?Copy@?$Array@PBD@Util@@AAEXABV12@@Z 0041af10 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:00019fe0       ?Delete@?$Array@PBD@Util@@AAEXXZ 0041afe0 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:0001a040       ?Grow@?$Array@PBD@Util@@AAEXXZ 0041b040 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:0001a0c0       ?GrowTo@?$Array@PBD@Util@@AAEXH@Z 0041b0c0 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:0001a170       ?Grow@?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@AAEXXZ 0041b170 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:0001a1f0       ?Move@?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@AAEXHH@Z 0041b1f0 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:0001a370       ?Destroy@?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@AAEXPAUStaticString@StringAtomTableBase@2@@Z 0041b370 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:0001a380       ?GrowTo@?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@AAEXH@Z 0041b380 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:0001a430       ___InlineInterlockedCompareExchangePointer 0041b430 f i foundation_win32.release:globalstringatomtable.obj
+ 0001:0001a450       ??0LocalStringAtomTable@Util@@QAE@XZ 0041b450 f   foundation_win32.release:localstringatomtable.obj
+ 0001:0001a4a0       ??1LocalStringAtomTable@Util@@QAE@XZ 0041b4a0 f   foundation_win32.release:localstringatomtable.obj
+ 0001:0001a4f0       ?Add@LocalStringAtomTable@Util@@AAEXPBD@Z 0041b4f0 f   foundation_win32.release:localstringatomtable.obj
+ 0001:0001a520       ??0ExitHandler@Core@@QAE@XZ 0041b520 f   foundation_win32.release:exithandler.obj
+ 0001:0001a550       ??_GExitHandler@Core@@UAEPAXI@Z 0041b550 f i foundation_win32.release:exithandler.obj
+ 0001:0001a550       ??_EExitHandler@Core@@UAEPAXI@Z 0041b550 f i  CIL library: CIL module
+ 0001:0001a580       ??1ExitHandler@Core@@UAE@XZ 0041b580 f   foundation_win32.release:exithandler.obj
+ 0001:0001a5a0       ?Next@ExitHandler@Core@@QBEPBV12@XZ 0041b5a0 f   foundation_win32.release:exithandler.obj
+ 0001:0001a5c0       ?OnExit@ExitHandler@Core@@UBEXXZ 0041b5c0 f   foundation_win32.release:exithandler.obj
+ 0001:0001a5d0       ??0StringAtomTableBase@Util@@QAE@XZ 0041b5d0 f   foundation_win32.release:stringatomtablebase.obj
+ 0001:0001a5f0       ??1StringAtomTableBase@Util@@QAE@XZ 0041b5f0 f   foundation_win32.release:stringatomtablebase.obj
+ 0001:0001a610       ?Find@StringAtomTableBase@Util@@IBEPBDPBD@Z 0041b610 f   foundation_win32.release:stringatomtablebase.obj
+ 0001:0001a650       ??8StaticString@StringAtomTableBase@Util@@QBE_NABU012@@Z 0041b650 f   foundation_win32.release:stringatomtablebase.obj
+ 0001:0001a6d0       ??9StaticString@StringAtomTableBase@Util@@QBE_NABU012@@Z 0041b6d0 f   foundation_win32.release:stringatomtablebase.obj
+ 0001:0001a750       ??MStaticString@StringAtomTableBase@Util@@QBE_NABU012@@Z 0041b750 f   foundation_win32.release:stringatomtablebase.obj
+ 0001:0001a7d0       ??OStaticString@StringAtomTableBase@Util@@QBE_NABU012@@Z 0041b7d0 f   foundation_win32.release:stringatomtablebase.obj
+ 0001:0001a850       ??0?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@QAE@XZ 0041b850 f i foundation_win32.release:stringatomtablebase.obj
+ 0001:0001a890       ??1?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@QAE@XZ 0041b890 f i foundation_win32.release:stringatomtablebase.obj
+ 0001:0001a8b0       ?BinarySearchIndex@?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@QBEHABUStaticString@StringAtomTableBase@2@@Z 0041b8b0 f i foundation_win32.release:stringatomtablebase.obj
+ 0001:0001a9e0       ?Delete@?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@AAEXXZ 0041b9e0 f i foundation_win32.release:stringatomtablebase.obj
+ 0001:0001aa40       ??2Console@IO@@SAPAXI@Z    0041ba40 f i foundation_win32.release:console.obj
+ 0001:0001aa50       ??3Console@IO@@SAXPAX@Z    0041ba50 f i foundation_win32.release:console.obj
+ 0001:0001aa70       ?IsOpen@Console@IO@@QBE_NXZ 0041ba70 f i foundation_win32.release:console.obj
+ 0001:0001aa90       ?GetRtti@Console@IO@@UBEPAVRtti@Core@@XZ 0041ba90 f   foundation_win32.release:console.obj
+ 0001:0001aaa0       ?FactoryCreator@Console@IO@@SAPAVRefCounted@Core@@XZ 0041baa0 f   foundation_win32.release:console.obj
+ 0001:0001aab0       ?Create@Console@IO@@SAPAV12@XZ 0041bab0 f   foundation_win32.release:console.obj
+ 0001:0001aaf0       ?RegisterWithFactory@Console@IO@@SA_NXZ 0041baf0 f   foundation_win32.release:console.obj
+ 0001:0001abf0       ??0Console@IO@@QAE@XZ      0041bbf0 f   foundation_win32.release:console.obj
+ 0001:0001ac70       ??_EConsole@IO@@UAEPAXI@Z  0041bc70 f i  CIL library: CIL module
+ 0001:0001ac70       ??_GConsole@IO@@UAEPAXI@Z  0041bc70 f i foundation_win32.release:console.obj
+ 0001:0001aca0       ??1Console@IO@@UAE@XZ      0041bca0 f   foundation_win32.release:console.obj
+ 0001:0001ad50       ?Open@Console@IO@@QAEXXZ   0041bd50 f   foundation_win32.release:console.obj
+ 0001:0001ade0       ?Close@Console@IO@@QAEXXZ  0041bde0 f   foundation_win32.release:console.obj
+ 0001:0001ae80       ?Update@Console@IO@@QAEXXZ 0041be80 f   foundation_win32.release:console.obj
+ 0001:0001af30       ?AttachHandler@Console@IO@@QAEXABV?$Ptr@VConsoleHandler@IO@@@@@Z 0041bf30 f   foundation_win32.release:console.obj
+ 0001:0001afc0       ?RemoveHandler@Console@IO@@QAEXABV?$Ptr@VConsoleHandler@IO@@@@@Z 0041bfc0 f   foundation_win32.release:console.obj
+ 0001:0001b090       ?HasInput@Console@IO@@QBE_NXZ 0041c090 f   foundation_win32.release:console.obj
+ 0001:0001b160       ?GetInput@Console@IO@@QBE?AVString@Util@@XZ 0041c160 f   foundation_win32.release:console.obj
+ 0001:0001b2f0       ?Print@Console@IO@@QAAXPBDZZ 0041c2f0 f   foundation_win32.release:console.obj
+ 0001:0001b350       ?Print@Console@IO@@QAAXPBDPAD@Z 0041c350 f   foundation_win32.release:console.obj
+ 0001:0001b440       ?Print@Console@IO@@QAEXABVString@Util@@@Z 0041c440 f   foundation_win32.release:console.obj
+ 0001:0001b500       ?Error@Console@IO@@QAAXPBDZZ 0041c500 f   foundation_win32.release:console.obj
+ 0001:0001b560       ?Error@Console@IO@@QAAXPBDPAD@Z 0041c560 f   foundation_win32.release:console.obj
+ 0001:0001b650       ?DebugOut@Console@IO@@QAAXPBDZZ 0041c650 f   foundation_win32.release:console.obj
+ 0001:0001b6b0       ?DebugOut@Console@IO@@QAAXPBDPAD@Z 0041c6b0 f   foundation_win32.release:console.obj
+ 0001:0001b7a0       ?Warning@Console@IO@@QAAXPBDZZ 0041c7a0 f   foundation_win32.release:console.obj
+ 0001:0001b800       ?Warning@Console@IO@@QAAXPBDPAD@Z 0041c800 f   foundation_win32.release:console.obj
+ 0001:0001b8f0       ?Confirm@Console@IO@@QAAXPBDZZ 0041c8f0 f   foundation_win32.release:console.obj
+ 0001:0001b950       ?Confirm@Console@IO@@QAAXPBDPAD@Z 0041c950 f   foundation_win32.release:console.obj
+ 0001:0001ba40       ??0?$Array@V?$Ptr@VConsoleHandler@IO@@@@@Util@@QAE@XZ 0041ca40 f i foundation_win32.release:console.obj
+ 0001:0001ba80       ??1?$Array@V?$Ptr@VConsoleHandler@IO@@@@@Util@@QAE@XZ 0041ca80 f i foundation_win32.release:console.obj
+ 0001:0001baa0       ??A?$Array@V?$Ptr@VConsoleHandler@IO@@@@@Util@@QBEAAV?$Ptr@VConsoleHandler@IO@@@@H@Z 0041caa0 f i foundation_win32.release:console.obj
+ 0001:0001baf0       ?Size@?$Array@V?$Ptr@VConsoleHandler@IO@@@@@Util@@QBEHXZ 0041caf0 f i foundation_win32.release:console.obj
+ 0001:0001bb10       ?EraseIndex@?$Array@V?$Ptr@VConsoleHandler@IO@@@@@Util@@QAEXH@Z 0041cb10 f i foundation_win32.release:console.obj
+ 0001:0001bb90       ?Insert@?$Array@V?$Ptr@VConsoleHandler@IO@@@@@Util@@QAEXHABV?$Ptr@VConsoleHandler@IO@@@@@Z 0041cb90 f i foundation_win32.release:console.obj
+ 0001:0001bc00       ?FindIndex@?$Array@V?$Ptr@VConsoleHandler@IO@@@@@Util@@QBEHABV?$Ptr@VConsoleHandler@IO@@@@@Z 0041cc00 f i foundation_win32.release:console.obj
+ 0001:0001bc60       ??0?$Ptr@VConsoleHandler@IO@@@@QAE@PAVConsoleHandler@IO@@@Z 0041cc60 f i foundation_win32.release:console.obj
+ 0001:0001bca0       ??C?$Ptr@VConsoleHandler@IO@@@@QBEPAVConsoleHandler@IO@@XZ 0041cca0 f i foundation_win32.release:console.obj
+ 0001:0001bce0       ?isvalid@?$Ptr@VConsoleHandler@IO@@@@QBE_NXZ 0041cce0 f i foundation_win32.release:console.obj
+ 0001:0001bd00       ?Append@?$Array@V?$Ptr@VConsoleHandler@IO@@@@@Util@@QAEXABV?$Ptr@VConsoleHandler@IO@@@@@Z 0041cd00 f i foundation_win32.release:console.obj
+ 0001:0001bd80       ?Destroy@?$Array@V?$Ptr@VConsoleHandler@IO@@@@@Util@@AAEXPAV?$Ptr@VConsoleHandler@IO@@@@@Z 0041cd80 f i foundation_win32.release:console.obj
+ 0001:0001bdb0       ?Delete@?$Array@V?$Ptr@VConsoleHandler@IO@@@@@Util@@AAEXXZ 0041cdb0 f i foundation_win32.release:console.obj
+ 0001:0001be20       ?Move@?$Array@V?$Ptr@VConsoleHandler@IO@@@@@Util@@AAEXHH@Z 0041ce20 f i foundation_win32.release:console.obj
+ 0001:0001bfb0       ??4?$Ptr@VConsoleHandler@IO@@@@QAEXABV0@@Z 0041cfb0 f i foundation_win32.release:console.obj
+ 0001:0001c010       ??8?$Ptr@VConsoleHandler@IO@@@@QBE_NABV0@@Z 0041d010 f i foundation_win32.release:console.obj
+ 0001:0001c030       ??_G?$Ptr@VConsoleHandler@IO@@@@QAEPAXI@Z 0041d030 f i foundation_win32.release:console.obj
+ 0001:0001c060       ?Grow@?$Array@V?$Ptr@VConsoleHandler@IO@@@@@Util@@AAEXXZ 0041d060 f i foundation_win32.release:console.obj
+ 0001:0001c0e0       ??0?$Ptr@VConsoleHandler@IO@@@@QAE@XZ 0041d0e0 f i foundation_win32.release:console.obj
+ 0001:0001c100       ?GrowTo@?$Array@V?$Ptr@VConsoleHandler@IO@@@@@Util@@AAEXH@Z 0041d100 f i foundation_win32.release:console.obj
+ 0001:0001c220       ??0SystemInfoBase@Base@@QAE@XZ 0041d220 f   foundation_win32.release:systeminfobase.obj
+ 0001:0001c260       ?PlatformAsString@SystemInfoBase@Base@@SA?AVString@Util@@W4Platform@12@@Z 0041d260 f   foundation_win32.release:systeminfobase.obj
+ 0001:0001c3b0       ?CpuTypeAsString@SystemInfoBase@Base@@SA?AVString@Util@@W4CpuType@12@@Z 0041d3b0 f   foundation_win32.release:systeminfobase.obj
+ 0001:0001c540       ?CheckValidCharSet@String@Util@@QBE_NABV12@@Z 0041d540 f i foundation_win32.release:win360ipaddress.obj
+ 0001:0001c5e0       ?Host@URI@IO@@QBEABVString@Util@@XZ 0041d5e0 f i foundation_win32.release:win360ipaddress.obj
+ 0001:0001c600       ?Port@URI@IO@@QBEABVString@Util@@XZ 0041d600 f i foundation_win32.release:win360ipaddress.obj
+ 0001:0001c620       ??0Win360IpAddress@Win360@@QAE@XZ 0041d620 f   foundation_win32.release:win360ipaddress.obj
+ 0001:0001c6b0       ??0Win360IpAddress@Win360@@QAE@ABV01@@Z 0041d6b0 f   foundation_win32.release:win360ipaddress.obj
+ 0001:0001c790       ??0Win360IpAddress@Win360@@QAE@ABVString@Util@@G@Z 0041d790 f   foundation_win32.release:win360ipaddress.obj
+ 0001:0001c830       ??0Win360IpAddress@Win360@@QAE@ABVURI@IO@@@Z 0041d830 f   foundation_win32.release:win360ipaddress.obj
+ 0001:0001c8c0       ??0Win360IpAddress@Win360@@AAE@ABUsockaddr_in@@@Z 0041d8c0 f   foundation_win32.release:win360ipaddress.obj
+ 0001:0001c950       ?SetSockAddr@Win360IpAddress@Win360@@AAEXABUsockaddr_in@@@Z 0041d950 f   foundation_win32.release:win360ipaddress.obj
+ 0001:0001c9f0       ?GetSockAddr@Win360IpAddress@Win360@@ABEABUsockaddr_in@@XZ 0041d9f0 f   foundation_win32.release:win360ipaddress.obj
+ 0001:0001ca10       ?ExtractFromUri@Win360IpAddress@Win360@@QAEXABVURI@IO@@@Z 0041da10 f   foundation_win32.release:win360ipaddress.obj
+ 0001:0001cad0       ?SetPort@Win360IpAddress@Win360@@QAEXG@Z 0041dad0 f   foundation_win32.release:win360ipaddress.obj
+ 0001:0001caf0       ?GetPort@Win360IpAddress@Win360@@QBEGXZ 0041daf0 f   foundation_win32.release:win360ipaddress.obj
+ 0001:0001cb10       ?SetHostName@Win360IpAddress@Win360@@QAEXABVString@Util@@@Z 0041db10 f   foundation_win32.release:win360ipaddress.obj
+ 0001:0001cbd0       ?GetHostName@Win360IpAddress@Win360@@QBEABVString@Util@@XZ 0041dbd0 f   foundation_win32.release:win360ipaddress.obj
+ 0001:0001cbe0       ?GetHostAddr@Win360IpAddress@Win360@@QBEABVString@Util@@XZ 0041dbe0 f   foundation_win32.release:win360ipaddress.obj
+ 0001:0001cc00       ?GetHostByName@Win360IpAddress@Win360@@CA_NABVString@Util@@AAUin_addr@@@Z 0041dc00 f   foundation_win32.release:win360ipaddress.obj
+ 0001:0001cef0       ?IsInetAddr@Win360IpAddress@Win360@@CA_NPBUin_addr@@@Z 0041def0 f   foundation_win32.release:win360ipaddress.obj
+ 0001:0001d0f0       ??2Socket@Net@@SAPAXI@Z    0041e0f0 f i foundation_win32.release:socket.obj
+ 0001:0001d100       ??3Socket@Net@@SAXPAX@Z    0041e100 f i foundation_win32.release:socket.obj
+ 0001:0001d120       ?GetRtti@Socket@Net@@UBEPAVRtti@Core@@XZ 0041e120 f   foundation_win32.release:socket.obj
+ 0001:0001d130       ?FactoryCreator@Socket@Net@@SAPAVRefCounted@Core@@XZ 0041e130 f   foundation_win32.release:socket.obj
+ 0001:0001d140       ?Create@Socket@Net@@SAPAV12@XZ 0041e140 f   foundation_win32.release:socket.obj
+ 0001:0001d180       ??0Socket@Net@@QAE@XZ      0041e180 f i foundation_win32.release:socket.obj
+ 0001:0001d1a0       ??_GSocket@Net@@UAEPAXI@Z  0041e1a0 f i foundation_win32.release:socket.obj
+ 0001:0001d1a0       ??_ESocket@Net@@UAEPAXI@Z  0041e1a0 f i  CIL library: CIL module
+ 0001:0001d1d0       ??1Socket@Net@@UAE@XZ      0041e1d0 f i foundation_win32.release:socket.obj
+ 0001:0001d1f0       ?RegisterWithFactory@Socket@Net@@SA_NXZ 0041e1f0 f   foundation_win32.release:socket.obj
+ 0001:0001d2f0       ?IsValid@StringBuffer@Util@@QBE_NXZ 0041e2f0 f i foundation_win32.release:stringbuffer.obj
+ 0001:0001d310       ??0StringBuffer@Util@@QAE@XZ 0041e310 f   foundation_win32.release:stringbuffer.obj
+ 0001:0001d340       ??1StringBuffer@Util@@QAE@XZ 0041e340 f   foundation_win32.release:stringbuffer.obj
+ 0001:0001d370       ?Setup@StringBuffer@Util@@QAEXH@Z 0041e370 f   foundation_win32.release:stringbuffer.obj
+ 0001:0001d3d0       ?Discard@StringBuffer@Util@@QAEXXZ 0041e3d0 f   foundation_win32.release:stringbuffer.obj
+ 0001:0001d470       ?AllocNewChunk@StringBuffer@Util@@AAEXXZ 0041e470 f   foundation_win32.release:stringbuffer.obj
+ 0001:0001d4b0       ?AddString@StringBuffer@Util@@QAEPBDPBD@Z 0041e4b0 f   foundation_win32.release:stringbuffer.obj
+ 0001:0001d5d0       ??0?$Array@PAD@Util@@QAE@XZ 0041e5d0 f i foundation_win32.release:stringbuffer.obj
+ 0001:0001d610       ??1?$Array@PAD@Util@@QAE@XZ 0041e610 f i foundation_win32.release:stringbuffer.obj
+ 0001:0001d630       ??A?$Array@PAD@Util@@QBEAAPADH@Z 0041e630 f i foundation_win32.release:stringbuffer.obj
+ 0001:0001d680       ?Append@?$Array@PAD@Util@@QAEXABQAD@Z 0041e680 f i foundation_win32.release:stringbuffer.obj
+ 0001:0001d6f0       ?Back@?$Array@PAD@Util@@QBEAAPADXZ 0041e6f0 f i foundation_win32.release:stringbuffer.obj
+ 0001:0001d740       ?Clear@?$Array@PAD@Util@@QAEXXZ 0041e740 f i foundation_win32.release:stringbuffer.obj
+ 0001:0001d790       ?Destroy@?$Array@PAD@Util@@AAEXPAPAD@Z 0041e790 f i foundation_win32.release:stringbuffer.obj
+ 0001:0001d7a0       ?Delete@?$Array@PAD@Util@@AAEXXZ 0041e7a0 f i foundation_win32.release:stringbuffer.obj
+ 0001:0001d800       ?Grow@?$Array@PAD@Util@@AAEXXZ 0041e800 f i foundation_win32.release:stringbuffer.obj
+ 0001:0001d880       ?GrowTo@?$Array@PAD@Util@@AAEXH@Z 0041e880 f i foundation_win32.release:stringbuffer.obj
+ 0001:0001d930       ?GetNumCpuCores@SystemInfoBase@Base@@QBEHXZ 0041e930 f i foundation_win32.release:win360criticalsection.obj
+ 0001:0001d950       ??0Win360CriticalSection@Win360@@QAE@XZ 0041e950 f   foundation_win32.release:win360criticalsection.obj
+ 0001:0001d9c0       ??1Win360CriticalSection@Win360@@QAE@XZ 0041e9c0 f   foundation_win32.release:win360criticalsection.obj
+ 0001:0001d9f0       ??2Win32ConsoleHandler@Win32@@SAPAXI@Z 0041e9f0 f i foundation_win32.release:win32consolehandler.obj
+ 0001:0001da00       ??3Win32ConsoleHandler@Win32@@SAXPAX@Z 0041ea00 f i foundation_win32.release:win32consolehandler.obj
+ 0001:0001da20       ?Value@StringAtom@Util@@QBEPBDXZ 0041ea20 f i foundation_win32.release:win32consolehandler.obj
+ 0001:0001da30       ?Instance@CoreServer@Core@@SAPAV12@XZ 0041ea30 f i foundation_win32.release:win32consolehandler.obj
+ 0001:0001da70       ?HasInstance@CoreServer@Core@@SA_NXZ 0041ea70 f i foundation_win32.release:win32consolehandler.obj
+ 0001:0001da90       ?GetAppName@CoreServer@Core@@QBEABVStringAtom@Util@@XZ 0041ea90 f i foundation_win32.release:win32consolehandler.obj
+ 0001:0001dab0       ?GetRtti@Win32ConsoleHandler@Win32@@UBEPAVRtti@Core@@XZ 0041eab0 f   foundation_win32.release:win32consolehandler.obj
+ 0001:0001dac0       ?FactoryCreator@Win32ConsoleHandler@Win32@@SAPAVRefCounted@Core@@XZ 0041eac0 f   foundation_win32.release:win32consolehandler.obj
+ 0001:0001dad0       ?Create@Win32ConsoleHandler@Win32@@SAPAV12@XZ 0041ead0 f   foundation_win32.release:win32consolehandler.obj
+ 0001:0001db10       ?RegisterWithFactory@Win32ConsoleHandler@Win32@@SA_NXZ 0041eb10 f   foundation_win32.release:win32consolehandler.obj
+ 0001:0001dc10       ??0Win32ConsoleHandler@Win32@@QAE@XZ 0041ec10 f   foundation_win32.release:win32consolehandler.obj
+ 0001:0001dcb0       ??_EWin32ConsoleHandler@Win32@@UAEPAXI@Z 0041ecb0 f i  CIL library: CIL module
+ 0001:0001dcb0       ??_GWin32ConsoleHandler@Win32@@UAEPAXI@Z 0041ecb0 f i foundation_win32.release:win32consolehandler.obj
+ 0001:0001dce0       ??1Win32ConsoleHandler@Win32@@UAE@XZ 0041ece0 f i foundation_win32.release:win32consolehandler.obj
+ 0001:0001dd00       ?Print@Win32ConsoleHandler@Win32@@UAEXABVString@Util@@@Z 0041ed00 f   foundation_win32.release:win32consolehandler.obj
+ 0001:0001ddd0       ?DebugOut@Win32ConsoleHandler@Win32@@UAEXABVString@Util@@@Z 0041edd0 f   foundation_win32.release:win32consolehandler.obj
+ 0001:0001de10       ?Error@Win32ConsoleHandler@Win32@@UAEXABVString@Util@@@Z 0041ee10 f   foundation_win32.release:win32consolehandler.obj
+ 0001:0001df50       ?Warning@Win32ConsoleHandler@Win32@@UAEXABVString@Util@@@Z 0041ef50 f   foundation_win32.release:win32consolehandler.obj
+ 0001:0001dfa0       ?Confirm@Win32ConsoleHandler@Win32@@UAEXABVString@Util@@@Z 0041efa0 f   foundation_win32.release:win32consolehandler.obj
+ 0001:0001e020       ?HasInput@Win32ConsoleHandler@Win32@@UAE_NXZ 0041f020 f   foundation_win32.release:win32consolehandler.obj
+ 0001:0001e0d0       ?GetInput@Win32ConsoleHandler@Win32@@UAE?AVString@Util@@XZ 0041f0d0 f   foundation_win32.release:win32consolehandler.obj
+ 0001:0001e210       ??2ConsoleHandler@IO@@SAPAXI@Z 0041f210 f i foundation_win32.release:consolehandler.obj
+ 0001:0001e220       ??3ConsoleHandler@IO@@SAXPAX@Z 0041f220 f i foundation_win32.release:consolehandler.obj
+ 0001:0001e240       ?IsOpen@ConsoleHandler@IO@@QBE_NXZ 0041f240 f i foundation_win32.release:consolehandler.obj
+ 0001:0001e260       ?GetRtti@ConsoleHandler@IO@@UBEPAVRtti@Core@@XZ 0041f260 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e270       ?FactoryCreator@ConsoleHandler@IO@@SAPAVRefCounted@Core@@XZ 0041f270 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e280       ?Create@ConsoleHandler@IO@@SAPAV12@XZ 0041f280 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e2c0       ?RegisterWithFactory@ConsoleHandler@IO@@SA_NXZ 0041f2c0 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e3c0       ??0ConsoleHandler@IO@@QAE@XZ 0041f3c0 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e400       ??_GConsoleHandler@IO@@UAEPAXI@Z 0041f400 f i foundation_win32.release:consolehandler.obj
+ 0001:0001e400       ??_EConsoleHandler@IO@@UAEPAXI@Z 0041f400 f i  CIL library: CIL module
+ 0001:0001e430       ??1ConsoleHandler@IO@@UAE@XZ 0041f430 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e470       ?Open@ConsoleHandler@IO@@UAEXXZ 0041f470 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e4b0       ?Close@ConsoleHandler@IO@@UAEXXZ 0041f4b0 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e4f0       ?Update@ConsoleHandler@IO@@UAEXXZ 0041f4f0 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e530       ?Print@ConsoleHandler@IO@@UAEXABVString@Util@@@Z 0041f530 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e540       ?Error@ConsoleHandler@IO@@UAEXABVString@Util@@@Z 0041f540 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e550       ?Warning@ConsoleHandler@IO@@UAEXABVString@Util@@@Z 0041f550 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e560       ?Confirm@ConsoleHandler@IO@@UAEXABVString@Util@@@Z 0041f560 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e570       ?DebugOut@ConsoleHandler@IO@@UAEXABVString@Util@@@Z 0041f570 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e580       ?HasInput@ConsoleHandler@IO@@UAE_NXZ 0041f580 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e590       ?GetInput@ConsoleHandler@IO@@UAE?AVString@Util@@XZ 0041f590 f   foundation_win32.release:consolehandler.obj
+ 0001:0001e5d2       _HeapAlloc@12              0041f5d2 f   kernel32:KERNEL32.dll
+ 0001:0001e5d8       _HeapReAlloc@16            0041f5d8 f   kernel32:KERNEL32.dll
+ 0001:0001e5de       _HeapSize@12               0041f5de f   kernel32:KERNEL32.dll
+ 0001:0001e5e4       _HeapFree@12               0041f5e4 f   kernel32:KERNEL32.dll
+ 0001:0001e5ea       _GlobalMemoryStatus@4      0041f5ea f   kernel32:KERNEL32.dll
+ 0001:0001e5f0       _IsProcessorFeaturePresent@4 0041f5f0 f   kernel32:KERNEL32.dll
+ 0001:0001e5f6       _ExitProcess@4             0041f5f6 f   kernel32:KERNEL32.dll
+ 0001:0001e5fc       _Sleep@4                   0041f5fc f   kernel32:KERNEL32.dll
+ 0001:0001e602       _OutputDebugStringA@4      0041f602 f   kernel32:KERNEL32.dll
+ 0001:0001e608       _QueryPerformanceCounter@4 0041f608 f   kernel32:KERNEL32.dll
+ 0001:0001e60e       _QueryPerformanceFrequency@4 0041f60e f   kernel32:KERNEL32.dll
+ 0001:0001e614       _InterlockedPushEntrySList@8 0041f614 f   kernel32:KERNEL32.dll
+ 0001:0001e61a       _InterlockedPopEntrySList@4 0041f61a f   kernel32:KERNEL32.dll
+ 0001:0001e620       _HeapCreate@12             0041f620 f   kernel32:KERNEL32.dll
+ 0001:0001e626       _HeapSetInformation@16     0041f626 f   kernel32:KERNEL32.dll
+ 0001:0001e62c       _HeapDestroy@4             0041f62c f   kernel32:KERNEL32.dll
+ 0001:0001e632       _GetSystemInfo@4           0041f632 f   kernel32:KERNEL32.dll
+ 0001:0001e638       _GetCurrentThreadId@0      0041f638 f   kernel32:KERNEL32.dll
+ 0001:0001e63e       _CloseHandle@4             0041f63e f   kernel32:KERNEL32.dll
+ 0001:0001e644       _WaitForSingleObject@8     0041f644 f   kernel32:KERNEL32.dll
+ 0001:0001e64a       _CreateEventA@16           0041f64a f   kernel32:KERNEL32.dll
+ 0001:0001e650       _SetEvent@4                0041f650 f   kernel32:KERNEL32.dll
+ 0001:0001e656       _CreateThread@24           0041f656 f   kernel32:KERNEL32.dll
+ 0001:0001e65c       _SetThreadPriority@8       0041f65c f   kernel32:KERNEL32.dll
+ 0001:0001e662       _ResumeThread@4            0041f662 f   kernel32:KERNEL32.dll
+ 0001:0001e668       _GetExitCodeThread@8       0041f668 f   kernel32:KERNEL32.dll
+ 0001:0001e66e       _RaiseException@16         0041f66e f   kernel32:KERNEL32.dll
+ 0001:0001e674       _SetUnhandledExceptionFilter@4 0041f674 f   kernel32:KERNEL32.dll
+ 0001:0001e67a       _CreateFileA@28            0041f67a f   kernel32:KERNEL32.dll
+ 0001:0001e680       _GetCurrentProcess@0       0041f680 f   kernel32:KERNEL32.dll
+ 0001:0001e686       _GetCurrentProcessId@0     0041f686 f   kernel32:KERNEL32.dll
+ 0001:0001e68c       _GetModuleFileNameA@12     0041f68c f   kernel32:KERNEL32.dll
+ 0001:0001e692       _GetLocalTime@4            0041f692 f   kernel32:KERNEL32.dll
+ 0001:0001e698       _InterlockedCompareExchange@12 0041f698 f   kernel32:KERNEL32.dll
+ 0001:0001e69e       _CreateSemaphoreA@16       0041f69e f   kernel32:KERNEL32.dll
+ 0001:0001e6a4       _ReleaseSemaphore@12       0041f6a4 f   kernel32:KERNEL32.dll
+ 0001:0001e6aa       _GetStdHandle@4            0041f6aa f   kernel32:KERNEL32.dll
+ 0001:0001e6b0       _GetConsoleMode@8          0041f6b0 f   kernel32:KERNEL32.dll
+ 0001:0001e6b6       _WriteConsoleA@20          0041f6b6 f   kernel32:KERNEL32.dll
+ 0001:0001e6bc       _WriteFile@20              0041f6bc f   kernel32:KERNEL32.dll
+ 0001:0001e6c2       _PeekConsoleInputA@16      0041f6c2 f   kernel32:KERNEL32.dll
+ 0001:0001e6c8       _FlushConsoleInputBuffer@4 0041f6c8 f   kernel32:KERNEL32.dll
+ 0001:0001e6ce       _ReadConsoleA@20           0041f6ce f   kernel32:KERNEL32.dll
+ 0001:0001e6d4       _MessageBoxA@16            0041f6d4 f   user32:USER32.dll
+ 0001:0001e6da       _FindWindowA@8             0041f6da f   user32:USER32.dll
+ 0001:0001e6e0       _ShowWindow@8              0041f6e0 f   user32:USER32.dll
+ 0001:0001e6e6       __onexit                   0041f6e6 f   MSVCRT:atonexit.obj
+ 0001:0001e78b       _atexit                    0041f78b f   MSVCRT:atonexit.obj
+ 0001:0001e7a2       _NtCurrentTeb              0041f7a2 f i MSVCRT:crtexe.obj
+ 0001:0001eaaa       _mainCRTStartup            0041faaa f   MSVCRT:crtexe.obj
+ 0001:0001eab4       __vsnprintf                0041fab4 f   MSVCRT:MSVCR90.dll
+ 0001:0001eaba       _strtok                    0041faba f   MSVCRT:MSVCR90.dll
+ 0001:0001eac0       _strchr                    0041fac0 f   MSVCRT:MSVCR90.dll
+ 0001:0001eac6       _strpbrk                   0041fac6 f   MSVCRT:MSVCR90.dll
+ 0001:0001eacc       _strncmp                   0041facc f   MSVCRT:MSVCR90.dll
+ 0001:0001ead2       _strstr                    0041fad2 f   MSVCRT:MSVCR90.dll
+ 0001:0001ead8       _strrchr                   0041fad8 f   MSVCRT:MSVCR90.dll
+ 0001:0001eade       _tolower                   0041fade f   MSVCRT:MSVCR90.dll
+ 0001:0001eae4       _toupper                   0041fae4 f   MSVCRT:MSVCR90.dll
+ 0001:0001eaea       _atoi                      0041faea f   MSVCRT:MSVCR90.dll
+ 0001:0001eaf0       _atof                      0041faf0 f   MSVCRT:MSVCR90.dll
+ 0001:0001eaf6       _isdigit                   0041faf6 f   MSVCRT:MSVCR90.dll
+ 0001:0001eafc       _isalpha                   0041fafc f   MSVCRT:MSVCR90.dll
+ 0001:0001eb02       _isalnum                   0041fb02 f   MSVCRT:MSVCR90.dll
+ 0001:0001eb08       _islower                   0041fb08 f   MSVCRT:MSVCR90.dll
+ 0001:0001eb0e       _isupper                   0041fb0e f   MSVCRT:MSVCR90.dll
+ 0001:0001eb14       __cexit                    0041fb14 f   MSVCRT:MSVCR90.dll
+ 0001:0001eb1a       _abort                     0041fb1a f   MSVCRT:MSVCR90.dll
+ 0001:0001eb20       __unlock                   0041fb20 f   MSVCRT:MSVCR90.dll
+ 0001:0001eb26       ___dllonexit               0041fb26 f   MSVCRT:MSVCR90.dll
+ 0001:0001eb2c       __encode_pointer           0041fb2c f   MSVCRT:MSVCR90.dll
+ 0001:0001eb32       __lock                     0041fb32 f   MSVCRT:MSVCR90.dll
+ 0001:0001eb38       __decode_pointer           0041fb38 f   MSVCRT:MSVCR90.dll
+ 0001:0001eb40       __SEH_prolog4              0041fb40 f   MSVCRT:sehprolg4.obj
+ 0001:0001eb85       __SEH_epilog4              0041fb85 f   MSVCRT:sehprolg4.obj
+ 0001:0001eb99       __except_handler4          0041fb99 f   MSVCRT:chandler4gs.obj
+ 0001:0001ebbe       ?__CxxUnhandledExceptionFilter@@YGJPAU_EXCEPTION_POINTERS@@@Z 0041fbbe f   MSVCRT:unhandld.obj
+ 0001:0001ec00       ___CxxSetUnhandledExceptionFilter 0041fc00 f   MSVCRT:unhandld.obj
+ 0001:0001ec0e       __amsg_exit                0041fc0e f   MSVCRT:MSVCR90.dll
+ 0001:0001ec14       ___getmainargs             0041fc14 f   MSVCRT:MSVCR90.dll
+ 0001:0001ec1a       __RTC_Initialize           0041fc1a f   MSVCRT:_initsect_.obj
+ 0001:0001ec40       __RTC_Terminate            0041fc40 f   MSVCRT:_initsect_.obj
+ 0001:0001ec66       __exit                     0041fc66 f   MSVCRT:MSVCR90.dll
+ 0001:0001ec6c       __XcptFilter               0041fc6c f   MSVCRT:MSVCR90.dll
+ 0001:0001ec72       _exit                      0041fc72 f   MSVCRT:MSVCR90.dll
+ 0001:0001ec80       __ValidateImageBase        0041fc80 f   MSVCRT:pesect.obj
+ 0001:0001ecc0       __FindPESection            0041fcc0 f   MSVCRT:pesect.obj
+ 0001:0001ed10       __IsNonwritableInCurrentImage 0041fd10 f   MSVCRT:pesect.obj
+ 0001:0001edce       __initterm                 0041fdce f   MSVCRT:MSVCR90.dll
+ 0001:0001edd4       __initterm_e               0041fdd4 f   MSVCRT:MSVCR90.dll
+ 0001:0001edda       __configthreadlocale       0041fdda f   MSVCRT:MSVCR90.dll
+ 0001:0001ede0       __invoke_watson_if_error   0041fde0 f i MSVCRT:fp8.obj
+ 0001:0001ee04       __setdefaultprecision      0041fe04 f   MSVCRT:fp8.obj
+ 0001:0001ee30       ___setusermatherr          0041fe30 f   MSVCRT:MSVCR90.dll
+ 0001:0001ee36       __matherr                  0041fe36 f   MSVCRT:merr.obj
+ 0001:0001ee39       __setargv                  0041fe39 f   MSVCRT:dllargv.obj
+ 0001:0001ee3c       ___p__commode              0041fe3c f   MSVCRT:MSVCR90.dll
+ 0001:0001ee42       ___p__fmode                0041fe42 f   MSVCRT:MSVCR90.dll
+ 0001:0001ee48       ___set_app_type            0041fe48 f   MSVCRT:MSVCR90.dll
+ 0001:0001ee4e       ___security_init_cookie    0041fe4e f   MSVCRT:gs_support.obj
+ 0001:0001eee4       @__security_check_cookie@4 0041fee4 f   MSVCRT:secchk.obj
+ 0001:0001eef4       __except_handler4_common   0041fef4 f   MSVCRT:MSVCR90.dll
+ 0001:0001eefa       ?terminate@@YAXXZ          0041fefa f   MSVCRT:MSVCR90.dll
+ 0001:0001ef00       __invoke_watson            0041ff00 f   MSVCRT:MSVCR90.dll
+ 0001:0001ef06       __controlfp_s              0041ff06 f   MSVCRT:MSVCR90.dll
+ 0001:0001ef0c       ___report_gsfailure        0041ff0c f   MSVCRT:gs_report.obj
+ 0001:0001f012       __crt_debugger_hook        00420012 f   MSVCRT:MSVCR90.dll
+ 0001:0001f018       _MiniDumpWriteDump@28      00420018 f   dbghelp:dbghelp.dll
+ 0001:0001f01e       _WSAStartup@8              0042001e f   wsock32:WSOCK32.dll
+ 0001:0001f024       _socket@12                 00420024 f   wsock32:WSOCK32.dll
+ 0001:0001f02a       _shutdown@8                0042002a f   wsock32:WSOCK32.dll
+ 0001:0001f030       _closesocket@4             00420030 f   wsock32:WSOCK32.dll
+ 0001:0001f036       _setsockopt@20             00420036 f   wsock32:WSOCK32.dll
+ 0001:0001f03c       _getsockopt@20             0042003c f   wsock32:WSOCK32.dll
+ 0001:0001f042       _ioctlsocket@12            00420042 f   wsock32:WSOCK32.dll
+ 0001:0001f048       _bind@12                   00420048 f   wsock32:WSOCK32.dll
+ 0001:0001f04e       _listen@8                  0042004e f   wsock32:WSOCK32.dll
+ 0001:0001f054       _accept@12                 00420054 f   wsock32:WSOCK32.dll
+ 0001:0001f05a       _connect@12                0042005a f   wsock32:WSOCK32.dll
+ 0001:0001f060       _WSAGetLastError@0         00420060 f   wsock32:WSOCK32.dll
+ 0001:0001f066       _select@20                 00420066 f   wsock32:WSOCK32.dll
+ 0001:0001f06c       _send@16                   0042006c f   wsock32:WSOCK32.dll
+ 0001:0001f072       _recv@16                   00420072 f   wsock32:WSOCK32.dll
+ 0001:0001f078       _htons@4                   00420078 f   wsock32:WSOCK32.dll
+ 0001:0001f07e       _ntohs@4                   0042007e f   wsock32:WSOCK32.dll
+ 0001:0001f084       _htonl@4                   00420084 f   wsock32:WSOCK32.dll
+ 0001:0001f08a       _gethostname@8             0042008a f   wsock32:WSOCK32.dll
+ 0001:0001f090       _gethostbyname@4           00420090 f   wsock32:WSOCK32.dll
+ 0001:0001f096       _inet_addr@4               00420096 f   wsock32:WSOCK32.dll
+ 0001:0001f09c       _InterlockedExchange@8     0042009c f   kernel32:KERNEL32.dll
+ 0001:0001f0a2       _GetTickCount@0            004200a2 f   kernel32:KERNEL32.dll
+ 0001:0001f0a8       _GetSystemTimeAsFileTime@4 004200a8 f   kernel32:KERNEL32.dll
+ 0001:0001f0ae       _TerminateProcess@8        004200ae f   kernel32:KERNEL32.dll
+ 0001:0001f0b4       _UnhandledExceptionFilter@4 004200b4 f   kernel32:KERNEL32.dll
+ 0001:0001f0ba       _IsDebuggerPresent@0       004200ba f   kernel32:KERNEL32.dll
+ 0001:0001f0c0       __stricmp                  004200c0 f   MSVCRT:MSVCR90.dll
+ 0001:0001f0d0       __except_handler3          004200d0 f   MSVCRT:MSVCR90.dll
+ 0001:0001f0d6       _memset                    004200d6 f   MSVCRT:MSVCR90.dll
+ 0001:0001f0e0       __ftol2_sse                004200e0 f   MSVCRT:ftol2.obj
+ 0001:0001f0e9       __ftol2_pentium4           004200e9 f   MSVCRT:ftol2.obj
+ 0001:0001f0fc       __ftol2_sse_excpt          004200fc f   MSVCRT:ftol2.obj
+ 0001:0001f116       __ftol2                    00420116 f   MSVCRT:ftol2.obj
+ 0001:0001f190       __alldiv                   00420190 f   MSVCRT:lldiv.obj
+ 0001:0001f240       __alloca_probe             00420240     MSVCRT:chkstk.obj
+ 0001:0001f240       __chkstk                   00420240 f   MSVCRT:chkstk.obj
+ 0001:0001f26c       _memcpy                    0042026c f   MSVCRT:MSVCR90.dll
+ 0001:0001f2c2       __get_sse2_info            004202c2 f   MSVCRT:cpu_disp.obj
+ 0001:0001f324       ___sse2_available_init     00420324 f   MSVCRT:cpu_disp.obj
+ 0002:00000000       __imp__HeapAlloc@12        00421000     kernel32:KERNEL32.dll
+ 0002:00000004       __imp__HeapReAlloc@16      00421004     kernel32:KERNEL32.dll
+ 0002:00000008       __imp__HeapSize@12         00421008     kernel32:KERNEL32.dll
+ 0002:0000000c       __imp__HeapFree@12         0042100c     kernel32:KERNEL32.dll
+ 0002:00000010       __imp__GlobalMemoryStatus@4 00421010     kernel32:KERNEL32.dll
+ 0002:00000014       __imp__IsProcessorFeaturePresent@4 00421014     kernel32:KERNEL32.dll
+ 0002:00000018       __imp__ExitProcess@4       00421018     kernel32:KERNEL32.dll
+ 0002:0000001c       __imp__Sleep@4             0042101c     kernel32:KERNEL32.dll
+ 0002:00000020       __imp__OutputDebugStringA@4 00421020     kernel32:KERNEL32.dll
+ 0002:00000024       __imp__QueryPerformanceCounter@4 00421024     kernel32:KERNEL32.dll
+ 0002:00000028       __imp__QueryPerformanceFrequency@4 00421028     kernel32:KERNEL32.dll
+ 0002:0000002c       __imp__InterlockedPushEntrySList@8 0042102c     kernel32:KERNEL32.dll
+ 0002:00000030       __imp__InterlockedPopEntrySList@4 00421030     kernel32:KERNEL32.dll
+ 0002:00000034       __imp__HeapCreate@12       00421034     kernel32:KERNEL32.dll
+ 0002:00000038       __imp__HeapSetInformation@16 00421038     kernel32:KERNEL32.dll
+ 0002:0000003c       __imp__HeapDestroy@4       0042103c     kernel32:KERNEL32.dll
+ 0002:00000040       __imp__GetSystemInfo@4     00421040     kernel32:KERNEL32.dll
+ 0002:00000044       __imp__GetCurrentThreadId@0 00421044     kernel32:KERNEL32.dll
+ 0002:00000048       __imp__CloseHandle@4       00421048     kernel32:KERNEL32.dll
+ 0002:0000004c       __imp__WaitForSingleObject@8 0042104c     kernel32:KERNEL32.dll
+ 0002:00000050       __imp__CreateEventA@16     00421050     kernel32:KERNEL32.dll
+ 0002:00000054       __imp__SetEvent@4          00421054     kernel32:KERNEL32.dll
+ 0002:00000058       __imp__CreateThread@24     00421058     kernel32:KERNEL32.dll
+ 0002:0000005c       __imp__SetThreadPriority@8 0042105c     kernel32:KERNEL32.dll
+ 0002:00000060       __imp__ResumeThread@4      00421060     kernel32:KERNEL32.dll
+ 0002:00000064       __imp__GetExitCodeThread@8 00421064     kernel32:KERNEL32.dll
+ 0002:00000068       __imp__RaiseException@16   00421068     kernel32:KERNEL32.dll
+ 0002:0000006c       __imp__SetUnhandledExceptionFilter@4 0042106c     kernel32:KERNEL32.dll
+ 0002:00000070       __imp__CreateFileA@28      00421070     kernel32:KERNEL32.dll
+ 0002:00000074       __imp__GetCurrentProcess@0 00421074     kernel32:KERNEL32.dll
+ 0002:00000078       __imp__GetCurrentProcessId@0 00421078     kernel32:KERNEL32.dll
+ 0002:0000007c       __imp__GetModuleFileNameA@12 0042107c     kernel32:KERNEL32.dll
+ 0002:00000080       __imp__GetLocalTime@4      00421080     kernel32:KERNEL32.dll
+ 0002:00000084       __imp__InterlockedCompareExchange@12 00421084     kernel32:KERNEL32.dll
+ 0002:00000088       __imp__CreateSemaphoreA@16 00421088     kernel32:KERNEL32.dll
+ 0002:0000008c       __imp__ReleaseSemaphore@12 0042108c     kernel32:KERNEL32.dll
+ 0002:00000090       __imp__GetStdHandle@4      00421090     kernel32:KERNEL32.dll
+ 0002:00000094       __imp__GetConsoleMode@8    00421094     kernel32:KERNEL32.dll
+ 0002:00000098       __imp__WriteConsoleA@20    00421098     kernel32:KERNEL32.dll
+ 0002:0000009c       __imp__WriteFile@20        0042109c     kernel32:KERNEL32.dll
+ 0002:000000a0       __imp__PeekConsoleInputA@16 004210a0     kernel32:KERNEL32.dll
+ 0002:000000a4       __imp__FlushConsoleInputBuffer@4 004210a4     kernel32:KERNEL32.dll
+ 0002:000000a8       __imp__ReadConsoleA@20     004210a8     kernel32:KERNEL32.dll
+ 0002:000000ac       __imp__GetTickCount@0      004210ac     kernel32:KERNEL32.dll
+ 0002:000000b0       __imp__GetSystemTimeAsFileTime@4 004210b0     kernel32:KERNEL32.dll
+ 0002:000000b4       __imp__TerminateProcess@8  004210b4     kernel32:KERNEL32.dll
+ 0002:000000b8       __imp__IsDebuggerPresent@0 004210b8     kernel32:KERNEL32.dll
+ 0002:000000bc       __imp__InterlockedExchange@8 004210bc     kernel32:KERNEL32.dll
+ 0002:000000c0       __imp__UnhandledExceptionFilter@4 004210c0     kernel32:KERNEL32.dll
+ 0002:000000c4       \177KERNEL32_NULL_THUNK_DATA 004210c4     kernel32:KERNEL32.dll
+ 0002:000000c8       __imp__strchr              004210c8     MSVCRT:MSVCR90.dll
+ 0002:000000cc       __imp__strpbrk             004210cc     MSVCRT:MSVCR90.dll
+ 0002:000000d0       __imp__strncmp             004210d0     MSVCRT:MSVCR90.dll
+ 0002:000000d4       __imp__strstr              004210d4     MSVCRT:MSVCR90.dll
+ 0002:000000d8       __imp__strrchr             004210d8     MSVCRT:MSVCR90.dll
+ 0002:000000dc       __imp__tolower             004210dc     MSVCRT:MSVCR90.dll
+ 0002:000000e0       __imp__toupper             004210e0     MSVCRT:MSVCR90.dll
+ 0002:000000e4       __imp__atoi                004210e4     MSVCRT:MSVCR90.dll
+ 0002:000000e8       __imp__atof                004210e8     MSVCRT:MSVCR90.dll
+ 0002:000000ec       __imp__isdigit             004210ec     MSVCRT:MSVCR90.dll
+ 0002:000000f0       __imp__isalpha             004210f0     MSVCRT:MSVCR90.dll
+ 0002:000000f4       __imp__isalnum             004210f4     MSVCRT:MSVCR90.dll
+ 0002:000000f8       __imp__islower             004210f8     MSVCRT:MSVCR90.dll
+ 0002:000000fc       __imp__isupper             004210fc     MSVCRT:MSVCR90.dll
+ 0002:00000100       __imp___cexit              00421100     MSVCRT:MSVCR90.dll
+ 0002:00000104       __imp__abort               00421104     MSVCRT:MSVCR90.dll
+ 0002:00000108       __imp___unlock             00421108     MSVCRT:MSVCR90.dll
+ 0002:0000010c       __imp____dllonexit         0042110c     MSVCRT:MSVCR90.dll
+ 0002:00000110       __imp___encode_pointer     00421110     MSVCRT:MSVCR90.dll
+ 0002:00000114       __imp___lock               00421114     MSVCRT:MSVCR90.dll
+ 0002:00000118       __imp___onexit             00421118     MSVCRT:MSVCR90.dll
+ 0002:0000011c       __imp___decode_pointer     0042111c     MSVCRT:MSVCR90.dll
+ 0002:00000120       __imp___amsg_exit          00421120     MSVCRT:MSVCR90.dll
+ 0002:00000124       __imp____getmainargs       00421124     MSVCRT:MSVCR90.dll
+ 0002:00000128       __imp___exit               00421128     MSVCRT:MSVCR90.dll
+ 0002:0000012c       __imp___XcptFilter         0042112c     MSVCRT:MSVCR90.dll
+ 0002:00000130       __imp__exit                00421130     MSVCRT:MSVCR90.dll
+ 0002:00000134       __imp____initenv           00421134     MSVCRT:MSVCR90.dll
+ 0002:00000138       __imp___initterm           00421138     MSVCRT:MSVCR90.dll
+ 0002:0000013c       __imp___initterm_e         0042113c     MSVCRT:MSVCR90.dll
+ 0002:00000140       __imp___configthreadlocale 00421140     MSVCRT:MSVCR90.dll
+ 0002:00000144       __imp____setusermatherr    00421144     MSVCRT:MSVCR90.dll
+ 0002:00000148       __imp___adjust_fdiv        00421148     MSVCRT:MSVCR90.dll
+ 0002:0000014c       __imp____p__commode        0042114c     MSVCRT:MSVCR90.dll
+ 0002:00000150       __imp____p__fmode          00421150     MSVCRT:MSVCR90.dll
+ 0002:00000154       __imp____set_app_type      00421154     MSVCRT:MSVCR90.dll
+ 0002:00000158       __imp___except_handler4_common 00421158     MSVCRT:MSVCR90.dll
+ 0002:0000015c       __imp_?terminate@@YAXXZ    0042115c     MSVCRT:MSVCR90.dll
+ 0002:00000160       __imp___invoke_watson      00421160     MSVCRT:MSVCR90.dll
+ 0002:00000164       __imp___controlfp_s        00421164     MSVCRT:MSVCR90.dll
+ 0002:00000168       __imp___crt_debugger_hook  00421168     MSVCRT:MSVCR90.dll
+ 0002:0000016c       __imp__strtok              0042116c     MSVCRT:MSVCR90.dll
+ 0002:00000170       __imp__stricmp             00421170     MSVCRT:MSVCR90.dll
+ 0002:00000170       __imp___stricmp            00421170     MSVCRT:MSVCR90.dll
+ 0002:00000174       __imp___except_handler3    00421174     MSVCRT:MSVCR90.dll
+ 0002:00000178       __imp__memset              00421178     MSVCRT:MSVCR90.dll
+ 0002:0000017c       __imp___vsnprintf          0042117c     MSVCRT:MSVCR90.dll
+ 0002:00000180       __imp__memcpy              00421180     MSVCRT:MSVCR90.dll
+ 0002:00000184       \177MSVCR90_NULL_THUNK_DATA 00421184     MSVCRT:MSVCR90.dll
+ 0002:00000188       __imp__FindWindowA@8       00421188     user32:USER32.dll
+ 0002:0000018c       __imp__MessageBoxA@16      0042118c     user32:USER32.dll
+ 0002:00000190       __imp__ShowWindow@8        00421190     user32:USER32.dll
+ 0002:00000194       \177USER32_NULL_THUNK_DATA 00421194     user32:USER32.dll
+ 0002:00000198       __imp__listen@8            00421198     wsock32:WSOCK32.dll
+ 0002:0000019c       __imp__accept@12           0042119c     wsock32:WSOCK32.dll
+ 0002:000001a0       __imp__connect@12          004211a0     wsock32:WSOCK32.dll
+ 0002:000001a4       __imp__WSAGetLastError@0   004211a4     wsock32:WSOCK32.dll
+ 0002:000001a8       __imp__select@20           004211a8     wsock32:WSOCK32.dll
+ 0002:000001ac       __imp__send@16             004211ac     wsock32:WSOCK32.dll
+ 0002:000001b0       __imp__recv@16             004211b0     wsock32:WSOCK32.dll
+ 0002:000001b4       __imp__htons@4             004211b4     wsock32:WSOCK32.dll
+ 0002:000001b8       __imp__bind@12             004211b8     wsock32:WSOCK32.dll
+ 0002:000001bc       __imp__htonl@4             004211bc     wsock32:WSOCK32.dll
+ 0002:000001c0       __imp__gethostname@8       004211c0     wsock32:WSOCK32.dll
+ 0002:000001c4       __imp__gethostbyname@4     004211c4     wsock32:WSOCK32.dll
+ 0002:000001c8       __imp__inet_addr@4         004211c8     wsock32:WSOCK32.dll
+ 0002:000001cc       __imp__shutdown@8          004211cc     wsock32:WSOCK32.dll
+ 0002:000001d0       __imp__socket@12           004211d0     wsock32:WSOCK32.dll
+ 0002:000001d4       __imp__WSAStartup@8        004211d4     wsock32:WSOCK32.dll
+ 0002:000001d8       __imp__ioctlsocket@12      004211d8     wsock32:WSOCK32.dll
+ 0002:000001dc       __imp__getsockopt@20       004211dc     wsock32:WSOCK32.dll
+ 0002:000001e0       __imp__setsockopt@20       004211e0     wsock32:WSOCK32.dll
+ 0002:000001e4       __imp__ntohs@4             004211e4     wsock32:WSOCK32.dll
+ 0002:000001e8       __imp__closesocket@4       004211e8     wsock32:WSOCK32.dll
+ 0002:000001ec       \177WSOCK32_NULL_THUNK_DATA 004211ec     wsock32:WSOCK32.dll
+ 0002:000001f0       __imp__MiniDumpWriteDump@28 004211f0     dbghelp:dbghelp.dll
+ 0002:000001f4       \177dbghelp_NULL_THUNK_DATA 004211f4     dbghelp:dbghelp.dll
+ 0002:000001f8       ___xc_a                    004211f8     MSVCRT:cinitexe.obj
+ 0002:00000248       ___xc_z                    00421248     MSVCRT:cinitexe.obj
+ 0002:0000024c       ___xi_a                    0042124c     MSVCRT:cinitexe.obj
+ 0002:0000025c       ___xi_z                    0042125c     MSVCRT:cinitexe.obj
+ 0002:00000260       ___xl_a                    00421260     MSVCRT:tlssup.obj
+ 0002:00000264       ___xl_z                    00421264     MSVCRT:tlssup.obj
+ 0002:0000028c       ?ProcessDetach@NativeDll@<CrtImplementationDetails>@@0IB 0042128c     MSVCRT:unhandld.obj
+ 0002:00000290       ?ProcessAttach@NativeDll@<CrtImplementationDetails>@@0IB 00421290     MSVCRT:unhandld.obj
+ 0002:00000294       ?ThreadAttach@NativeDll@<CrtImplementationDetails>@@0IB 00421294     MSVCRT:unhandld.obj
+ 0002:00000298       ?ThreadDetach@NativeDll@<CrtImplementationDetails>@@0IB 00421298     MSVCRT:unhandld.obj
+ 0002:0000029c       ?ProcessVerifier@NativeDll@<CrtImplementationDetails>@@0IB 0042129c     MSVCRT:unhandld.obj
+ 0002:000002a8       ??_C@_0P@GHFPNOJB@bad?5allocation?$AA@ 004212a8     stdneb.obj
+ 0002:000002c0       ?g_XMSinCoefficients0@@3UXMVECTORF32@@B 004212c0     stdneb.obj
+ 0002:000002d0       ?g_XMSinCoefficients1@@3UXMVECTORF32@@B 004212d0     stdneb.obj
+ 0002:000002e0       ?g_XMSinCoefficients2@@3UXMVECTORF32@@B 004212e0     stdneb.obj
+ 0002:000002f0       ?g_XMCosCoefficients0@@3UXMVECTORF32@@B 004212f0     stdneb.obj
+ 0002:00000300       ?g_XMCosCoefficients1@@3UXMVECTORF32@@B 00421300     stdneb.obj
+ 0002:00000310       ?g_XMCosCoefficients2@@3UXMVECTORF32@@B 00421310     stdneb.obj
+ 0002:00000320       ?g_XMTanCoefficients0@@3UXMVECTORF32@@B 00421320     stdneb.obj
+ 0002:00000330       ?g_XMTanCoefficients1@@3UXMVECTORF32@@B 00421330     stdneb.obj
+ 0002:00000340       ?g_XMTanCoefficients2@@3UXMVECTORF32@@B 00421340     stdneb.obj
+ 0002:00000350       ?g_XMASinCoefficients0@@3UXMVECTORF32@@B 00421350     stdneb.obj
+ 0002:00000360       ?g_XMASinCoefficients1@@3UXMVECTORF32@@B 00421360     stdneb.obj
+ 0002:00000370       ?g_XMASinCoefficients2@@3UXMVECTORF32@@B 00421370     stdneb.obj
+ 0002:00000380       ?g_XMATanCoefficients0@@3UXMVECTORF32@@B 00421380     stdneb.obj
+ 0002:00000390       ?g_XMATanCoefficients1@@3UXMVECTORF32@@B 00421390     stdneb.obj
+ 0002:000003a0       ?g_XMATanCoefficients2@@3UXMVECTORF32@@B 004213a0     stdneb.obj
+ 0002:000003b0       ?g_XMSinEstCoefficients@@3UXMVECTORF32@@B 004213b0     stdneb.obj
+ 0002:000003c0       ?g_XMCosEstCoefficients@@3UXMVECTORF32@@B 004213c0     stdneb.obj
+ 0002:000003d0       ?g_XMTanEstCoefficients@@3UXMVECTORF32@@B 004213d0     stdneb.obj
+ 0002:000003e0       ?g_XMATanEstCoefficients@@3UXMVECTORF32@@B 004213e0     stdneb.obj
+ 0002:000003f0       ?g_XMASinEstCoefficients@@3UXMVECTORF32@@B 004213f0     stdneb.obj
+ 0002:00000400       ?g_XMASinEstConstants@@3UXMVECTORF32@@B 00421400     stdneb.obj
+ 0002:00000410       ?g_XMPiConstants0@@3UXMVECTORF32@@B 00421410     stdneb.obj
+ 0002:00000420       ?g_XMIdentityR0@@3UXMVECTORF32@@B 00421420     stdneb.obj
+ 0002:00000430       ?g_XMIdentityR1@@3UXMVECTORF32@@B 00421430     stdneb.obj
+ 0002:00000440       ?g_XMIdentityR2@@3UXMVECTORF32@@B 00421440     stdneb.obj
+ 0002:00000450       ?g_XMIdentityR3@@3UXMVECTORF32@@B 00421450     stdneb.obj
+ 0002:00000460       ?g_XMNegIdentityR0@@3UXMVECTORF32@@B 00421460     stdneb.obj
+ 0002:00000470       ?g_XMNegIdentityR1@@3UXMVECTORF32@@B 00421470     stdneb.obj
+ 0002:00000480       ?g_XMNegIdentityR2@@3UXMVECTORF32@@B 00421480     stdneb.obj
+ 0002:00000490       ?g_XMNegIdentityR3@@3UXMVECTORF32@@B 00421490     stdneb.obj
+ 0002:000004a0       ?g_XMNegativeZero@@3UXMVECTORI32@@B 004214a0     stdneb.obj
+ 0002:000004b0       ?g_XMNegate3@@3UXMVECTORI32@@B 004214b0     stdneb.obj
+ 0002:000004c0       ?g_XMMask3@@3UXMVECTORI32@@B 004214c0     stdneb.obj
+ 0002:000004d0       ?g_XMMaskX@@3UXMVECTORI32@@B 004214d0     stdneb.obj
+ 0002:000004e0       ?g_XMMaskY@@3UXMVECTORI32@@B 004214e0     stdneb.obj
+ 0002:000004f0       ?g_XMMaskZ@@3UXMVECTORI32@@B 004214f0     stdneb.obj
+ 0002:00000500       ?g_XMMaskW@@3UXMVECTORI32@@B 00421500     stdneb.obj
+ 0002:00000510       ?g_XMOne@@3UXMVECTORF32@@B 00421510     stdneb.obj
+ 0002:00000520       ?g_XMOne3@@3UXMVECTORF32@@B 00421520     stdneb.obj
+ 0002:00000530       ?g_XMZero@@3UXMVECTORF32@@B 00421530     stdneb.obj
+ 0002:00000540       ?g_XMNegativeOne@@3UXMVECTORF32@@B 00421540     stdneb.obj
+ 0002:00000550       ?g_XMOneHalf@@3UXMVECTORF32@@B 00421550     stdneb.obj
+ 0002:00000560       ?g_XMNegativeOneHalf@@3UXMVECTORF32@@B 00421560     stdneb.obj
+ 0002:00000570       ?g_XMNegativeTwoPi@@3UXMVECTORF32@@B 00421570     stdneb.obj
+ 0002:00000580       ?g_XMNegativePi@@3UXMVECTORF32@@B 00421580     stdneb.obj
+ 0002:00000590       ?g_XMHalfPi@@3UXMVECTORF32@@B 00421590     stdneb.obj
+ 0002:000005a0       ?g_XMPi@@3UXMVECTORF32@@B  004215a0     stdneb.obj
+ 0002:000005b0       ?g_XMReciprocalPi@@3UXMVECTORF32@@B 004215b0     stdneb.obj
+ 0002:000005c0       ?g_XMTwoPi@@3UXMVECTORF32@@B 004215c0     stdneb.obj
+ 0002:000005d0       ?g_XMReciprocalTwoPi@@3UXMVECTORF32@@B 004215d0     stdneb.obj
+ 0002:000005e0       ?g_XMEpsilon@@3UXMVECTORF32@@B 004215e0     stdneb.obj
+ 0002:000005f0       ?g_XMInfinity@@3UXMVECTORI32@@B 004215f0     stdneb.obj
+ 0002:00000600       ?g_XMQNaN@@3UXMVECTORI32@@B 00421600     stdneb.obj
+ 0002:00000610       ?g_XMQNaNTest@@3UXMVECTORI32@@B 00421610     stdneb.obj
+ 0002:00000620       ?g_XMAbsMask@@3UXMVECTORI32@@B 00421620     stdneb.obj
+ 0002:00000630       ?g_XMFltMin@@3UXMVECTORI32@@B 00421630     stdneb.obj
+ 0002:00000640       ?g_XMFltMax@@3UXMVECTORI32@@B 00421640     stdneb.obj
+ 0002:00000650       ?g_XMNegOneMask@@3UXMVECTORI32@@B 00421650     stdneb.obj
+ 0002:00000660       ?g_XMMaskA8R8G8B8@@3UXMVECTORI32@@B 00421660     stdneb.obj
+ 0002:00000670       ?g_XMFlipA8R8G8B8@@3UXMVECTORI32@@B 00421670     stdneb.obj
+ 0002:00000680       ?g_XMFixAA8R8G8B8@@3UXMVECTORF32@@B 00421680     stdneb.obj
+ 0002:00000690       ?g_XMNormalizeA8R8G8B8@@3UXMVECTORF32@@B 00421690     stdneb.obj
+ 0002:000006a0       ?g_XMMaskA2B10G10R10@@3UXMVECTORI32@@B 004216a0     stdneb.obj
+ 0002:000006b0       ?g_XMFlipA2B10G10R10@@3UXMVECTORI32@@B 004216b0     stdneb.obj
+ 0002:000006c0       ?g_XMFixAA2B10G10R10@@3UXMVECTORF32@@B 004216c0     stdneb.obj
+ 0002:000006d0       ?g_XMNormalizeA2B10G10R10@@3UXMVECTORF32@@B 004216d0     stdneb.obj
+ 0002:000006e0       ?g_XMMaskX16Y16@@3UXMVECTORI32@@B 004216e0     stdneb.obj
+ 0002:000006f0       ?g_XMFlipX16Y16@@3UXMVECTORI32@@B 004216f0     stdneb.obj
+ 0002:00000700       ?g_XMFixX16Y16@@3UXMVECTORF32@@B 00421700     stdneb.obj
+ 0002:00000710       ?g_XMNormalizeX16Y16@@3UXMVECTORF32@@B 00421710     stdneb.obj
+ 0002:00000720       ?g_XMMaskX16Y16Z16W16@@3UXMVECTORI32@@B 00421720     stdneb.obj
+ 0002:00000730       ?g_XMFlipX16Y16Z16W16@@3UXMVECTORI32@@B 00421730     stdneb.obj
+ 0002:00000740       ?g_XMFixX16Y16Z16W16@@3UXMVECTORF32@@B 00421740     stdneb.obj
+ 0002:00000750       ?g_XMNormalizeX16Y16Z16W16@@3UXMVECTORF32@@B 00421750     stdneb.obj
+ 0002:00000760       ?g_XMNoFraction@@3UXMVECTORF32@@B 00421760     stdneb.obj
+ 0002:00000770       ?g_XMMaskByte@@3UXMVECTORI32@@B 00421770     stdneb.obj
+ 0002:00000780       ?g_XMNegateX@@3UXMVECTORF32@@B 00421780     stdneb.obj
+ 0002:00000790       ?g_XMNegateY@@3UXMVECTORF32@@B 00421790     stdneb.obj
+ 0002:000007a0       ?g_XMNegateZ@@3UXMVECTORF32@@B 004217a0     stdneb.obj
+ 0002:000007b0       ?g_XMNegateW@@3UXMVECTORF32@@B 004217b0     stdneb.obj
+ 0002:000007c0       ?g_XMSelect0101@@3UXMVECTORI32@@B 004217c0     stdneb.obj
+ 0002:000007d0       ?g_XMSelect1010@@3UXMVECTORI32@@B 004217d0     stdneb.obj
+ 0002:000007e0       ?g_XMOneHalfMinusEpsilon@@3UXMVECTORI32@@B 004217e0     stdneb.obj
+ 0002:000007f0       ?g_XMSelect1000@@3UXMVECTORI32@@B 004217f0     stdneb.obj
+ 0002:00000800       ?g_XMSelect1100@@3UXMVECTORI32@@B 00421800     stdneb.obj
+ 0002:00000810       ?g_XMSelect1110@@3UXMVECTORI32@@B 00421810     stdneb.obj
+ 0002:00000820       ?g_XMSwizzleXYXY@@3UXMVECTORI32@@B 00421820     stdneb.obj
+ 0002:00000830       ?g_XMSwizzleXYZX@@3UXMVECTORI32@@B 00421830     stdneb.obj
+ 0002:00000840       ?g_XMSwizzleYXZW@@3UXMVECTORI32@@B 00421840     stdneb.obj
+ 0002:00000850       ?g_XMSwizzleYZXW@@3UXMVECTORI32@@B 00421850     stdneb.obj
+ 0002:00000860       ?g_XMSwizzleZXYW@@3UXMVECTORI32@@B 00421860     stdneb.obj
+ 0002:00000870       ?g_XMPermute0X0Y1X1Y@@3UXMVECTORI32@@B 00421870     stdneb.obj
+ 0002:00000880       ?g_XMPermute0Z0W1Z1W@@3UXMVECTORI32@@B 00421880     stdneb.obj
+ 0002:00000890       ?g_XMFixupY16@@3UXMVECTORF32@@B 00421890     stdneb.obj
+ 0002:000008a0       ?g_XMFixupY16W16@@3UXMVECTORF32@@B 004218a0     stdneb.obj
+ 0002:000008b0       ?g_XMFlipY@@3UXMVECTORI32@@B 004218b0     stdneb.obj
+ 0002:000008c0       ?g_XMFlipZ@@3UXMVECTORI32@@B 004218c0     stdneb.obj
+ 0002:000008d0       ?g_XMFlipW@@3UXMVECTORI32@@B 004218d0     stdneb.obj
+ 0002:000008e0       ?g_XMFlipYZ@@3UXMVECTORI32@@B 004218e0     stdneb.obj
+ 0002:000008f0       ?g_XMFlipZW@@3UXMVECTORI32@@B 004218f0     stdneb.obj
+ 0002:00000900       ?g_XMFlipYW@@3UXMVECTORI32@@B 00421900     stdneb.obj
+ 0002:00000910       ?g_XMMaskHenD3@@3UXMVECTORI32@@B 00421910     stdneb.obj
+ 0002:00000920       ?g_XMMaskDHen3@@3UXMVECTORI32@@B 00421920     stdneb.obj
+ 0002:00000930       ?g_XMAddUHenD3@@3UXMVECTORF32@@B 00421930     stdneb.obj
+ 0002:00000940       ?g_XMAddHenD3@@3UXMVECTORF32@@B 00421940     stdneb.obj
+ 0002:00000950       ?g_XMAddDHen3@@3UXMVECTORF32@@B 00421950     stdneb.obj
+ 0002:00000960       ?g_XMMulHenD3@@3UXMVECTORF32@@B 00421960     stdneb.obj
+ 0002:00000970       ?g_XMMulDHen3@@3UXMVECTORF32@@B 00421970     stdneb.obj
+ 0002:00000980       ?g_XMXorHenD3@@3UXMVECTORI32@@B 00421980     stdneb.obj
+ 0002:00000990       ?g_XMXorDHen3@@3UXMVECTORI32@@B 00421990     stdneb.obj
+ 0002:000009a0       ?g_XMMaskIco4@@3UXMVECTORI32@@B 004219a0     stdneb.obj
+ 0002:000009b0       ?g_XMXorXIco4@@3UXMVECTORI32@@B 004219b0     stdneb.obj
+ 0002:000009c0       ?g_XMXorIco4@@3UXMVECTORI32@@B 004219c0     stdneb.obj
+ 0002:000009d0       ?g_XMAddXIco4@@3UXMVECTORF32@@B 004219d0     stdneb.obj
+ 0002:000009e0       ?g_XMAddUIco4@@3UXMVECTORF32@@B 004219e0     stdneb.obj
+ 0002:000009f0       ?g_XMAddIco4@@3UXMVECTORF32@@B 004219f0     stdneb.obj
+ 0002:00000a00       ?g_XMMulIco4@@3UXMVECTORF32@@B 00421a00     stdneb.obj
+ 0002:00000a10       ?g_XMMaskDec4@@3UXMVECTORI32@@B 00421a10     stdneb.obj
+ 0002:00000a20       ?g_XMXorDec4@@3UXMVECTORI32@@B 00421a20     stdneb.obj
+ 0002:00000a30       ?g_XMAddUDec4@@3UXMVECTORF32@@B 00421a30     stdneb.obj
+ 0002:00000a40       ?g_XMAddDec4@@3UXMVECTORF32@@B 00421a40     stdneb.obj
+ 0002:00000a50       ?g_XMMulDec4@@3UXMVECTORF32@@B 00421a50     stdneb.obj
+ 0002:00000a60       ?g_XMMaskByte4@@3UXMVECTORI32@@B 00421a60     stdneb.obj
+ 0002:00000a70       ?g_XMXorByte4@@3UXMVECTORI32@@B 00421a70     stdneb.obj
+ 0002:00000a80       ?g_XMAddByte4@@3UXMVECTORF32@@B 00421a80     stdneb.obj
+ 0002:00000da8       ?FreeBlockPattern@Win360MemoryPool@Win360@@0IB 00421da8     createobjects.obj
+ 0002:00000dac       ?NewBlockPattern@Win360MemoryPool@Win360@@0IB 00421dac     createobjects.obj
+ 0002:00000db0       ?BlockAlign@Win360MemoryPool@Win360@@0HB 00421db0     createobjects.obj
+ 0002:00000db4       ?NumPools@PoolArrayAllocator@Memory@@2HB 00421db4     createobjects.obj
+ 0002:00000db8       ?MinGrowSize@?$Array@VString@Util@@@Util@@0HB 00421db8     createobjects.obj
+ 0002:00000dbc       ?MaxGrowSize@?$Array@VString@Util@@@Util@@0HB 00421dbc     createobjects.obj
+ 0002:00000dc0       ?MinGrowSize@?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@0HB 00421dc0     createobjects.obj
+ 0002:00000dc4       ?MaxGrowSize@?$Array@V?$KeyValuePair@VFourCC@Util@@PBVRtti@Core@@@Util@@@Util@@0HB 00421dc4     createobjects.obj
+ 0002:00000dc8       ??_C@_0BM@POLCIKDO@Benchmarking?3?3CreateObjects?$AA@ 00421dc8     createobjects.obj
+ 0002:00000de4       ??_7RefCounted@Core@@6B@   00421de4     createobjects.obj
+ 0002:00000dec       ??_7Benchmark@Benchmarking@@6B@ 00421dec     createobjects.obj
+ 0002:00000df8       ??_7CreateObjects@Benchmarking@@6B@ 00421df8     createobjects.obj
+ 0002:00000e04       ??_C@_0CH@OBAODIJI@Benchmarking?3?3CreateObjectsByCla@ 00421e04     createobjectsbyclassname.obj
+ 0002:00000e2c       ??_C@_0BB@NOEPGKJK@Core?3?3RefCounted?$AA@ 00421e2c     createobjectsbyclassname.obj
+ 0002:00000e40       ??_7CreateObjectsByClassName@Benchmarking@@6B@ 00421e40     createobjectsbyclassname.obj
+ 0002:00000e4c       ??_C@_0CE@NIKJNMLA@Benchmarking?3?3CreateObjectsByFou@ 00421e4c     createobjectsbyfourcc.obj
+ 0002:00000e70       ??_7CreateObjectsByFourCC@Benchmarking@@6B@ 00421e70     createobjectsbyfourcc.obj
+ 0002:00000e7c       ??_C@_0BJ@KEJPFBPB@Benchmarking?3?3Float4Math?$AA@ 00421e7c     float4math.obj
+ 0002:00000e98       ??_7Float4Math@Benchmarking@@6B@ 00421e98     float4math.obj
+ 0002:00000ea4       ?MinGrowSize@?$Array@V?$Ptr@VConsoleHandler@IO@@@@@Util@@0HB 00421ea4     main.obj
+ 0002:00000ea8       ?MaxGrowSize@?$Array@V?$Ptr@VConsoleHandler@IO@@@@@Util@@0HB 00421ea8     main.obj
+ 0002:00000eac       ?MinGrowSize@?$Array@V?$Ptr@VBenchmark@Benchmarking@@@@@Util@@0HB 00421eac     main.obj
+ 0002:00000eb0       ?MaxGrowSize@?$Array@V?$Ptr@VBenchmark@Benchmarking@@@@@Util@@0HB 00421eb0     main.obj
+ 0002:00000eb4       ??_C@_0BJ@DHBGBFPN@Nebula3?5Benchmark?5Runner?$AA@ 00421eb4     main.obj
+ 0002:00000ed0       ??_C@_0CG@FGODFJOD@c?3?2nebula3?2code?2foundation?2core?1@ 00421ed0     main.obj
+ 0002:00000ef8       ??_C@_0CK@GLFJIEFE@NULL?5pointer?5access?5in?5Ptr?3?3oper@ 00421ef8     main.obj
+ 0002:00000f24       ??_C@_09JGKFILJK@this?9?$DOptr?$AA@ 00421f24     main.obj
+ 0002:00000f30       ??_C@_0BO@LOJFIKPE@Benchmarking?3?3Matrix44Inverse?$AA@ 00421f30     matrix44inverse.obj
+ 0002:00000f50       ??_7Matrix44Inverse@Benchmarking@@6B@ 00421f50     matrix44inverse.obj
+ 0002:00000f5c       ??_C@_0BP@DJNODNAN@Benchmarking?3?3Matrix44Multiply?$AA@ 00421f5c     matrix44multiply.obj
+ 0002:00000f7c       ??_7Matrix44Multiply@Benchmarking@@6B@ 00421f7c     matrix44multiply.obj
+ 0002:00000f88       ??_C@_0BP@PLHHIAJD@Benchmarking?3?3MemPoolBenchmark?$AA@ 00421f88     mempoolbenchmark.obj
+ 0002:00000fa8       ??_C@_0CM@FLJAPJFJ@Run?5?$CFd?3?5Allocate?5?$CFd?5memory?5pool?5@ 00421fa8     mempoolbenchmark.obj
+ 0002:00000fd4       ??_C@_0CI@BBFAGFHN@Run?5?$CFd?3?5Free?5?$CFd?5memory?5pool?5bloc@ 00421fd4     mempoolbenchmark.obj
+ 0002:00000ffc       ??_C@_0CA@HFJEKEMG@Run?5?$CFd?3?5Allocate?5?$CFd?5blocks?3?5?$CFf?6?$AA@ 00421ffc     mempoolbenchmark.obj
+ 0002:0000101c       ??_C@_0BM@JJKAFJBI@Run?5?$CFd?3?5Free?5?$CFd?5blocks?3?5?$CFf?6?$AA@ 0042201c     mempoolbenchmark.obj
+ 0002:00001038       ??_7MemPoolBenchmark@Benchmarking@@6B@ 00422038     mempoolbenchmark.obj
+ 0002:00001044       ??_C@_0BI@ILEIBOPB@Benchmarking?3?3Benchmark?$AA@ 00422044     benchmarkbase_win32.release:benchmark.obj
+ 0002:0000105c       ??_C@_0BO@PDJFFIKD@Benchmarking?3?3BenchmarkRunner?$AA@ 0042205c     benchmarkbase_win32.release:benchmarkrunner.obj
+ 0002:0000107c       ??_C@_0CP@JKPAJJAC@?4?4?2benchmarks?2benchmarkbase?2benc@ 0042207c     benchmarkbase_win32.release:benchmarkrunner.obj
+ 0002:000010ac       ??_C@_06FMDKOJOI@0?5?$CB?$DN?5b?$AA@ 004220ac     benchmarkbase_win32.release:benchmarkrunner.obj
+ 0002:000010b8       ??_C@_0EB@FIJHBPFG@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ 004220b8     benchmarkbase_win32.release:benchmarkrunner.obj
+ 0002:000010fc       ??_C@_01JLIPDDHJ@?3?$AA@   004220fc     benchmarkbase_win32.release:benchmarkrunner.obj
+ 0002:00001100       ??_C@_0BM@DHEILAPC@?$DO?5?$CFs?3?5?$CFd?5ticks?0?5?$CFf?5seconds?6?$AA@ 00422100     benchmarkbase_win32.release:benchmarkrunner.obj
+ 0002:0000111c       ??_C@_0CB@LOBBCEOM@?$CK?5OVERALL?3?5?$CFd?5ticks?0?5?$CFf?5seconds?6@ 0042211c     benchmarkbase_win32.release:benchmarkrunner.obj
+ 0002:00001140       ??_C@_0CI@BHODGIE@c?3?2nebula3?2code?2foundation?2util?1@ 00422140     benchmarkbase_win32.release:benchmarkrunner.obj
+ 0002:00001168       ??_C@_0CH@BDOPOIPB@this?9?$DOelements?5?$CG?$CG?5?$CIindex?5?$DM?5this?9@ 00422168     benchmarkbase_win32.release:benchmarkrunner.obj
+ 0002:00001190       ??_C@_0P@NLJNLNEM@this?9?$DOelements?$AA@ 00422190     benchmarkbase_win32.release:benchmarkrunner.obj
+ 0002:000011a0       ??_C@_0CO@PAGCGEKM@NULL?5pointer?5access?5in?5Ptr?3?3oper@ 004221a0     benchmarkbase_win32.release:benchmarkrunner.obj
+ 0002:000011d0       ??_C@_0P@HBJIIKFB@this?9?$DOgrow?5?$DO?50?$AA@ 004221d0     benchmarkbase_win32.release:benchmarkrunner.obj
+ 0002:000011e0       ??_7BenchmarkRunner@Benchmarking@@6B@ 004221e0     benchmarkbase_win32.release:benchmarkrunner.obj
+ 0002:000011e8       ??_C@_0DG@OFBDDPFF@c?3?2nebula3?2code?2foundation?2memor@ 004221e8     foundation_win32.release:win360memory.obj
+ 0002:00001220       ??_C@_09EJCPEHHD@0?5?$CB?$DN?5from?$AA@ 00422220     foundation_win32.release:win360memory.obj
+ 0002:0000122c       ??_C@_07FEEDPIAJ@0?5?$CB?$DN?5to?$AA@ 0042222c     foundation_win32.release:win360memory.obj
+ 0002:00001234       ??_C@_0L@FNMCDHDA@from?5?$CB?$DN?5to?$AA@ 00422234     foundation_win32.release:win360memory.obj
+ 0002:00001240       ??_C@_0CM@ODKKPOME@?4?4?2foundation?2memory?2win360?2win3@ 00422240     foundation_win32.release:win360memory.obj
+ 0002:0000126c       ??_C@_0BI@NOOHAMNH@heapType?5?$DM?5NumHeapTypes?$AA@ 0042226c     foundation_win32.release:win360memory.obj
+ 0002:00001284       ??_C@_0BF@MFBPIJCM@0?5?$CB?$DN?5Heaps?$FLheapType?$FN?$AA@ 00422284     foundation_win32.release:win360memory.obj
+ 0002:0000129c       ??_C@_0BL@KDHBNLEK@?$CI?$CIuint?$CJallocPtr?5?$CG?515?$CJ?5?$DN?$DN?50?$AA@ 0042229c     foundation_win32.release:win360memory.obj
+ 0002:000012b8       ??_C@_0EF@JMMPNDAL@Alloc?3?5Out?5of?5memory?0?5allocating@ 004222b8     foundation_win32.release:win360memory.obj
+ 0002:00001300       ??_C@_0EE@LFKDAEPB@?$CIheapType?5?$CB?$DN?5Xbox360GraphicsHeap@ 00422300     foundation_win32.release:win360memory.obj
+ 0002:00001344       ??_C@_0DE@KJDCBOMA@?$CIheapType?5?$DM?5NumHeapTypes?$CJ?5?$CG?$CG?5?$CI0?5@ 00422344     foundation_win32.release:win360memory.obj
+ 0002:00001378       ??_C@_0EH@FIPHFLEB@Realloc?3?5Out?5of?5memory?0?5allocati@ 00422378     foundation_win32.release:win360memory.obj
+ 0002:000013c0       ??_C@_0DE@NFMLABPA@DumpTotalMemoryStatus?$CI?$CJ?5not?5impl@ 004223c0     foundation_win32.release:win360memory.obj
+ 0002:000013f4       ??_C@_02LIELOMNJ@on?$AA@   004223f4     foundation_win32.release:string.obj
+ 0002:000013f8       ??_C@_03MCADLMAF@off?$AA@  004223f8     foundation_win32.release:string.obj
+ 0002:000013fc       ??_C@_03ICICOMAL@yes?$AA@  004223fc     foundation_win32.release:string.obj
+ 0002:00001400       ??_C@_02KAJCLHKP@no?$AA@   00422400     foundation_win32.release:string.obj
+ 0002:00001404       ??_C@_0CJ@KPDBJEOK@c?3?2nebula3?2code?2foundation?2util?1@ 00422404     foundation_win32.release:string.obj
+ 0002:00001430       ??_C@_0BN@POFINLGO@newSize?5?$DO?5?$CIthis?9?$DOstrLen?5?$CL?51?$CJ?$AA@ 00422430     foundation_win32.release:string.obj
+ 0002:00001450       ??_C@_0BP@EEBDEGPD@newSize?5?$DO?5this?9?$DOheapBufferSize?$AA@ 00422450     foundation_win32.release:string.obj
+ 0002:00001470       ??_C@_04LOAJBDKD@true?$AA@ 00422470     foundation_win32.release:string.obj
+ 0002:00001478       ??_C@_05LAPONLG@false?$AA@ 00422478     foundation_win32.release:string.obj
+ 0002:00001480       ??_C@_0BC@CJPEMPAL@i?5?$DM?$DN?5this?9?$DOstrLen?$AA@ 00422480     foundation_win32.release:string.obj
+ 0002:00001494       ??_C@_03NNNAMNMM@?0?5?7?$AA@ 00422494     foundation_win32.release:string.obj
+ 0002:00001498       ??_C@_0BN@NDBMPMCD@?4?4?2foundation?2util?2string?4cc?$AA@ 00422498     foundation_win32.release:string.obj
+ 0002:000014b8       ??_C@_08COOMBJJI@0?5?$CB?$DN?5buf?$AA@ 004224b8     foundation_win32.release:string.obj
+ 0002:000014c4       ??_C@_0M@KILAHHOK@bufSize?5?$DO?51?$AA@ 004224c4     foundation_win32.release:string.obj
+ 0002:000014d0       ??_C@_06PCICMFGG@append?$AA@ 004224d0     foundation_win32.release:string.obj
+ 0002:000014d8       ??_C@_0BF@LMEIFOGC@from?5?$DM?$DN?5this?9?$DOstrLen?$AA@ 004224d8     foundation_win32.release:string.obj
+ 0002:000014f0       ??_C@_0CC@ICCFPDP@?$CIfrom?5?$CL?5numChars?$CJ?5?$DM?$DN?5this?9?$DOstrLe@ 004224f0     foundation_win32.release:string.obj
+ 0002:00001514       ??_C@_0BK@ONBCDJGI@startIndex?5?$DM?5this?9?$DOstrLen?$AA@ 00422514     foundation_win32.release:string.obj
+ 0002:00001530       ??_C@_0M@DLFFJCNF@s?4IsValid?$CI?$CJ?$AA@ 00422530     foundation_win32.release:string.obj
+ 0002:0000153c       ??_C@_0BC@LKPOIPPK@charSet?4IsValid?$CI?$CJ?$AA@ 0042253c     foundation_win32.release:string.obj
+ 0002:00001550       ??_C@_0BD@POLGAEPB@matchStr?4IsValid?$CI?$CJ?$AA@ 00422550     foundation_win32.release:string.obj
+ 0002:00001564       ??_C@_0BE@BLNLEPGL@tokens?4Size?$CI?$CJ?5?$DN?$DN?516?$AA@ 00422564     foundation_win32.release:string.obj
+ 0002:00001578       ??_C@_08OJCFJEAA@0?5?$CB?$DN?5str?$AA@ 00422578     foundation_win32.release:string.obj
+ 0002:00001584       ??_C@_0BF@CKPCPHAL@index?5?$DM?5this?9?$DOstrLen?$AA@ 00422584     foundation_win32.release:string.obj
+ 0002:0000159c       ??_C@_09EEGIECFH@0?5?$CB?$DN?5cStr?$AA@ 0042259c     foundation_win32.release:string.obj
+ 0002:000015a8       ??_C@_0BP@MKHLMGDH@Invalid?5string?5value?5for?5bool?$CB?$AA@ 004225a8     foundation_win32.release:string.obj
+ 0002:000015c8       ??_C@_0N@MDGKIMAM@str0?5?$CG?$CG?5str1?$AA@ 004225c8     foundation_win32.release:string.obj
+ 0002:000015d8       ??_C@_03OJMAPEGJ@str?$AA@  004225d8     foundation_win32.release:string.obj
+ 0002:000015dc       ?MinGrowSize@?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@0HB 004225dc     foundation_win32.release:string.obj
+ 0002:000015e0       ?MaxGrowSize@?$Array@V?$KeyValuePair@VString@Util@@V12@@Util@@@Util@@0HB 004225e0     foundation_win32.release:string.obj
+ 0002:000015e4       ??_C@_04OCGLKFAE@?5?7?6?$DN?$AA@ 004225e4     foundation_win32.release:string.obj
+ 0002:000015ec       ??_C@_0BJ@EBIIIFLN@0?5?$DN?$DN?5?$CItokens?4Size?$CI?$CJ?5?$CG?51?$CJ?$AA@ 004225ec     foundation_win32.release:string.obj
+ 0002:00001608       ??_C@_01LFCBOECM@?4?$AA@   00422608     foundation_win32.release:string.obj
+ 0002:0000160c       ??_C@_0CN@PLFFNBEJ@c?3?2nebula3?2code?2foundation?2util?1@ 0042260c     foundation_win32.release:string.obj
+ 0002:0000163c       ??_C@_0BC@GNKCGDPP@?$CBrhs?4inBulkInsert?$AA@ 0042263c     foundation_win32.release:string.obj
+ 0002:00001650       ??_C@_0BE@GDBIPADH@0?5?$DN?$DN?5this?9?$DOelements?$AA@ 00422650     foundation_win32.release:string.obj
+ 0002:00001664       ??_C@_07DCGCMICB@0?5?$DN?$DN?5lo?$AA@ 00422664     foundation_win32.release:string.obj
+ 0002:0000166c       ??_C@_0CD@BKAJLKAE@Array?3?3InsertSorted?3?5Can?8t?5happe@ 0042266c     foundation_win32.release:string.obj
+ 0002:00001690       ??_C@_0BE@DJMCGKBH@index?5?$DM?$DN?5this?9?$DOsize?$AA@ 00422690     foundation_win32.release:string.obj
+ 0002:000016a4       ??_C@_0BH@MMMAFPLC@fromIndex?5?$DM?5this?9?$DOsize?$AA@ 004226a4     foundation_win32.release:string.obj
+ 0002:000016bb       ??_C@_00CNPNBAHC@?$AA@     004226bb     foundation_win32.release:string.obj
+ 0002:000016bc       ??_C@_0BL@LNDCKHOK@?4?4?2foundation?2core?2rtti?4cc?$AA@ 004226bc     foundation_win32.release:rtti.obj
+ 0002:000016d8       ??_C@_0P@LLDBGGLM@0?5?$CB?$DN?5className?$AA@ 004226d8     foundation_win32.release:rtti.obj
+ 0002:000016e8       ??_C@_0BE@PFKLFMLD@parentClass?5?$CB?$DN?5this?$AA@ 004226e8     foundation_win32.release:rtti.obj
+ 0002:00001700       ??_C@_0EC@GFCMFCKH@Rtti?3?3Create?$CI?$CJ?3?5Trying?5to?5create@ 00422700     foundation_win32.release:rtti.obj
+ 0002:00001744       ??_C@_0CB@NEMGBOEL@?4?4?2foundation?2core?2refcounted?4cc@ 00422744     foundation_win32.release:refcounted.obj
+ 0002:00001768       ??_C@_0BE@CLOAMCCB@0?5?$DN?$DN?5this?9?$DOrefCount?$AA@ 00422768     foundation_win32.release:refcounted.obj
+ 0002:0000177c       ??_C@_0CH@KLAPDODG@c?3?2nebula3?2code?2foundation?2util?1@ 0042277c     foundation_win32.release:win32sysfunc.obj
+ 0002:000017a4       ??_C@_0O@FGCIKNOJ@0?5?$DN?$DN?5DataHeap?$AA@ 004227a4     foundation_win32.release:win32sysfunc.obj
+ 0002:000017b4       ??_C@_0BD@BPOECNJK@Util?4Blob?4DataHeap?$AA@ 004227b4     foundation_win32.release:win32sysfunc.obj
+ 0002:000017c8       ??_C@_0O@FPDKANJE@0?5?$CB?$DN?5DataHeap?$AA@ 004227c8     foundation_win32.release:win32sysfunc.obj
+ 0002:000017d8       ?InvalidCoreId@Win32Cpu@Win32@@2KB 004227d8     foundation_win32.release:win32sysfunc.obj
+ 0002:000017dc       ?MainThreadCore@Win32Cpu@Win32@@2KB 004227dc     foundation_win32.release:win32sysfunc.obj
+ 0002:000017e0       ?IoThreadCore@Win32Cpu@Win32@@2KB 004227e0     foundation_win32.release:win32sysfunc.obj
+ 0002:000017e4       ?RenderThreadCore@Win32Cpu@Win32@@2KB 004227e4     foundation_win32.release:win32sysfunc.obj
+ 0002:000017e8       ?AudioThreadCore@Win32Cpu@Win32@@2KB 004227e8     foundation_win32.release:win32sysfunc.obj
+ 0002:000017ec       ?MiscThreadCore@Win32Cpu@Win32@@2KB 004227ec     foundation_win32.release:win32sysfunc.obj
+ 0002:000017f0       ?NetworkThreadCore@Win32Cpu@Win32@@2KB 004227f0     foundation_win32.release:win32sysfunc.obj
+ 0002:000017f4       ?JobThreadFirstCore@Win32Cpu@Win32@@2KB 004227f4     foundation_win32.release:win32sysfunc.obj
+ 0002:000017f8       ?MinGrowSize@?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@0HB 004227f8     foundation_win32.release:win32sysfunc.obj
+ 0002:000017fc       ?MaxGrowSize@?$Array@UStaticString@StringAtomTableBase@Util@@@Util@@0HB 004227fc     foundation_win32.release:win32sysfunc.obj
+ 0002:00001800       ?MinGrowSize@?$Array@PAD@Util@@0HB 00422800     foundation_win32.release:win32sysfunc.obj
+ 0002:00001804       ?MaxGrowSize@?$Array@PAD@Util@@0HB 00422804     foundation_win32.release:win32sysfunc.obj
+ 0002:00001808       ?MinGrowSize@?$Array@PBD@Util@@0HB 00422808     foundation_win32.release:win32sysfunc.obj
+ 0002:0000180c       ?MaxGrowSize@?$Array@PBD@Util@@0HB 0042280c     foundation_win32.release:win32sysfunc.obj
+ 0002:00001810       ??_C@_0L@HGHDALHK@MainThread?$AA@ 00422810     foundation_win32.release:win32sysfunc.obj
+ 0002:00001820       ??_C@_0EO@EGNOHIDC@no?5SSE?1SSE2?5support?5on?5this?5CPU?4@ 00422820     foundation_win32.release:win32sysfunc.obj
+ 0002:00001870       ??_C@_0BF@LECBEOGP@NEBULA3?5SYSTEM?5ERROR?$AA@ 00422870     foundation_win32.release:win32sysfunc.obj
+ 0002:00001888       ??_C@_0BE@OEGCBAMB@Nebula3?3?3MainWindow?$AA@ 00422888     foundation_win32.release:win32sysfunc.obj
+ 0002:0000189c       ??_C@_0BA@PJFNBMAI@NEBULA3?5MESSAGE?$AA@ 0042289c     foundation_win32.release:win32sysfunc.obj
+ 0002:000018ac       ??_C@_0CJ@LDPDCBJJ@c?3?2nebula3?2code?2foundation?2util?1@ 004228ac     foundation_win32.release:factory.obj
+ 0002:000018d8       ??_C@_0M@KPOOAIDJ@f?4IsValid?$CI?$CJ?$AA@ 004228d8     foundation_win32.release:factory.obj
+ 0002:000018e4       ??_C@_04MPKDFPPK@xzyw?$AA@ 004228e4     foundation_win32.release:factory.obj
+ 0002:000018ec       ??_C@_0BO@DJFJGNAC@?4?4?2foundation?2core?2factory?4cc?$AA@ 004228ec     foundation_win32.release:factory.obj
+ 0002:0000190c       ??_C@_0P@BAMCAPOJ@0?5?$CB?$DN?5Singleton?$AA@ 0042290c     foundation_win32.release:factory.obj
+ 0002:0000191c       ??_C@_09INDLKAHI@0?5?$CB?$DN?5rtti?$AA@ 0042291c     foundation_win32.release:factory.obj
+ 0002:00001928       ??_C@_0CN@FJFLAEHH@Class?5name?5?8?$CFs?8?5has?5already?5been@ 00422928     foundation_win32.release:factory.obj
+ 0002:00001958       ??_C@_0DK@DFNCFKJA@Class?5fourcc?5?8?$CFs?8?5?$CIname?3?5?$CFs?$CJ?5has@ 00422958     foundation_win32.release:factory.obj
+ 0002:00001994       ??_C@_0BE@BBAEOLHN@className?4IsValid?$CI?$CJ?$AA@ 00422994     foundation_win32.release:factory.obj
+ 0002:000019a8       ??_C@_0BB@MAKBHHBC@fourCC?4IsValid?$CI?$CJ?$AA@ 004229a8     foundation_win32.release:factory.obj
+ 0002:000019bc       ??_C@_0BN@OBELMPBF@this?9?$DOClassExists?$CIclassName?$CJ?$AA@ 004229bc     foundation_win32.release:factory.obj
+ 0002:000019dc       ??_C@_0BG@BCFKNJPL@classFourCC?4IsValid?$CI?$CJ?$AA@ 004229dc     foundation_win32.release:factory.obj
+ 0002:000019f4       ??_C@_0BP@OAPAMIOH@this?9?$DOClassExists?$CIclassFourCC?$CJ?$AA@ 004229f4     foundation_win32.release:factory.obj
+ 0002:00001a14       ??_C@_0CL@BNBMBDPD@Factory?3?3Create?$CI?8?$CFs?8?$CJ?3?5unknown?5c@ 00422a14     foundation_win32.release:factory.obj
+ 0002:00001a40       ??_C@_0DC@PPEDOFIN@Factory?3?3Create?$CI?8?$CFs?8?$CJ?3?5unknown?5c@ 00422a40     foundation_win32.release:factory.obj
+ 0002:00001a74       ??_C@_0CM@CKKKLNIB@c?3?2nebula3?2code?2foundation?2util?1@ 00422a74     foundation_win32.release:factory.obj
+ 0002:00001aa0       ??_C@_0BF@GCHCFOFO@0?5?$CB?$DN?5numHashElements?$AA@ 00422aa0     foundation_win32.release:factory.obj
+ 0002:00001ab8       ??_C@_0CB@JHMLCKOJ@InvalidIndex?5?$CB?$DN?5hashElementIndex@ 00422ab8     foundation_win32.release:factory.obj
+ 0002:00001adc       ?MaxGrowSize@?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@0HB 00422adc     foundation_win32.release:factory.obj
+ 0002:00001ae0       ?MinGrowSize@?$Array@V?$KeyValuePair@VString@Util@@PBVRtti@Core@@@Util@@@Util@@0HB 00422ae0     foundation_win32.release:factory.obj
+ 0002:00001ae4       ??_C@_0CC@PALPEJMB@InvalidIndex?5?$CB?$DN?5keyValuePairInde@ 00422ae4     foundation_win32.release:factory.obj
+ 0002:00001b08       ??_C@_0BE@LCKAMAEE@?$CBthis?9?$DOinBulkInsert?$AA@ 00422b08     foundation_win32.release:factory.obj
+ 0002:00001b1c       ??_C@_0CN@DIALFDOD@c?3?2nebula3?2code?2foundation?2util?1@ 00422b1c     foundation_win32.release:factory.obj
+ 0002:00001b4c       ??_C@_0BL@JLGDMHKO@?$CBthis?9?$DOContains?$CIkvp?4Key?$CI?$CJ?$CJ?$AA@ 00422b4c     foundation_win32.release:factory.obj
+ 0002:00001b68       ??_C@_0CL@CIMOLCLO@?4?4?2foundation?2timing?2win360?2win3@ 00422b68     foundation_win32.release:win360timer.obj
+ 0002:00001b94       ??_C@_0P@FKEILAOM@?$CBthis?9?$DOrunning?$AA@ 00422b94     foundation_win32.release:win360timer.obj
+ 0002:00001ba4       ??_C@_0O@GNBOCPLK@this?9?$DOrunning?$AA@ 00422ba4     foundation_win32.release:win360timer.obj
+ 0002:00001bb4       ??_C@_0DH@DHGDJLAP@c?3?2nebula3?2code?2foundation?2util?1@ 00422bb4     foundation_win32.release:stringatom.obj
+ 0002:00001bec       ??_C@_0DI@MBCPNNKF@c?3?2nebula3?2code?2foundation?2util?1@ 00422bec     foundation_win32.release:stringatom.obj
+ 0002:00001c24       ??_C@_0BB@BHLEFDJG@Core?3?3CoreServer?$AA@ 00422c24     foundation_win32.release:coreserver.obj
+ 0002:00001c38       ??_C@_0BA@ILGFJDHF@Radon?5Labs?5GmbH?$AA@ 00422c38     foundation_win32.release:coreserver.obj
+ 0002:00001c48       ??_C@_07MHMENOHJ@Nebula3?$AA@ 00422c48     foundation_win32.release:coreserver.obj
+ 0002:00001c50       ??_C@_05BDABMLJL@home?3?$AA@ 00422c50     foundation_win32.release:coreserver.obj
+ 0002:00001c58       ??_C@_0CB@DAPGMNMP@?4?4?2foundation?2core?2coreserver?4cc@ 00422c58     foundation_win32.release:coreserver.obj
+ 0002:00001c7c       ??_C@_0P@DOHPBAMI@0?5?$DN?$DN?5Singleton?$AA@ 00422c7c     foundation_win32.release:coreserver.obj
+ 0002:00001c8c       ??_C@_09EHKKJHDM@Singleton?$AA@ 00422c8c     foundation_win32.release:coreserver.obj
+ 0002:00001c98       ??_C@_0BA@GJILFILP@?$CBthis?9?$DOIsOpen?$CI?$CJ?$AA@ 00422c98     foundation_win32.release:coreserver.obj
+ 0002:00001ca8       ??_C@_0P@OLLEPKOB@this?9?$DOIsOpen?$CI?$CJ?$AA@ 00422ca8     foundation_win32.release:coreserver.obj
+ 0002:00001cb8       ??_7CoreServer@Core@@6B@   00422cb8     foundation_win32.release:coreserver.obj
+ 0002:00001cc0       ??_C@_0CI@GBGNMPLK@c?3?2nebula3?2code?2foundation?2io?1co@ 00422cc0     foundation_win32.release:debug.obj
+ 0002:00001ce8       ??_C@_0DL@PJMICFCM@?$CK?$CK?$CK?5NEBULA?5ASSERTION?5?$CK?$CK?$CK?6express@ 00422ce8     foundation_win32.release:debug.obj
+ 0002:00001d28       ??_C@_0EP@ECJDIGOP@?$CK?$CK?$CK?5NEBULA?5ASSERTION?5?$CK?$CK?$CK?6program@ 00422d28     foundation_win32.release:debug.obj
+ 0002:00001d78       ??_C@_0DA@MDDOIEIN@?4?4?2foundation?2memory?2win360?2win3@ 00422d78     foundation_win32.release:win360memorypool.obj
+ 0002:00001da8       ??_C@_0BF@KCEGMGBB@0?5?$DN?$DN?5this?9?$DOpoolStart?$AA@ 00422da8     foundation_win32.release:win360memorypool.obj
+ 0002:00001dc0       ??_C@_0BD@KECIFMPA@0?5?$DN?$DN?5this?9?$DOpoolEnd?$AA@ 00422dc0     foundation_win32.release:win360memorypool.obj
+ 0002:00001dd4       ??_C@_0DC@EKFJFGND@?4?4?2foundation?2memory?2win360?2win3@ 00422dd4     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001e08       ??_C@_0O@CBAGDPAC@0?5?$DN?$DN?5Heaps?$FLi?$FN?$AA@ 00422e08     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001e18       ??_C@_0ED@GGCEJJJE@Invalid?5heap?5type?5in?5Memory?3?3Set@ 00422e18     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001e5c       ??_C@_0N@JLKAGEFF@Default?5Heap?$AA@ 00422e5c     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001e6c       ??_C@_0M@FNOKPELE@Object?5Heap?$AA@ 00422e6c     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001e78       ??_C@_0BC@GCHAMMC@Object?5Array?5Heap?$AA@ 00422e78     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001e8c       ??_C@_0O@CHCHHJEE@Resource?5Heap?$AA@ 00422e8c     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001e9c       ??_C@_0N@MNODCGCL@Scratch?5Heap?$AA@ 00422e9c     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001eac       ??_C@_0BB@FKLHLCFD@String?5Data?5Heap?$AA@ 00422eac     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001ec0       ??_C@_0BB@LNAFBOCK@Stream?5Data?5Heap?$AA@ 00422ec0     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001ed4       ??_C@_0N@DJJHFFGI@Physics?5Heap?$AA@ 00422ed4     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001ee4       ??_C@_08JFNKHEMA@App?5Heap?$AA@ 00422ee4     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001ef0       ??_C@_0N@LMJMIJAH@Network?5Heap?$AA@ 00422ef0     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001f00       ??_C@_0BG@FBKNDLGL@Xbox360?5Graphics?5Heap?$AA@ 00422f00     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001f18       ??_C@_0BD@KJBJPDLN@Xbox360?5Audio?5Heap?$AA@ 00422f18     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001f2c       ??_C@_0P@MGAAIIGN@Scaleform?5Heap?$AA@ 00422f2c     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001f40       ??_C@_0EL@MAAJOHHH@Invalid?5HeapType?5arg?5in?5Memory?3?3@ 00422f40     foundation_win32.release:win360memoryconfig.obj
+ 0002:00001f8c       ??_C@_0BL@JDNDNPJB@?4?4?2foundation?2util?2blob?4cc?$AA@ 00422f8c     foundation_win32.release:blob.obj
+ 0002:00001fa8       ??_C@_0P@MBMNBDEP@0?5?$CB?$DN?5this?9?$DOptr?$AA@ 00422fa8     foundation_win32.release:blob.obj
+ 0002:00001fb8       ??_C@_0N@DHIIFFJH@0?5?$CB?$DN?5rhs?4ptr?$AA@ 00422fb8     foundation_win32.release:blob.obj
+ 0002:00001fc8       ??_C@_0N@CFANLGAN@0?5?$CB?$DN?5success?$AA@ 00422fc8     foundation_win32.release:win360heap.obj
+ 0002:00001fd8       ??_C@_0CK@CFGCFHEK@?4?4?2foundation?2memory?2win360?2win3@ 00422fd8     foundation_win32.release:win360heap.obj
+ 0002:00002004       ??_C@_0O@HMFEGNAJ@0?5?$CB?$DN?5heapName?$AA@ 00423004     foundation_win32.release:win360heap.obj
+ 0002:00002014       ??_C@_0BA@GPMIBJHE@0?5?$CB?$DN?5this?9?$DOheap?$AA@ 00423014     foundation_win32.release:win360heap.obj
+ 0002:00002024       ??_C@_0DK@LJJKHKIJ@c?3?2nebula3?2code?2foundation?2threa@ 00423024     foundation_win32.release:win360thread.obj
+ 0002:00002060       ??_C@_0BB@BOFACGGP@0?5?$CB?$DN?5this?9?$DOevent?$AA@ 00423060     foundation_win32.release:win360thread.obj
+ 0002:00002074       ??_C@_0BF@IHFKCJF@Win360?3?3Win360Thread?$AA@ 00423074     foundation_win32.release:win360thread.obj
+ 0002:0000208c       ??_C@_0CP@PMHDAPCP@?4?4?2foundation?2threading?2win360?2w@ 0042308c     foundation_win32.release:win360thread.obj
+ 0002:000020bc       ??_C@_0BD@PJJJHNGI@?$CBthis?9?$DOIsRunning?$CI?$CJ?$AA@ 004230bc     foundation_win32.release:win360thread.obj
+ 0002:000020d0       ??_C@_0BI@FGOFOLED@0?5?$DN?$DN?5this?9?$DOthreadHandle?$AA@ 004230d0     foundation_win32.release:win360thread.obj
+ 0002:000020e8       ??_C@_0BL@KMMDDLHN@NULL?5?$CB?$DN?5this?9?$DOthreadHandle?$AA@ 004230e8     foundation_win32.release:win360thread.obj
+ 0002:00002104       ??_C@_0BC@LFOMINAG@this?9?$DOIsRunning?$CI?$CJ?$AA@ 00423104     foundation_win32.release:win360thread.obj
+ 0002:00002118       ??_C@_0BI@BKPABEAC@0?5?$CB?$DN?5this?9?$DOthreadHandle?$AA@ 00423118     foundation_win32.release:win360thread.obj
+ 0002:00002130       ??_C@_09MNFDFHDF@0?5?$CB?$DN?5self?$AA@ 00423130     foundation_win32.release:win360thread.obj
+ 0002:0000213c       ??_7Win360Thread@Win360@@6B@ 0042313c     foundation_win32.release:win360thread.obj
+ 0002:0000214c       ??_C@_0BF@CAEDNPCP@Win360?3?3Win360Socket?$AA@ 0042314c     foundation_win32.release:win360socket.obj
+ 0002:00002164       ??_C@_0CJ@EMMGCAGF@?4?4?2foundation?2net?2win360?2win360s@ 00423164     foundation_win32.release:win360socket.obj
+ 0002:00002190       ??_C@_0BD@FDLGBPFC@NetworkInitialized?$AA@ 00423190     foundation_win32.release:win360socket.obj
+ 0002:000021a4       ??_C@_0BE@PJPACGPN@?$CBNetworkInitialized?$AA@ 004231a4     foundation_win32.release:win360socket.obj
+ 0002:000021b8       ??_C@_0BP@PCLJPGDC@WSAStartup?$CI?$CJ?5failed?5with?5?8?$CFs?8?$CB?$AA@ 004231b8     foundation_win32.release:win360socket.obj
+ 0002:000021d8       ??_C@_0BF@KNPDIJJA@Invalid?5socket?5type?$CB?$AA@ 004231d8     foundation_win32.release:win360socket.obj
+ 0002:000021f0       ??_C@_0BE@LDHIDEEA@INVALID_SOCKET?5?$CB?$DN?5s?$AA@ 004231f0     foundation_win32.release:win360socket.obj
+ 0002:00002204       ??_C@_0DF@HHCFPGCN@Win360Socket?3?3Close?$CI?$CJ?3?5shutdown?$CI@ 00423204     foundation_win32.release:win360socket.obj
+ 0002:0000223c       ??_C@_0DI@LMMENDCA@Win360Socket?3?3Close?$CI?$CJ?3?5closesock@ 0042323c     foundation_win32.release:win360socket.obj
+ 0002:00002274       ??_C@_0DP@IBFAEMLI@Win360Socket?3?3SetBoolOption?$CI?$CJ?3?5s@ 00423274     foundation_win32.release:win360socket.obj
+ 0002:000022b4       ??_C@_0DP@CFMPFCIJ@Win360Socket?3?3GetBoolOption?$CI?$CJ?3?5g@ 004232b4     foundation_win32.release:win360socket.obj
+ 0002:000022f4       ??_C@_0BN@EHIGFCCH@sizeof?$CIoptVal?$CJ?5?$DN?$DN?5optValSize?$AA@ 004232f4     foundation_win32.release:win360socket.obj
+ 0002:00002314       ??_C@_0DO@CMJHKPOO@Win360Socket?3?3SetIntOption?$CI?$CJ?3?5se@ 00423314     foundation_win32.release:win360socket.obj
+ 0002:00002354       ??_C@_0DO@NLHPKJBP@Win360Socket?3?3GetIntOption?$CI?$CJ?3?5ge@ 00423354     foundation_win32.release:win360socket.obj
+ 0002:00002394       ??_C@_0DO@BMLJDOIJ@Win360Socket?3?3SetBlocking?$CI?$CJ?3?5ioc@ 00423394     foundation_win32.release:win360socket.obj
+ 0002:000023d4       ??_C@_0BB@MGLEMMHB@?$CBthis?9?$DOIsBound?$CI?$CJ?$AA@ 004233d4     foundation_win32.release:win360socket.obj
+ 0002:000023e8       ??_C@_0DA@DNNFPCKA@Win360Socket?3?3Bind?$CI?$CJ?3?5bind?$CI?$CJ?5fai@ 004233e8     foundation_win32.release:win360socket.obj
+ 0002:00002418       ??_C@_0BA@EKOFIPCA@this?9?$DOIsBound?$CI?$CJ?$AA@ 00423418     foundation_win32.release:win360socket.obj
+ 0002:00002428       ??_C@_0DE@HPKGIFAM@Win360Socket?3?3Listen?$CI?$CJ?3?5listen?$CI?$CJ@ 00423428     foundation_win32.release:win360socket.obj
+ 0002:0000245c       ??_C@_0DE@LJHBLHK@Win360Socket?3?3Accept?$CI?$CJ?3?5accept?$CI?$CJ@ 0042345c     foundation_win32.release:win360socket.obj
+ 0002:00002490       ??_C@_0DG@PFJLNDLD@Win360Socket?3?3Connect?$CI?$CJ?3?5connect@ 00423490     foundation_win32.release:win360socket.obj
+ 0002:000024c8       ??_C@_0DJ@IHALGLPL@Win360Socket?3?3IsConnected?$CI?$CJ?3?5sel@ 004234c8     foundation_win32.release:win360socket.obj
+ 0002:00002504       ??_C@_0CP@KAPCMLKM@Win360Socket?3?3Send?$CI?$CJ?3?5send?$CI?$CJ?5fai@ 00423504     foundation_win32.release:win360socket.obj
+ 0002:00002534       ??_C@_0DJ@FECEEJHG@Win360Socket?3?3HasRecvData?$CI?$CJ?3?5sel@ 00423534     foundation_win32.release:win360socket.obj
+ 0002:00002570       ??_C@_0CP@GFNALHPO@Win360Socket?3?3Recv?$CI?$CJ?3?5recv?$CI?$CJ?5fai@ 00423570     foundation_win32.release:win360socket.obj
+ 0002:000025a0       ??_C@_0CG@JIJPEHJN@Win360Socket?3?3SendTo?$CI?$CJ?3?5IMPLEMEN@ 004235a0     foundation_win32.release:win360socket.obj
+ 0002:000025c8       ??_C@_0CI@OHPGCLCM@Win360Socket?3?3RecvFrom?$CI?$CJ?3?5IMPLEM@ 004235c8     foundation_win32.release:win360socket.obj
+ 0002:000025f0       ??_C@_09MFOLKCNJ@No?5error?4?$AA@ 004235f0     foundation_win32.release:win360socket.obj
+ 0002:000025fc       ??_C@_0DC@LIBAAKPF@Unknown?5error?5?$CInot?5mapped?5by?5Win@ 004235fc     foundation_win32.release:win360socket.obj
+ 0002:00002630       ??_C@_0BL@MNFCMOJL@Interrupted?5function?5call?4?$AA@ 00423630     foundation_win32.release:win360socket.obj
+ 0002:0000264c       ??_C@_0BD@FKJFEME@Permission?5denied?4?$AA@ 0042364c     foundation_win32.release:win360socket.obj
+ 0002:00002660       ??_C@_0N@GCLPIMGA@Bad?5address?4?$AA@ 00423660     foundation_win32.release:win360socket.obj
+ 0002:00002670       ??_C@_0BC@PPKPNKFJ@Invalid?5argument?4?$AA@ 00423670     foundation_win32.release:win360socket.obj
+ 0002:00002684       ??_C@_0BP@GDMEHPCG@Too?5many?5open?5files?5?$CIsockets?$CJ?4?$AA@ 00423684     foundation_win32.release:win360socket.obj
+ 0002:000026a4       ??_C@_0BH@HILHEDJB@Operation?5would?5block?4?$AA@ 004236a4     foundation_win32.release:win360socket.obj
+ 0002:000026bc       ??_C@_0BL@NJLLEBOH@Operation?5now?5in?5progress?4?$AA@ 004236bc     foundation_win32.release:win360socket.obj
+ 0002:000026d8       ??_C@_0BP@MBKBMKHO@Operation?5already?5in?5progress?4?$AA@ 004236d8     foundation_win32.release:win360socket.obj
+ 0002:000026f8       ??_C@_0CA@CIBMEFJP@Socket?5operation?5on?5non?9socket?4?$AA@ 004236f8     foundation_win32.release:win360socket.obj
+ 0002:00002718       ??_C@_0BN@HFCIEIME@Destination?5address?5required?$AA@ 00423718     foundation_win32.release:win360socket.obj
+ 0002:00002738       ??_C@_0BC@KAAFDOAL@Message?5too?5long?4?$AA@ 00423738     foundation_win32.release:win360socket.obj
+ 0002:0000274c       ??_C@_0CA@MJJGEIL@Protocol?5wrong?5type?5for?5socket?4?$AA@ 0042374c     foundation_win32.release:win360socket.obj
+ 0002:0000276c       ??_C@_0BF@IHBONONG@Bad?5protocal?5option?4?$AA@ 0042376c     foundation_win32.release:win360socket.obj
+ 0002:00002784       ??_C@_0BI@HCEGKLDD@Protocol?5not?5supported?4?$AA@ 00423784     foundation_win32.release:win360socket.obj
+ 0002:0000279c       ??_C@_0BL@IBGJAAEH@Socket?5type?5not?5supported?4?$AA@ 0042379c     foundation_win32.release:win360socket.obj
+ 0002:000027b8       ??_C@_0BJ@OEEMOEE@Operation?5not?5supported?4?$AA@ 004237b8     foundation_win32.release:win360socket.obj
+ 0002:000027d4       ??_C@_0BP@EJPELDFL@Protocol?5family?5not?5supported?4?$AA@ 004237d4     foundation_win32.release:win360socket.obj
+ 0002:000027f4       ??_C@_0DB@BMBDNMEG@Address?5family?5not?5supported?5by?5@ 004237f4     foundation_win32.release:win360socket.obj
+ 0002:00002828       ??_C@_0BI@LBNMNFCL@Address?5already?5in?5use?4?$AA@ 00423828     foundation_win32.release:win360socket.obj
+ 0002:00002840       ??_C@_0CB@BKNHHCEP@Cannot?5assign?5requested?5address?4@ 00423840     foundation_win32.release:win360socket.obj
+ 0002:00002864       ??_C@_0BB@JNLBCFLE@Network?5is?5down?4?$AA@ 00423864     foundation_win32.release:win360socket.obj
+ 0002:00002878       ??_C@_0BI@GJPCFKOM@Network?5is?5unreachable?4?$AA@ 00423878     foundation_win32.release:win360socket.obj
+ 0002:00002890       ??_C@_0CF@EAAKKOEF@Network?5dropped?5connection?5on?5re@ 00423890     foundation_win32.release:win360socket.obj
+ 0002:000028b8       ??_C@_0CC@FDGMNFNN@Software?5caused?5connection?5abort@ 004238b8     foundation_win32.release:win360socket.obj
+ 0002:000028dc       ??_C@_0BK@NKOFGCPK@Connection?5reset?5by?5peer?4?$AA@ 004238dc     foundation_win32.release:win360socket.obj
+ 0002:000028f8       ??_C@_0BL@HNDJEPNA@No?5buffer?5space?5available?4?$AA@ 004238f8     foundation_win32.release:win360socket.obj
+ 0002:00002914       ??_C@_0BN@NKJOIDAP@Socket?5is?5already?5connected?4?$AA@ 00423914     foundation_win32.release:win360socket.obj
+ 0002:00002934       ??_C@_0BJ@ICFPCMKN@Socket?5is?5not?5connected?4?$AA@ 00423934     foundation_win32.release:win360socket.obj
+ 0002:00002950       ??_C@_0CD@DDOPECAA@Cannot?5send?5after?5socket?5shutdow@ 00423950     foundation_win32.release:win360socket.obj
+ 0002:00002974       ??_C@_0BG@FJOOPMBM@Connection?5timed?5out?4?$AA@ 00423974     foundation_win32.release:win360socket.obj
+ 0002:0000298c       ??_C@_0BE@PAAMHJLG@Connection?5refused?4?$AA@ 0042398c     foundation_win32.release:win360socket.obj
+ 0002:000029a0       ??_C@_0O@NFGFDNC@Host?5is?5down?4?$AA@ 004239a0     foundation_win32.release:win360socket.obj
+ 0002:000029b0       ??_C@_0BC@LGEPODIC@No?5route?5to?5host?4?$AA@ 004239b0     foundation_win32.release:win360socket.obj
+ 0002:000029c4       ??_C@_0BE@LPAHEAJN@Too?5many?5processes?4?$AA@ 004239c4     foundation_win32.release:win360socket.obj
+ 0002:000029d8       ??_C@_0CC@LAPHNDHH@Network?5subsystem?5is?5unavailable@ 004239d8     foundation_win32.release:win360socket.obj
+ 0002:000029fc       ??_C@_0CC@PPLEHHBE@Winsock?4dll?5version?5out?5of?5range@ 004239fc     foundation_win32.release:win360socket.obj
+ 0002:00002a20       ??_C@_0CJ@IDCKMOHB@Successful?5WSAStartup?5not?5yet?5pe@ 00423a20     foundation_win32.release:win360socket.obj
+ 0002:00002a4c       ??_C@_0BP@LJDBFHGM@Graceful?5shutdown?5in?5progress?4?$AA@ 00423a4c     foundation_win32.release:win360socket.obj
+ 0002:00002a6c       ??_C@_0BG@DPCOFCIG@Class?5type?5not?5found?4?$AA@ 00423a6c     foundation_win32.release:win360socket.obj
+ 0002:00002a84       ??_C@_0BA@GFEMFDFG@Host?5not?5found?4?$AA@ 00423a84     foundation_win32.release:win360socket.obj
+ 0002:00002a94       ??_C@_0CB@BHFFMGGM@Nonauthoritative?5host?5not?5found?4@ 00423a94     foundation_win32.release:win360socket.obj
+ 0002:00002ab8       ??_C@_0CA@MAHIFNBD@This?5is?5a?5nonrecoverable?5error?4?$AA@ 00423ab8     foundation_win32.release:win360socket.obj
+ 0002:00002ad8       ??_C@_0CO@JIKLALMA@Valid?5name?0?5no?5data?5record?5of?5re@ 00423ad8     foundation_win32.release:win360socket.obj
+ 0002:00002b08       ??_C@_0DF@LFBAJAON@Win360Socket?3?3ErrorAsString?$CI?$CJ?3?5u@ 00423b08     foundation_win32.release:win360socket.obj
+ 0002:00002b40       ??_7Win360Socket@Win360@@6B@ 00423b40     foundation_win32.release:win360socket.obj
+ 0002:00002b48       ??_C@_0BO@BOEMEOMC@?$CF04d?9?$CF02d?9?$CF02d_?$CF02d?9?$CF02d?9?$CF02d?$AA@ 00423b48     foundation_win32.release:win32minidump.obj
+ 0002:00002b68       ??_C@_0M@DKJCMOIE@?$CFs?$CFs_?$CFs?4dmp?$AA@ 00423b68     foundation_win32.release:win32minidump.obj
+ 0002:00002b78       ??_C@_0EE@FMNLPNPG@c?3?2nebula3?2code?2foundation?2threa@ 00423b78     foundation_win32.release:globalstringatomtable.obj
+ 0002:00002bbc       ??_C@_0P@OKJJAII@NULL?5?$CB?$DN?5handle?$AA@ 00423bbc     foundation_win32.release:globalstringatomtable.obj
+ 0002:00002bcc       ??_C@_0BA@KPOMOFPA@this?9?$DOsemaphore?$AA@ 00423bcc     foundation_win32.release:globalstringatomtable.obj
+ 0002:00002bdc       ??_C@_0CM@PFLFHPFG@?4?4?2foundation?2util?2globalstringa@ 00423bdc     foundation_win32.release:globalstringatomtable.obj
+ 0002:00002c08       ??_C@_07GDLIKBJC@num?5?$DO?50?$AA@ 00423c08     foundation_win32.release:globalstringatomtable.obj
+ 0002:00002c10       ??_C@_0CL@JONGJMFE@?4?4?2foundation?2util?2localstringat@ 00423c10     foundation_win32.release:localstringatomtable.obj
+ 0002:00002c3c       ??_7ExitHandler@Core@@6B@  00423c3c     foundation_win32.release:exithandler.obj
+ 0002:00002c44       ??_C@_0M@MEPMEGKB@IO?3?3Console?$AA@ 00423c44     foundation_win32.release:console.obj
+ 0002:00002c50       ??_C@_0BM@HFIMCIOD@?4?4?2foundation?2io?2console?4cc?$AA@ 00423c50     foundation_win32.release:console.obj
+ 0002:00002c6c       ??_C@_0DB@FMDPFOIJ@Thread?3?3GetMyThreadId?$CI?$CJ?5?$DN?$DN?5this?9@ 00423c6c     foundation_win32.release:console.obj
+ 0002:00002ca0       ??_C@_0M@PAPELKKB@h?4isvalid?$CI?$CJ?$AA@ 00423ca0     foundation_win32.release:console.obj
+ 0002:00002cac       ??_C@_0BG@KOPLHNID@InvalidIndex?5?$CB?$DN?5index?$AA@ 00423cac     foundation_win32.release:console.obj
+ 0002:00002cc4       ??_7Console@IO@@6B@        00423cc4     foundation_win32.release:console.obj
+ 0002:00002ccc       ??_C@_05NMJMPJJB@win32?$AA@ 00423ccc     foundation_win32.release:systeminfobase.obj
+ 0002:00002cd4       ??_C@_07NEHPBJGA@xbox360?$AA@ 00423cd4     foundation_win32.release:systeminfobase.obj
+ 0002:00002cdc       ??_C@_03NLGKJIIH@wii?$AA@  00423cdc     foundation_win32.release:systeminfobase.obj
+ 0002:00002ce0       ??_C@_03BHFIDDEG@ps3?$AA@  00423ce0     foundation_win32.release:systeminfobase.obj
+ 0002:00002ce4       ??_C@_0BA@FELDNHBI@unknownplatform?$AA@ 00423ce4     foundation_win32.release:systeminfobase.obj
+ 0002:00002cf4       ??_C@_06CDGPGGGH@x86_32?$AA@ 00423cf4     foundation_win32.release:systeminfobase.obj
+ 0002:00002cfc       ??_C@_06HDPOADAK@x86_64?$AA@ 00423cfc     foundation_win32.release:systeminfobase.obj
+ 0002:00002d04       ??_C@_0BA@KJCALELP@powerpc_xbox360?$AA@ 00423d04     foundation_win32.release:systeminfobase.obj
+ 0002:00002d14       ??_C@_0M@JOPAPABN@powerpc_ps3?$AA@ 00423d14     foundation_win32.release:systeminfobase.obj
+ 0002:00002d20       ??_C@_0M@FCMCFLNM@powerpc_wii?$AA@ 00423d20     foundation_win32.release:systeminfobase.obj
+ 0002:00002d2c       ??_C@_0P@IOANILPO@unknowncputype?$AA@ 00423d2c     foundation_win32.release:systeminfobase.obj
+ 0002:00002d3c       ??_C@_0BD@GICHHBIJ@tokens?4Size?$CI?$CJ?5?$DN?$DN?54?$AA@ 00423d3c     foundation_win32.release:win360ipaddress.obj
+ 0002:00002d50       ??_C@_0M@PCENNPGA@?$CFd?4?$CFd?4?$CFd?4?$CFd?$AA@ 00423d50     foundation_win32.release:win360ipaddress.obj
+ 0002:00002d5c       ??_C@_09IPAEKDAI@localhost?$AA@ 00423d5c     foundation_win32.release:win360ipaddress.obj
+ 0002:00002d68       ??_C@_0CM@EAKOCGND@?4?4?2foundation?2net?2win360?2win360i@ 00423d68     foundation_win32.release:win360ipaddress.obj
+ 0002:00002d94       ??_C@_0M@KJOCHOMH@n?4IsValid?$CI?$CJ?$AA@ 00423d94     foundation_win32.release:win360ipaddress.obj
+ 0002:00002da0       ??_C@_0BD@EJMIODFG@hostName?4IsValid?$CI?$CJ?$AA@ 00423da0     foundation_win32.release:win360ipaddress.obj
+ 0002:00002db4       ??_C@_03OBJFJEBA@any?$AA@  00423db4     foundation_win32.release:win360ipaddress.obj
+ 0002:00002db8       ??_C@_09OALBOHJN@broadcast?$AA@ 00423db8     foundation_win32.release:win360ipaddress.obj
+ 0002:00002dc4       ??_C@_04PJDNGLKJ@self?$AA@ 00423dc4     foundation_win32.release:win360ipaddress.obj
+ 0002:00002dcc       ??_C@_08KFIKCBPJ@inetself?$AA@ 00423dcc     foundation_win32.release:win360ipaddress.obj
+ 0002:00002dd8       ??_C@_0M@LOAOIMFF@?40123456789?$AA@ 00423dd8     foundation_win32.release:win360ipaddress.obj
+ 0002:00002de4       ??_C@_0M@PACOMBBM@Net?3?3Socket?$AA@ 00423de4     foundation_win32.release:socket.obj
+ 0002:00002df0       ??_7Socket@Net@@6B@        00423df0     foundation_win32.release:socket.obj
+ 0002:00002df8       ??_C@_0CD@PNKBLKLC@?4?4?2foundation?2util?2stringbuffer?4@ 00423df8     foundation_win32.release:stringbuffer.obj
+ 0002:00002e1c       ??_C@_0BB@PIIDAHLO@?$CBthis?9?$DOIsValid?$CI?$CJ?$AA@ 00423e1c     foundation_win32.release:stringbuffer.obj
+ 0002:00002e30       ??_C@_08DJGDGONI@size?5?$DO?50?$AA@ 00423e30     foundation_win32.release:stringbuffer.obj
+ 0002:00002e3c       ??_C@_0BA@HENCEEOP@this?9?$DOIsValid?$CI?$CJ?$AA@ 00423e3c     foundation_win32.release:stringbuffer.obj
+ 0002:00002e4c       ??_C@_0BM@DBFHMPLN@strLength?5?$DM?5this?9?$DOchunkSize?$AA@ 00423e4c     foundation_win32.release:stringbuffer.obj
+ 0002:00002e68       ??_C@_0CD@OACPADOP@this?9?$DOelements?5?$CG?$CG?5?$CIthis?9?$DOsize?5?$DO?5@ 00423e68     foundation_win32.release:stringbuffer.obj
+ 0002:00002e8c       ??_C@_0CN@JFMHDALH@c?3?2nebula3?2code?2foundation?2core?1@ 00423e8c     foundation_win32.release:win32consolehandler.obj
+ 0002:00002ebc       ??_C@_0BL@JCDCJCAD@Win32?3?3Win32ConsoleHandler?$AA@ 00423ebc     foundation_win32.release:win32consolehandler.obj
+ 0002:00002ed8       ??_C@_0CO@FFJPCLLL@?4?4?2foundation?2io?2win32?2win32cons@ 00423ed8     foundation_win32.release:win32consolehandler.obj
+ 0002:00002f08       ??_C@_0CL@BNEANLIA@INVALID_HANDLE_VALUE?5?$CB?$DN?5this?9?$DOst@ 00423f08     foundation_win32.release:win32consolehandler.obj
+ 0002:00002f34       ??_C@_0CK@OFIECDKM@INVALID_HANDLE_VALUE?5?$CB?$DN?5this?9?$DOst@ 00423f34     foundation_win32.release:win32consolehandler.obj
+ 0002:00002f60       ??_C@_0CL@KIGMCPAH@INVALID_HANDLE_VALUE?5?$CB?$DN?5this?9?$DOst@ 00423f60     foundation_win32.release:win32consolehandler.obj
+ 0002:00002f8c       ??_C@_03BBKEAIF@?$DP?$DP?$DP?$AA@ 00423f8c     foundation_win32.release:win32consolehandler.obj
+ 0002:00002f90       ??_C@_04KGFMLCPK@Main?$AA@ 00423f90     foundation_win32.release:win32consolehandler.obj
+ 0002:00002f98       ??_C@_0DD@LGGPGMPP@?$CK?$CK?$CK?5ERROR?5?$CK?$CK?$CK?6Application?3?5?$CFs?6Th@ 00423f98     foundation_win32.release:win32consolehandler.obj
+ 0002:00002fcc       ??_C@_02LIIHNNHG@?6?$AN?$AA@ 00423fcc     foundation_win32.release:win32consolehandler.obj
+ 0002:00002fd0       ??_7Win32ConsoleHandler@Win32@@6B@ 00423fd0     foundation_win32.release:win32consolehandler.obj
+ 0002:00003000       ??_C@_0BD@OHCGIOAM@IO?3?3ConsoleHandler?$AA@ 00424000     foundation_win32.release:consolehandler.obj
+ 0002:00003014       ??_C@_0CD@LNDHOCKM@?4?4?2foundation?2io?2consolehandler?4@ 00424014     foundation_win32.release:consolehandler.obj
+ 0002:00003038       ??_7ConsoleHandler@IO@@6B@ 00424038     foundation_win32.release:consolehandler.obj
+ 0002:00003068       __real@408f400000000000    00424068      CIL library: CIL module
+ 0002:00003070       __real@00000000            00424070      CIL library: CIL module
+ 0002:00003074       __real@40c00000            00424074      CIL library: CIL module
+ 0002:00003078       __real@40a00000            00424078      CIL library: CIL module
+ 0002:0000307c       __real@40800000            0042407c      CIL library: CIL module
+ 0002:00003080       __real@41100000            00424080      CIL library: CIL module
+ 0002:00003084       __real@41000000            00424084      CIL library: CIL module
+ 0002:00003088       __real@40e00000            00424088      CIL library: CIL module
+ 0002:0000308c       __real@40400000            0042408c      CIL library: CIL module
+ 0002:00003090       __real@40000000            00424090      CIL library: CIL module
+ 0002:00003094       __real@3f800000            00424094      CIL library: CIL module
+ 0002:00003098       __real@3f000000            00424098      CIL library: CIL module
+ 0002:0000309c       __real@3ecccccd            0042409c      CIL library: CIL module
+ 0002:000030a0       __real@3e99999a            004240a0      CIL library: CIL module
+ 0002:000030a4       __real@3e4ccccd            004240a4      CIL library: CIL module
+ 0002:000030a8       __real@3dcccccd            004240a8      CIL library: CIL module
+ 0002:000030ac       __real@3fe66666            004240ac      CIL library: CIL module
+ 0002:000030b0       __real@3fd9999a            004240b0      CIL library: CIL module
+ 0002:000030b4       __real@3fc00000            004240b4      CIL library: CIL module
+ 0002:000030b8       __real@0000000000000000    004240b8      CIL library: CIL module
+ 0002:000030c0       __load_config_used         004240c0     MSVCRT:loadcfg.obj
+ 0002:00003108       __tls_used                 00424108     MSVCRT:tlssup.obj
+ 0002:00003170       ___safe_se_handler_table   00424170     <linker-defined>
+ 0002:00003178       ___rtc_iaa                 00424178     MSVCRT:_initsect_.obj
+ 0002:0000317c       ___rtc_izz                 0042417c     MSVCRT:_initsect_.obj
+ 0002:00003180       ___rtc_taa                 00424180     MSVCRT:_initsect_.obj
+ 0002:00003184       ___rtc_tzz                 00424184     MSVCRT:_initsect_.obj
+ 0002:00003214       __IMPORT_DESCRIPTOR_KERNEL32 00424214     kernel32:KERNEL32.dll
+ 0002:00003228       __IMPORT_DESCRIPTOR_USER32 00424228     user32:USER32.dll
+ 0002:0000323c       __IMPORT_DESCRIPTOR_MSVCR90 0042423c     MSVCRT:MSVCR90.dll
+ 0002:00003250       __IMPORT_DESCRIPTOR_dbghelp 00424250     dbghelp:dbghelp.dll
+ 0002:00003264       __IMPORT_DESCRIPTOR_WSOCK32 00424264     wsock32:WSOCK32.dll
+ 0002:00003278       __NULL_IMPORT_DESCRIPTOR   00424278     kernel32:KERNEL32.dll
+ 0003:00000000       ___native_dllmain_reason   00425000     MSVCRT:natstart.obj
+ 0003:00000004       ___native_vcclrit_reason   00425004     MSVCRT:natstart.obj
+ 0003:00000008       ___globallocalestatus      00425008     MSVCRT:xthdloc.obj
+ 0003:0000000c       ___defaultmatherr          0042500c     MSVCRT:merr.obj
+ 0003:00000010       ___security_cookie         00425010     MSVCRT:gs_cookie.obj
+ 0003:00000014       ___security_cookie_complement 00425014     MSVCRT:gs_cookie.obj
+ 0003:0000001c       ?MemoryLoggingHeapType@Memory@@3W4HeapType@1@C 0042501c     foundation_win32.release:win360memory.obj
+ 0003:00000080       __dowildcard               00425080     MSVCRT:wildcard.obj
+ 0003:00000084       __newmode                  00425084     MSVCRT:_newmode.obj
+ 0003:00000088       __commode                  00425088     MSVCRT:xncommod.obj
+ 0003:0000008c       __fmode                    0042508c     MSVCRT:xtxtmode.obj
+ 0003:000003b4       ___@@_PchSym_@00@UmvyfozDUxlwvUehJOAUdrmDCUivovzhvUyvmxsnzipulfmwzgrlmPdrmDCUhgwmvyOlyq@ 004253b4     stdneb.obj
+ 0003:000003b8       ___@@_PchSym_@00@UmvyfozDUxlwvUehJOAUdrmDCUivovzhvUyvmxsnzipyzhvPdrmDCUhgwmvyOlyq@ 004253b8     benchmarkbase_win32.release:stdneb.obj
+ 0003:000003bc       ___@@_PchSym_@00@UmvyfozDUxlwvUehJOAUdrmDCUivovzhvUulfmwzgrlmPdrmDCUhgwmvyOlyq@ 004253bc     foundation_win32.release:stdneb.obj
+ 0003:000003c0       ?Win32ProcessHeap@Memory@@3RAXA 004253c0     foundation_win32.release:win360memory.obj
+ 0003:000003c4       ?TotalAllocCount@Memory@@3HC 004253c4     foundation_win32.release:win360memory.obj
+ 0003:000003c8       ?TotalAllocSize@Memory@@3HC 004253c8     foundation_win32.release:win360memory.obj
+ 0003:000003cc       ?HeapTypeAllocCount@Memory@@3RCHC 004253cc     foundation_win32.release:win360memory.obj
+ 0003:00000400       ?HeapTypeAllocSize@Memory@@3RCHC 00425400     foundation_win32.release:win360memory.obj
+ 0003:00000434       ?MemoryLoggingEnabled@Memory@@3_NC 00425434     foundation_win32.release:win360memory.obj
+ 0003:00000435       ?SetupCalled@SysFunc@Win32@@0_NC 00425435     foundation_win32.release:win32sysfunc.obj
+ 0003:00000436       ?NetworkInitialized@Win360Socket@Win360@@0_NA 00425436     foundation_win32.release:win360socket.obj
+ 0003:00000438       ?MemoryLoggingThreshold@Memory@@3IC 00425438     foundation_win32.release:win360memory.obj
+ 0003:0000043c       ?ExitHandlers@SysFunc@Win32@@0PBVExitHandler@Core@@B 0042543c     foundation_win32.release:win32sysfunc.obj
+ 0003:00000440       ?globalStringAtomTable@Win32@@3PAVGlobalStringAtomTable@Util@@A 00425440     foundation_win32.release:win32sysfunc.obj
+ 0003:00000444       ?localStringAtomTable@Win32@@3PAVLocalStringAtomTable@Util@@A 00425444     foundation_win32.release:win32sysfunc.obj
+ 0003:00000448       ?Singleton@Factory@Core@@0PAV12@A 00425448     foundation_win32.release:factory.obj
+ 0003:0000044c       ?Heaps@Memory@@3RCRAXC     0042544c     foundation_win32.release:win360memoryconfig.obj
+ 0003:00000480       ?DataHeap@Blob@Util@@0PAVWin360Heap@Win360@@A 00425480     foundation_win32.release:blob.obj
+ 0003:00000484       ?Singleton@GlobalStringAtomTable@Util@@2PAV12@A 00425484     foundation_win32.release:globalstringatomtable.obj
+ 0003:00000488       ?Singleton@Console@IO@@2PAV12@A 00425488     foundation_win32.release:console.obj
+ 0003:0000048c       ?RTTI@CreateObjects@Benchmarking@@2VRtti@Core@@A 0042548c     createobjects.obj
+ 0003:000004bc       ?RTTI@CreateObjectsByClassName@Benchmarking@@2VRtti@Core@@A 004254bc     createobjectsbyclassname.obj
+ 0003:000004ec       ?RTTI@CreateObjectsByFourCC@Benchmarking@@2VRtti@Core@@A 004254ec     createobjectsbyfourcc.obj
+ 0003:0000051c       ?RTTI@Float4Math@Benchmarking@@2VRtti@Core@@A 0042551c     float4math.obj
+ 0003:0000054c       ?RTTI@Matrix44Inverse@Benchmarking@@2VRtti@Core@@A 0042554c     matrix44inverse.obj
+ 0003:0000057c       ?RTTI@Matrix44Multiply@Benchmarking@@2VRtti@Core@@A 0042557c     matrix44multiply.obj
+ 0003:000005ac       ?RTTI@MemPoolBenchmark@Benchmarking@@2VRtti@Core@@A 004255ac     mempoolbenchmark.obj
+ 0003:000005dc       ?RTTI@Benchmark@Benchmarking@@2VRtti@Core@@A 004255dc     benchmarkbase_win32.release:benchmark.obj
+ 0003:0000060c       ?RTTI@BenchmarkRunner@Benchmarking@@2VRtti@Core@@A 0042560c     benchmarkbase_win32.release:benchmarkrunner.obj
+ 0003:0000063c       ?RTTI@RefCounted@Core@@2VRtti@2@A 0042563c     foundation_win32.release:refcounted.obj
+ 0003:0000066c       ?systemInfo@SysFunc@Win32@@0VSystemInfo@System@@A 0042566c     foundation_win32.release:win32sysfunc.obj
+ 0003:0000067c       ?RTTI@CoreServer@Core@@2VRtti@2@A 0042567c     foundation_win32.release:coreserver.obj
+ 0003:000006ac       ?RTTI@Win360Thread@Win360@@2VRtti@Core@@A 004256ac     foundation_win32.release:win360thread.obj
+ 0003:000006dc       ?RTTI@Win360Socket@Win360@@2VRtti@Core@@A 004256dc     foundation_win32.release:win360socket.obj
+ 0003:0000070c       ?RTTI@Console@IO@@2VRtti@Core@@A 0042570c     foundation_win32.release:console.obj
+ 0003:0000073c       ?RTTI@Socket@Net@@2VRtti@Core@@A 0042573c     foundation_win32.release:socket.obj
+ 0003:0000076c       ?RTTI@Win32ConsoleHandler@Win32@@2VRtti@Core@@A 0042576c     foundation_win32.release:win32consolehandler.obj
+ 0003:0000079c       ?RTTI@ConsoleHandler@IO@@2VRtti@Core@@A 0042579c     foundation_win32.release:consolehandler.obj
+ 0003:000007cc       __tls_index                004257cc     MSVCRT:tlssup.obj
+ 0003:000007d0       ___sse2_available          004257d0     <common>
+ 0003:000007d4       __adjust_fdiv              004257d4     <common>
+ 0003:000007d8       ___native_startup_state    004257d8     <common>
+ 0003:000007dc       ___native_startup_lock     004257dc     <common>
+ 0003:000007e0       ___dyn_tls_init_callback   004257e0     <common>
+ 0003:000007e4       ___onexitend               004257e4     <common>
+ 0003:000007e8       ___onexitbegin             004257e8     <common>
+ 0004:00000000       __tls_start                00426000     MSVCRT:tlssup.obj
+ 0004:00000004       ?Singleton@CoreServer@Core@@2PAV12@A 00426004     foundation_win32.release:coreserver.obj
+ 0004:00000008       ?Singleton@LocalStringAtomTable@Util@@2PAV12@A 00426008     foundation_win32.release:localstringatomtable.obj
+ 0004:0000000c       ?ThreadName@Win360Thread@Win360@@0PBDB 0042600c     foundation_win32.release:win360thread.obj
+ 0004:00000010       __tls_end                  00426010     MSVCRT:tlssup.obj
+
+ entry point at        0001:0001eaaa
+
+ Static symbols
+
+ 0001:0000cd10       ??HUtil@@YA?AVString@0@ABV10@0@Z 0040dd10 f    CIL library: CIL module
+ 0001:00011110       ?StringVPrintfWorkerA@@YGJPADIPAIPBD0@Z 00412110 f    CIL library: CIL module
+ 0001:00011210       ?StringLengthWorkerA@@YGJPBDIPAI@Z 00412210 f    CIL library: CIL module
+ 0001:00011280       ?StringValidateDestA@@YGJPADIPAII@Z 00412280 f    CIL library: CIL module
+ 0001:00011340       ?StringCopyWorkerA@@YGJPADIPAIPBDI@Z 00412340 f    CIL library: CIL module
+ 0001:0001e7a9       _pre_cpp_init              0041f7a9 f   MSVCRT:crtexe.obj
+ 0001:0001e7f4       ___tmainCRTStartup         0041f7f4 f   MSVCRT:crtexe.obj
+ 0001:0001e96a       _check_managed_app         0041f96a f   MSVCRT:crtexe.obj
+ 0001:0001e9c9       _pre_c_init                0041f9c9 f   MSVCRT:crtexe.obj
+ 0001:0001f272       _has_osfxsr_set            00420272 f   MSVCRT:cpu_disp.obj
+ 0001:0001f340       ??__E?RTTI@CreateObjects@Benchmarking@@2VRtti@Core@@A@@YAXXZ 00420340 f    CIL library: CIL module
+ 0001:0001f380       ??__E?RTTI@CreateObjectsByClassName@Benchmarking@@2VRtti@Core@@A@@YAXXZ 00420380 f    CIL library: CIL module
+ 0001:0001f3c0       ??__E?RTTI@CreateObjectsByFourCC@Benchmarking@@2VRtti@Core@@A@@YAXXZ 004203c0 f    CIL library: CIL module
+ 0001:0001f400       ??__E?RTTI@Float4Math@Benchmarking@@2VRtti@Core@@A@@YAXXZ 00420400 f    CIL library: CIL module
+ 0001:0001f440       ??__E?RTTI@Matrix44Inverse@Benchmarking@@2VRtti@Core@@A@@YAXXZ 00420440 f    CIL library: CIL module
+ 0001:0001f480       ??__E?RTTI@Matrix44Multiply@Benchmarking@@2VRtti@Core@@A@@YAXXZ 00420480 f    CIL library: CIL module
+ 0001:0001f4c0       ??__E?RTTI@MemPoolBenchmark@Benchmarking@@2VRtti@Core@@A@@YAXXZ 004204c0 f    CIL library: CIL module
+ 0001:0001f500       ??__E?RTTI@Benchmark@Benchmarking@@2VRtti@Core@@A@@YAXXZ 00420500 f    CIL library: CIL module
+ 0001:0001f540       ??__E?RTTI@BenchmarkRunner@Benchmarking@@2VRtti@Core@@A@@YAXXZ 00420540 f    CIL library: CIL module
+ 0001:0001f580       ??__E?RTTI@RefCounted@Core@@2VRtti@2@A@@YAXXZ 00420580 f    CIL library: CIL module
+ 0001:0001f5c0       ??__E?systemInfo@SysFunc@Win32@@0VSystemInfo@System@@A@@YAXXZ 004205c0 f    CIL library: CIL module
+ 0001:0001f5d0       ??__E?RTTI@CoreServer@Core@@2VRtti@2@A@@YAXXZ 004205d0 f    CIL library: CIL module
+ 0001:0001f610       ??__E?RTTI@Win360Thread@Win360@@2VRtti@Core@@A@@YAXXZ 00420610 f    CIL library: CIL module
+ 0001:0001f650       ??__E?RTTI@Win360Socket@Win360@@2VRtti@Core@@A@@YAXXZ 00420650 f    CIL library: CIL module
+ 0001:0001f690       ??__E?RTTI@Console@IO@@2VRtti@Core@@A@@YAXXZ 00420690 f    CIL library: CIL module
+ 0001:0001f6d0       ??__E?RTTI@Socket@Net@@2VRtti@Core@@A@@YAXXZ 004206d0 f    CIL library: CIL module
+ 0001:0001f710       ??__E?RTTI@Win32ConsoleHandler@Win32@@2VRtti@Core@@A@@YAXXZ 00420710 f    CIL library: CIL module
+ 0001:0001f750       ??__E?RTTI@ConsoleHandler@IO@@2VRtti@Core@@A@@YAXXZ 00420750 f    CIL library: CIL module
+ 0001:0001f790       ??__F?RTTI@CreateObjects@Benchmarking@@2VRtti@Core@@A@@YAXXZ 00420790 f    CIL library: CIL module
+ 0001:0001f7e0       ??__F?RTTI@CreateObjectsByClassName@Benchmarking@@2VRtti@Core@@A@@YAXXZ 004207e0 f    CIL library: CIL module
+ 0001:0001f830       ??__F?RTTI@CreateObjectsByFourCC@Benchmarking@@2VRtti@Core@@A@@YAXXZ 00420830 f    CIL library: CIL module
+ 0001:0001f880       ??__F?RTTI@Float4Math@Benchmarking@@2VRtti@Core@@A@@YAXXZ 00420880 f    CIL library: CIL module
+ 0001:0001f8d0       ??__F?RTTI@Matrix44Inverse@Benchmarking@@2VRtti@Core@@A@@YAXXZ 004208d0 f    CIL library: CIL module
+ 0001:0001f920       ??__F?RTTI@Matrix44Multiply@Benchmarking@@2VRtti@Core@@A@@YAXXZ 00420920 f    CIL library: CIL module
+ 0001:0001f970       ??__F?RTTI@MemPoolBenchmark@Benchmarking@@2VRtti@Core@@A@@YAXXZ 00420970 f    CIL library: CIL module
+ 0001:0001f9c0       ??__F?RTTI@Benchmark@Benchmarking@@2VRtti@Core@@A@@YAXXZ 004209c0 f    CIL library: CIL module
+ 0001:0001fa10       ??__F?RTTI@BenchmarkRunner@Benchmarking@@2VRtti@Core@@A@@YAXXZ 00420a10 f    CIL library: CIL module
+ 0001:0001fa60       ??__F?RTTI@RefCounted@Core@@2VRtti@2@A@@YAXXZ 00420a60 f    CIL library: CIL module
+ 0001:0001fab0       ??__F?RTTI@CoreServer@Core@@2VRtti@2@A@@YAXXZ 00420ab0 f    CIL library: CIL module
+ 0001:0001fb00       ??__F?RTTI@Win360Thread@Win360@@2VRtti@Core@@A@@YAXXZ 00420b00 f    CIL library: CIL module
+ 0001:0001fb50       ??__F?RTTI@Win360Socket@Win360@@2VRtti@Core@@A@@YAXXZ 00420b50 f    CIL library: CIL module
+ 0001:0001fba0       ??__F?RTTI@Console@IO@@2VRtti@Core@@A@@YAXXZ 00420ba0 f    CIL library: CIL module
+ 0001:0001fbf0       ??__F?RTTI@Socket@Net@@2VRtti@Core@@A@@YAXXZ 00420bf0 f    CIL library: CIL module
+ 0001:0001fc40       ??__F?RTTI@Win32ConsoleHandler@Win32@@2VRtti@Core@@A@@YAXXZ 00420c40 f    CIL library: CIL module
+ 0001:0001fc90       ??__F?RTTI@ConsoleHandler@IO@@2VRtti@Core@@A@@YAXXZ 00420c90 f    CIL library: CIL module

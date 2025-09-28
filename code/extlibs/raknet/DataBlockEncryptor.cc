@@ -130,7 +130,7 @@ bool DataBlockEncryptor::Decrypt( unsigned char *input, unsigned int inputLength
 	unsigned int checkSum;
 	unsigned char paddingBytes;
 	unsigned char encodedPad;
-	unsigned char randomChar = 0;
+	unsigned char randomChar;
 	CheckSum checkSumCalculator;
 #ifdef _DEBUG
 

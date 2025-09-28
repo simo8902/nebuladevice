@@ -33,7 +33,7 @@ D3D9MemoryIndexBufferLoader::OnLoadRequested()
         n_assert(0 != this->indexDataPtr);
         n_assert(0 < this->indexDataSize);
     }
-   
+
 	// create a D3D9 index buffer object
 	const Ptr<IndexBuffer>& res = this->resource.downcast<IndexBuffer>();
 	n_assert(!res->IsLoaded());

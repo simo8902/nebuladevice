@@ -45,8 +45,6 @@ public:
     const Math::float2& GetScreenPosition() const;
     /// get mouse movement
     const Math::float2& GetMovement() const;
-	/// True if a button is down and the mouse is moving
-	bool Dragging() const;
 
 protected:
     /// called when the handler is attached to the input server
@@ -87,7 +85,6 @@ private:
     bool wheelForward;
     bool wheelBackward;
     bool initialMouseMovement;
-	bool dragging;
 };
 
 //------------------------------------------------------------------------------
@@ -169,15 +166,6 @@ inline bool
 MouseBase::WheelBackward() const
 {
     return this->wheelBackward;
-}
-
-//------------------------------------------------------------------------------
-/**
-*/
-inline bool
-MouseBase::Dragging() const
-{
-	return this->dragging;
 }
 
 } // namespace Base

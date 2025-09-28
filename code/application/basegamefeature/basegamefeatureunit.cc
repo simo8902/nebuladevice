@@ -28,9 +28,6 @@
 #include "debugrender/debugrender.h"
 #include "http/httpserverproxy.h"
 #include "debug/objectinspectorhandler.h"
-#include "debug/debugserver.h"
-
-
 
 // include all properties for known by managers::factorymanager
 #include "properties/timeproperty.h"
@@ -97,9 +94,9 @@ BaseGameFeatureUnit::OnActivate()
     this->audioInterface = Audio2::Audio2Interface::Create();
     this->audioInterface->Open();
 
-    //Create AudioServer//removed by xiongyouyi[05/07/2011]
-    //this->audioServer = Audio2::Audio2Server::Create();
-    //this->audioServer->Open();
+    //Create AudioServer
+    this->audioServer = Audio2::Audio2Server::Create();
+    this->audioServer->Open();
 
     // attach loader to BaseGameFeature::LoaderServer
     Ptr<BaseGameFeature::EntityLoader> entityloader = BaseGameFeature::EntityLoader::Create();
@@ -197,8 +194,8 @@ BaseGameFeatureUnit::OnDeactivate()
     this->dbServer->Close();
     this->dbServer = 0;
 
-    //this->audioServer->Close();//removed by xiongyouyi[05/07/2011]
-    //this->audioServer = 0;
+    this->audioServer->Close();
+    this->audioServer = 0;
 
     this->audioInterface->Close();
     this->audioInterface = 0;
@@ -221,24 +218,11 @@ BaseGameFeatureUnit::OnRenderDebug()
     // this->entityManager->OnRenderDebug();
     FeatureUnit::OnRenderDebug();
 
-
-	// lookup debug counters
-	Debug::DebugServer* dbgServer = Debug::DebugServer::Instance();
-	if (!this->numPrimitives.isvalid())
-	{
-		this->numPrimitives= dbgServer->GetDebugCounterByName("RenderDeviceNumPrimitives");
-	}
-	if (!this->numDrawCalls.isvalid())
-	{
-		this->numDrawCalls = dbgServer->GetDebugCounterByName("RenderDeviceNumDrawCalls");
-	}
-
-    // fps
+    // print fps
     Timing::Time frameTime = SystemTimeSource::Instance()->GetFrameTime();        
 	Util::String txt;
-	txt.Format("Primitives: %d  DP: %d\nFPS: %.0f", 
-		numPrimitives->GetSample(), numDrawCalls->GetSample(), 1/frameTime);
-	_debug_text(txt, Math::float2(0.01f, 0.01f), Math::float4(1, 1, 1, 1));
+	txt.Format("FPS: %.0f \n", 1/frameTime);
+	_debug_text(txt, Math::float2(0.7f, 0.0f), Math::float4(1, 1, 1, 1));
 	//IO::Console::Instance()->Print("FPS: %.0f \n", 1/frameTime);
 }
 
@@ -591,7 +575,7 @@ BaseGameFeatureUnit::HandleInput()
 void
 BaseGameFeatureUnit::OnFrame()
 {
-    //this->audioServer->OnFrame();//removed by xiongyouyi[05/07/2011]
+    this->audioServer->OnFrame();
     FeatureUnit::OnFrame();
 }
 

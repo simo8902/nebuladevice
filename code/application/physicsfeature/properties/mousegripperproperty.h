@@ -10,7 +10,7 @@
     (C) 2008 Radon Labs GmbH
 */
 #include "properties/inputproperty.h"
-//#include "physics/mousegripper.h"
+#include "physics/mousegripper.h"
 
 //------------------------------------------------------------------------------
 namespace PhysicsFeature
@@ -47,13 +47,9 @@ protected:
     void HandleLeftMouseBtnDown();
     /// handle left mouse btn
     void HandleLeftMouseBtnUp();
-    /// draw select gripper
-	void DrawSelectGripper();
-	/// draw move gripper
-	void DrawMoveGripper();
-
+    
 private:
-    //Ptr<Physics::MouseGripper> physicsGripper;
+    Ptr<Physics::MouseGripper> physicsGripper;
 };
 __RegisterClass(MouseGripperProperty);
 

@@ -559,7 +559,7 @@ ParticleSystemInstanceBase::StartJobStepParticles(float stepTime, bool generateV
     ///////////////////////
     // setup input data
     n_assert(this->particles.GetBuffer());
-#if !__WII__    
+#if !__WII__ && !NEBULA3_EDITOR    
     n_assert(!((int)this->particles.GetBuffer() & 0xF));
 #endif    
     const int inputBufferSize = this->particles.Size() * PARTICLE_JOB_INPUT_ELEMENT_SIZE;
@@ -588,7 +588,7 @@ ParticleSystemInstanceBase::StartJobStepParticles(float stepTime, bool generateV
         if(this->jobData.sliceOutput) n_delete_array(this->jobData.sliceOutput);
         this->jobData.sliceOutput = n_new_array(JobSliceOutputData, this->jobData.sliceOutputCapacity);
         n_assert(this->jobData.sliceOutput);
-#if !__WII__    
+#if !__WII__ && !NEBULA3_EDITOR
         n_assert(!((int)this->jobData.sliceOutput & 0xF));
 #endif        
     }
@@ -666,7 +666,7 @@ ParticleSystemInstanceBase::RenderDebug()
             ShapeRenderer::Instance()->AddShape(boxShape); 
 
             RenderShape centerShape;
-            matrix44 centerPoint = matrix44::scaling(vector(0.1,0.1,0.1));
+            matrix44 centerPoint = matrix44::scaling(vector(0.1f,0.1f,0.1f));
             centerPoint.set_position(this->boundingBox.center());
             centerShape.SetupSimpleShape(Threading::Thread::GetMyThreadId(),
                                          RenderShape::Box,

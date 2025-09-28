@@ -153,15 +153,6 @@ BinaryModelWriter::EndTag()
 /**
 */
 void
-BinaryModelWriter::WriteUChar(unsigned char c)
-{
-	this->writer->WriteUChar(c);
-}
-
-//------------------------------------------------------------------------------
-/**
-*/
-void
 BinaryModelWriter::WriteInt(int i)
 {
     this->writer->WriteInt(i);

@@ -48,14 +48,14 @@ public:
     void SetDefaultRenderTarget(bool b);
     /// get default render target flag
     bool IsDefaultRenderTarget() const;
-	/// set render target width
-	void SetWidth(SizeT w);
-	/// get width of render target in pixels
-	SizeT GetWidth() const;
-	/// set render target height
-	void SetHeight(SizeT h);
-	/// get height of render target in pixels
-	SizeT GetHeight() const;
+    /// set render target width
+    void SetWidth(SizeT w);
+    /// get width of render target in pixels
+    SizeT GetWidth() const;
+    /// set render target height
+    void SetHeight(SizeT h);
+    /// get height of render target in pixels
+    SizeT GetHeight() const;
 	/// set render target relative width
 	void SetRelativeWidth(float w);
 	/// set render target relative height
@@ -166,7 +166,7 @@ protected:
     Resources::ResourceId resolveDepthTextureResId;
     CoreGraphics::BatchType::Code batchType;
     SizeT width;
-    SizeT height;
+	SizeT height;
 	float relWidth;
 	float relHeight;
     bool resolveTextureDimensionsValid;
@@ -258,6 +258,8 @@ RenderTargetBase::GetHeight() const
 }
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline void
 RenderTargetBase::SetRelativeWidth(float w)
 {

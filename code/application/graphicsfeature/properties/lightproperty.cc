@@ -16,9 +16,6 @@
 #include "graphics/globallightentity.h"
 #include "graphics/pointlightentity.h"
 #include "math/polar.h"
-#include "graphicsattr/graphicsattributes.h"
-#include "physicsattr/physicsattributes.h"
-
 
 namespace Attr
 {
@@ -84,18 +81,6 @@ void
 LightProperty::OnActivate()
 {
     Property::OnActivate();
-
-	if (this->entity->HasAttr(Attr::Graphics))
-	{
-		this->entity->SetString(Attr::Graphics, "examples/sphere");
-	}
-	
-	if (this->entity->HasAttr(Attr::Physics))
-	{
-		this->entity->SetString(Attr::Physics, "examples/sphere");
-	}
-
-	this->lightTransform = this->entity->GetMatrix44(Attr::Transform);
 
     // create and setup graphics light entity
     int lightType = this->entity->GetInt(Attr::LightType);    
@@ -182,8 +167,7 @@ LightProperty::HandleMessage(const Ptr<Message>& msg)
     n_assert(msg);
     if (msg->CheckId(BaseGameFeature::UpdateTransform::Id))
     {
-		this->lightTransform = msg.cast<BaseGameFeature::UpdateTransform>()->GetMatrix();
-        this->UpdateLightTransform(this->lightTransform);
+        this->UpdateLightTransform(msg.cast<BaseGameFeature::UpdateTransform>()->GetMatrix());
     }
     else if (msg->CheckId(SetVisibleMsg::Id))
     {
@@ -253,9 +237,7 @@ LightProperty::UpdateLightFromAttributes()
         const Ptr<GlobalLightEntity>& globalLight = this->lightEntity.cast<GlobalLightEntity>();
         globalLight->SetBackLightColor(this->entity->GetFloat4(Attr::LightOppositeColor));
     }
-    
-	//this->UpdateLightTransform(this->entity->GetMatrix44(Attr::Transform));
-	this->UpdateLightTransform(this->lightTransform);
+    this->UpdateLightTransform(this->entity->GetMatrix44(Attr::Transform));
 }
 
 //------------------------------------------------------------------------------
@@ -294,7 +276,7 @@ void
 LightProperty::SetSpotLightTransform()
 {
     // spot light is rotated 
-    const matrix44& trans = this->lightTransform;//this->GetEntity()->GetMatrix44(Attr::Transform);
+    const matrix44& trans = this->GetEntity()->GetMatrix44(Attr::Transform);
     point pos = trans.get_position();
     vector dir = -trans.get_zaxis();
     float range = this->GetEntity()->GetFloat(Attr::LightRange);
@@ -307,12 +289,6 @@ LightProperty::SetSpotLightTransform()
     lightFrustum = matrix44::multiply(lightFrustum, lightTransform);*/
     this->lightEntity.cast<SpotLightEntity>()->SetTransformFromPosDirRangeAndCone(pos, dir, range, coneAngle);
     // create transform from fov angle, range and position 
-	this->lightTransform = this->lightEntity->GetTransform();
-
-	matrix44 m = this->lightTransform;
-	m.set_xaxis(float4::normalize(m.get_xaxis()));
-	m.set_yaxis(float4::normalize(m.get_yaxis()));
-	m.set_zaxis(float4::normalize(m.get_zaxis()));
-    this->GetEntity()->SetMatrix44(Attr::Transform, m);
+    this->GetEntity()->SetMatrix44(Attr::Transform, this->lightEntity->GetTransform());
 }
 } // namespace GraphicsFeature

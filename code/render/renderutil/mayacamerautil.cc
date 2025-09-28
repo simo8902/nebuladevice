@@ -87,7 +87,7 @@ MayaCameraUtil::Update()
     if (this->orbitButton)
     {
         lookHori -= this->mouseMovement.x();
-        lookVert -= this->mouseMovement.y();
+        lookVert += this->mouseMovement.y();
     }
     if (this->panButton)
     {

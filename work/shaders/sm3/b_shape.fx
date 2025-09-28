@@ -12,7 +12,7 @@ technique Default
     pass p0
     {
         ColorWriteEnable  = RED|GREEN|BLUE|ALPHA;
-        ZEnable           = False; // anti aliasing must be disabled, otherwise depth surface will be cleared before any rendering on the framebuffer takes place
+        ZEnable           = True; // anti aliasing must be disabled, otherwise depth surface will be cleared before any rendering on the framebuffer takes place
         ZWriteEnable      = False;
         StencilEnable     = False;
         FogEnable         = False;

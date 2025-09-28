@@ -5,8 +5,6 @@
   
     D3D9/Xbox360 implementation of index buffer.
     
-    FIXME: need to handle DeviceLost render event!
-    
     (C) 2007 Radon Labs GmbH
 */
 #include "coregraphics/base/indexbufferbase.h"
@@ -23,7 +21,7 @@ public:
     D3D9IndexBuffer();
     /// destructor
     virtual ~D3D9IndexBuffer();
-
+    
 	/// setup the d3d9 object
 	void Setup();
 	/// discard the d3d9 object
@@ -51,6 +49,8 @@ private:
 };
 
 //------------------------------------------------------------------------------
+/**
+*/
 inline IDirect3DIndexBuffer9*
 D3D9IndexBuffer::GetD3D9IndexBuffer() const
 {

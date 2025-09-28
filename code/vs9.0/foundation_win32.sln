@@ -1,0 +1,46 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NIDLs", "NIDLs", "{798777e9-b38c-4974-bee3-b1cd45f6a1e6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{832A854F-2030-4EA4-86FE-EDEEC017E78E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "foundation_nidls_win32", "foundation_nidls_win32.vcproj", "{99B4C216-94A1-4D6F-AAE0-7786FC15F328}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "foundation_win32", "foundation_win32.vcproj", "{A1D8D6AF-105F-4F72-95C9-182468B07D99}"
+	ProjectSection(ProjectDependencies) = postProject
+		{99B4C216-94A1-4D6F-AAE0-7786FC15F328} = {99B4C216-94A1-4D6F-AAE0-7786FC15F328}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Maya_Debug|Win32 = Maya_Debug|Win32
+		Maya_Release|Win32 = Maya_Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99B4C216-94A1-4D6F-AAE0-7786FC15F328}.Debug|Win32.ActiveCfg = Debug|Win32
+		{99B4C216-94A1-4D6F-AAE0-7786FC15F328}.Debug|Win32.Build.0 = Debug|Win32
+		{99B4C216-94A1-4D6F-AAE0-7786FC15F328}.Release|Win32.ActiveCfg = Release|Win32
+		{99B4C216-94A1-4D6F-AAE0-7786FC15F328}.Release|Win32.Build.0 = Release|Win32
+		{99B4C216-94A1-4D6F-AAE0-7786FC15F328}.Maya_Debug|Win32.ActiveCfg = Maya_Debug|Win32
+		{99B4C216-94A1-4D6F-AAE0-7786FC15F328}.Maya_Debug|Win32.Build.0 = Maya_Debug|Win32
+		{99B4C216-94A1-4D6F-AAE0-7786FC15F328}.Maya_Release|Win32.ActiveCfg = Maya_Release|Win32
+		{99B4C216-94A1-4D6F-AAE0-7786FC15F328}.Maya_Release|Win32.Build.0 = Maya_Release|Win32
+		{A1D8D6AF-105F-4F72-95C9-182468B07D99}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A1D8D6AF-105F-4F72-95C9-182468B07D99}.Debug|Win32.Build.0 = Debug|Win32
+		{A1D8D6AF-105F-4F72-95C9-182468B07D99}.Release|Win32.ActiveCfg = Release|Win32
+		{A1D8D6AF-105F-4F72-95C9-182468B07D99}.Release|Win32.Build.0 = Release|Win32
+		{A1D8D6AF-105F-4F72-95C9-182468B07D99}.Maya_Debug|Win32.ActiveCfg = Maya_Debug|Win32
+		{A1D8D6AF-105F-4F72-95C9-182468B07D99}.Maya_Debug|Win32.Build.0 = Maya_Debug|Win32
+		{A1D8D6AF-105F-4F72-95C9-182468B07D99}.Maya_Release|Win32.ActiveCfg = Maya_Release|Win32
+		{A1D8D6AF-105F-4F72-95C9-182468B07D99}.Maya_Release|Win32.Build.0 = Maya_Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99B4C216-94A1-4D6F-AAE0-7786FC15F328} = {798777e9-b38c-4974-bee3-b1cd45f6a1e6}
+		{A1D8D6AF-105F-4F72-95C9-182468B07D99} = {832A854F-2030-4EA4-86FE-EDEEC017E78E}
+	EndGlobalSection
+EndGlobal

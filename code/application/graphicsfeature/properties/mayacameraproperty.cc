@@ -151,8 +151,7 @@ void
 MayaCameraProperty::OnRender()
 {
     // handle input even if we have only camera focus
-    //if (FocusManager::Instance()->GetInputFocusEntity() == GetEntity())
-	if (FocusManager::Instance()->GetCameraFocusEntity() == GetEntity())
+    if (FocusManager::Instance()->GetInputFocusEntity() == GetEntity())
     {
         // feed the Maya camera object with input
 		InputServer* inputServer = InputServer::Instance();
@@ -161,8 +160,9 @@ MayaCameraProperty::OnRender()
         const Ptr<GamePad>& gamePad = inputServer->GetDefaultGamePad(0);
 
         // standard input handling: manipulate camera
-        this->mayaCameraUtil.SetOrbitButton(mouse->ButtonPressed(MouseButton::RightButton));
+        this->mayaCameraUtil.SetOrbitButton(mouse->ButtonPressed(MouseButton::LeftButton));
         this->mayaCameraUtil.SetPanButton(mouse->ButtonPressed(MouseButton::MiddleButton));
+        this->mayaCameraUtil.SetZoomButton(mouse->ButtonPressed(MouseButton::RightButton));
         this->mayaCameraUtil.SetZoomInButton(mouse->WheelForward());
         this->mayaCameraUtil.SetZoomOutButton(mouse->WheelBackward());
         this->mayaCameraUtil.SetMouseMovement(mouse->GetMovement());
@@ -237,10 +237,10 @@ void
 MayaCameraProperty::OnDeactivate()
 {
     // clear input focus, if we are the input focus object
-    //if (this->HasFocus())
-    //{
-    //    FocusManager::Instance()->SetInputFocusEntity(0);
-   //}
+    if (this->HasFocus())
+    {
+        FocusManager::Instance()->SetInputFocusEntity(0);
+    }
     CameraProperty::OnDeactivate();
 }
 }; // namespace Properties

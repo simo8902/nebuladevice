@@ -37,10 +37,10 @@ __cdecl main()
 
     // setup and run test runner
     Ptr<TestRunner> testRunner = TestRunner::Create();
-    //testRunner->AttachTestCase(AttributeContainerTest::Create());
-    //testRunner->AttachTestCase(AttributeTableTest::Create());
-    //testRunner->AttachTestCase(AnimSequencerTest::Create());
-    //testRunner->AttachTestCase(AnimSampleMixTest::Create());
+    testRunner->AttachTestCase(AttributeContainerTest::Create());
+    testRunner->AttachTestCase(AttributeTableTest::Create());
+    testRunner->AttachTestCase(AnimSequencerTest::Create());
+    testRunner->AttachTestCase(AnimSampleMixTest::Create());
     testRunner->AttachTestCase(LoadAnimationTest::Create());
     /*
     testRunner->AttachTestCase(N2ModelLoaderTest::Create());

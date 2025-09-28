@@ -17,15 +17,15 @@ using namespace Math;
 /**
 */
 Win32DisplayDevice::Win32DisplayDevice() :
-    hInst(0),
-    hWnd(0),
-    hAccel(0),
-    windowedStyle(WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_VISIBLE),
-    childWindowStyle(WS_CHILD | WS_VISIBLE),
-    fullscreenStyle(WS_POPUP | WS_SYSMENU | WS_VISIBLE)
+	hInst(0),
+	hWnd(0),
+	hAccel(0),
+	windowedStyle(WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_VISIBLE),
+	childWindowStyle(WS_CHILD | WS_VISIBLE),
+	fullscreenStyle(WS_POPUP | WS_SYSMENU | WS_VISIBLE)
 {
-    __ConstructSingleton;
-    this->hInst = GetModuleHandle(0);
+	__ConstructSingleton;
+	this->hInst = GetModuleHandle(0);
 }
 
 //------------------------------------------------------------------------------
@@ -33,11 +33,11 @@ Win32DisplayDevice::Win32DisplayDevice() :
 */
 Win32DisplayDevice::~Win32DisplayDevice()
 {
-    if (this->IsOpen())
-    {
-        this->Close();
-    }
-    __DestructSingleton;
+	if (this->IsOpen())
+	{
+		this->Close();
+	}
+	__DestructSingleton;
 }
 
 //------------------------------------------------------------------------------
@@ -46,13 +46,13 @@ Win32DisplayDevice::~Win32DisplayDevice()
 bool
 Win32DisplayDevice::Open()
 {
-    n_assert(!this->IsOpen());
-    if (DisplayDeviceBase::Open())
-    {
-        bool success = this->OpenWindow();
-        return success;
-    }
-    return false;
+	n_assert(!this->IsOpen());
+	if (DisplayDeviceBase::Open())
+	{
+		bool success = this->OpenWindow();
+		return success;
+	}
+	return false;
 }
 
 //------------------------------------------------------------------------------
@@ -61,37 +61,37 @@ Win32DisplayDevice::Open()
 void
 Win32DisplayDevice::Close()
 {
-    n_assert(this->IsOpen());
-    this->CloseWindow();
-    DisplayDeviceBase::Close();
+	n_assert(this->IsOpen());
+	this->CloseWindow();
+	DisplayDeviceBase::Close();
 }
 
 //------------------------------------------------------------------------------
 /**
     Polls for and processes window messages. Call this message once per
-    frame in your render loop. If the user clicks the window close 
+    frame in your render loop. If the user clicks the window close
     button, or hits Alt-F4, a CloseRequested input event will be sent.
 */
 void
 Win32DisplayDevice::ProcessWindowMessages()
 {
-    n_assert(this->IsOpen());
-    
-    // it may happen that the WinProc has already closed our window!
-    if (0 != this->hWnd)
-    {
-        n_assert(0 != this->hAccel);
-        MSG msg;
-        while (PeekMessage(&msg, this->hWnd, 0, 0, PM_REMOVE))
-        {
-            int msgHandled = TranslateAccelerator(this->hWnd, this->hAccel, &msg);
-            if (0 == msgHandled)
-            {
-                TranslateMessage(&msg);
-                DispatchMessage(&msg);
-            }
-        }
-    }
+	n_assert(this->IsOpen());
+
+	// it may happen that the WinProc has already closed our window!
+	if (0 != this->hWnd)
+	{
+		n_assert(0 != this->hAccel);
+		MSG msg;
+		while (PeekMessage(&msg, this->hWnd, 0, 0, PM_REMOVE))
+		{
+			int msgHandled = TranslateAccelerator(this->hWnd, this->hAccel, &msg);
+			if (0 == msgHandled)
+			{
+				TranslateMessage(&msg);
+				DispatchMessage(&msg);
+			}
+		}
+	}
 }
 
 //------------------------------------------------------------------------------
@@ -101,31 +101,46 @@ Win32DisplayDevice::ProcessWindowMessages()
 bool
 Win32DisplayDevice::OpenWindow()
 {
-    n_assert(0 != this->hInst);
-    n_assert(0 == this->hWnd);
-    n_assert(0 == this->hAccel);
+	n_assert(0 != this->hInst);
+	n_assert(0 == this->hWnd);
+	n_assert(0 == this->hAccel);
 
-    // initialize accelerator keys
-    ACCEL acc[1];
-    acc[0].fVirt = FALT|FNOINVERT|FVIRTKEY;
-    acc[0].key   = VK_RETURN;
-    acc[0].cmd   = AccelToggleFullscreen;
-    this->hAccel = CreateAcceleratorTable(acc, 1);
+	// initialize accelerator keys
+	ACCEL acc[1];
+	acc[0].fVirt = FALT | FNOINVERT | FVIRTKEY;
+	acc[0].key   = VK_RETURN;
+	acc[0].cmd   = AccelToggleFullscreen;
+	this->hAccel = CreateAcceleratorTable(acc, 1);
 
-	if (!this->externalWindow)
+	// initialize application icon
+#if NEBULA3_EDITOR
+	DisplayMode adjMode = this->ComputeAdjustedWindowRect();
+	this->hWnd = (HWND) this->parentWindow;
+	this->displayMode.SetWidth(adjMode.GetWidth());
+	this->displayMode.SetHeight(adjMode.GetHeight());
+	this->displayMode.SetXPos(adjMode.GetXPos());
+	this->displayMode.SetYPos(adjMode.GetYPos());
+#else
+	HICON icon = 0;
+	if (this->iconName.IsValid())
 	{
-		// initialize application icon
-		HICON icon = 0;
-		if (this->iconName.IsValid())
-		{
-			icon = LoadIcon(this->hInst, this->iconName.AsCharPtr());
-		}
-		// fallthrough if no custom icon defined, or loading custom icon failed
-		if (0 == icon)
-		{
-			icon = LoadIcon(NULL, IDI_APPLICATION);
-		}
+		icon = LoadIcon(this->hInst, this->iconName.AsCharPtr());
+	}
+	// fallthrough if no custom icon defined, or loading custom icon failed
+	if (0 == icon)
+	{
+		icon = LoadIcon(NULL, IDI_APPLICATION);
+	}
 
+	// if the window has been created, use it
+	if (0 != this->parentWindow)
+	{
+		this->hWnd = FindWindowEx((HWND)this->parentWindow, 0, NEBULA3_WINDOW_CLASS, NULL);
+		n_assert(NULL != this->hWnd);
+	}
+	DisplayMode adjMode = this->ComputeAdjustedWindowRect();
+	if (0 == this->hWnd)
+	{
 		// register window class
 		WNDCLASSEX wndClass;
 		Memory::Clear(&wndClass, sizeof(wndClass));
@@ -143,7 +158,7 @@ Win32DisplayDevice::OpenWindow()
 		wndClass.hIconSm       = NULL;
 		RegisterClassEx(&wndClass);
 
-		// we may need to adjust window size so that the client area of 
+		// we may need to adjust window size so that the client area of
 		// the window is of the requested size
 		DWORD windowStyle = this->windowedStyle;
 		if (0 != this->parentWindow)
@@ -154,22 +169,20 @@ Win32DisplayDevice::OpenWindow()
 		{
 			windowStyle = this->fullscreenStyle;
 		}
-		DisplayMode adjMode = this->ComputeAdjustedWindowRect();
 		HWND parentHwnd = (HWND) this->parentWindow;
 
 		// open window
 		this->hWnd = CreateWindow(NEBULA3_WINDOW_CLASS,                 // lpClassName
-			this->windowTitle.AsCharPtr(),        // lpWindowName
-			windowStyle,                          // dwStyle
-			adjMode.GetXPos(),                    // x
-			adjMode.GetYPos(),                    // y
-			adjMode.GetWidth(),                   // nWidth
-			adjMode.GetHeight(),                  // nHeight
-			parentHwnd,                           // hWndParent
-			NULL,                                 // hMenu
-			this->hInst,                          // hInstance
-			NULL);                                // lParam
-
+		                          this->windowTitle.AsCharPtr(),        // lpWindowName
+		                          windowStyle,                          // dwStyle
+		                          adjMode.GetXPos(),                    // x
+		                          adjMode.GetYPos(),                    // y
+		                          adjMode.GetWidth(),                   // nWidth
+		                          adjMode.GetHeight(),                  // nHeight
+		                          parentHwnd,                           // hWndParent
+		                          NULL,                                 // hMenu
+		                          this->hInst,                          // hInstance
+		                          NULL);                                // lParam
 		n_assert(0 != this->hWnd);
 
 		// set topmost flag
@@ -177,28 +190,19 @@ Win32DisplayDevice::OpenWindow()
 		{
 			SetWindowPos(this->hWnd, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE);
 		}
+	}
 
-		// if we're in child-window mode, adjust the actually used display mode!
-		if (0 != this->parentWindow)
-		{
-			this->displayMode.SetWidth(adjMode.GetWidth());
-			this->displayMode.SetHeight(adjMode.GetHeight());
-			this->displayMode.SetXPos(adjMode.GetXPos());
-			this->displayMode.SetYPos(adjMode.GetYPos());
-		}
-	} 
-	else
+	// if we're in child-window mode, adjust the actually used display mode!
+	if (0 != this->parentWindow)
 	{
-		this->hWnd = (HWND) this->externalWindow;
-
-		DisplayMode adjMode = this->ComputeAdjustedWindowRect();
 		this->displayMode.SetWidth(adjMode.GetWidth());
 		this->displayMode.SetHeight(adjMode.GetHeight());
 		this->displayMode.SetXPos(adjMode.GetXPos());
 		this->displayMode.SetYPos(adjMode.GetYPos());
 	}
+#endif
 
-    return true;
+	return true;
 }
 
 //------------------------------------------------------------------------------
@@ -208,28 +212,26 @@ Win32DisplayDevice::OpenWindow()
 void
 Win32DisplayDevice::CloseWindow()
 {
-    n_assert(0 != this->hInst);
+	n_assert(0 != this->hInst);
+#if(NEBULA3_EDITOR ==0)
+	// close the window (if not already happened), the window may
+	// have been closed externally by Alt-F4 (for instance)
+	if (0 != this->hWnd)
+	{
+		DestroyWindow(this->hWnd);
+		this->hWnd = 0;
+	}
 
 	// release accelerator table
-	if (this->hAccel) 
+	if (this->hAccel)
 	{
 		DestroyAcceleratorTable(this->hAccel);
 		this->hAccel = 0;
 	}
+#endif
 
-	if (0 != this->externalWindow)
-	{
-		// close the window (if not already happened), the window may
-		// have been closed externally by Alt-F4 (for instance)
-		if (0 != this->hWnd)
-		{
-			DestroyWindow(this->hWnd);
-			this->hWnd = 0;
-		}
-
-		// unregister the window class
-		UnregisterClass(NEBULA3_WINDOW_CLASS, this->hInst);
-	}
+	// unregister the window class
+	UnregisterClass(NEBULA3_WINDOW_CLASS, this->hInst);
 }
 
 //------------------------------------------------------------------------------
@@ -240,37 +242,29 @@ Win32DisplayDevice::CloseWindow()
 DisplayMode
 Win32DisplayDevice::ComputeAdjustedWindowRect()
 {
-	if (0 != this->externalWindow)
+	if (0 != this->parentWindow)
 	{
-		HWND externalWindow = (HWND) this->externalWindow;
+		HWND parentHwnd = (HWND) this->parentWindow;
 		RECT r = { 0 };
-		GetClientRect(externalWindow, &r);        
-		AdjustWindowRect(&r, this->windowedStyle, 0);
+		GetClientRect(parentHwnd, &r);
+		AdjustWindowRect(&r, this->childWindowStyle, 0);
 		return DisplayMode(0, 0, r.right - r.left, r.bottom - r.top, this->displayMode.GetPixelFormat());
 	}
-    else if (0 != this->parentWindow)
-    {
-        HWND parentHwnd = (HWND) this->parentWindow;
-        RECT r = { 0 };
-        GetClientRect(parentHwnd, &r);        
-        AdjustWindowRect(&r, this->childWindowStyle, 0);
-        return DisplayMode(0, 0, r.right - r.left, r.bottom - r.top, this->displayMode.GetPixelFormat());
-    }
-    else if (this->fullscreen)
-    {
-        return this->displayMode;
-    }
-    else
-    {
-        const DisplayMode& mode = this->displayMode;
-        RECT r;
-        r.left   = mode.GetXPos();
-        r.right  = mode.GetXPos() + mode.GetWidth();
-        r.top    = mode.GetYPos();
-        r.bottom = mode.GetYPos() + mode.GetHeight();
-        AdjustWindowRect(&r, this->windowedStyle, 0);
-        return DisplayMode(mode.GetXPos(), mode.GetYPos(), r.right - r.left, r.bottom - r.top, mode.GetPixelFormat());
-    }
+	else if (this->fullscreen)
+	{
+		return this->displayMode;
+	}
+	else
+	{
+		const DisplayMode& mode = this->displayMode;
+		RECT r;
+		r.left   = mode.GetXPos();
+		r.right  = mode.GetXPos() + mode.GetWidth();
+		r.top    = mode.GetYPos();
+		r.bottom = mode.GetYPos() + mode.GetHeight();
+		AdjustWindowRect(&r, this->windowedStyle, 0);
+		return DisplayMode(mode.GetXPos(), mode.GetYPos(), r.right - r.left, r.bottom - r.top, mode.GetPixelFormat());
+	}
 }
 
 //------------------------------------------------------------------------------
@@ -279,8 +273,8 @@ Win32DisplayDevice::ComputeAdjustedWindowRect()
 void
 Win32DisplayDevice::OnMinimized()
 {
-    this->NotifyEventHandlers(DisplayEvent(DisplayEvent::DisplayMinimized));
-    ReleaseCapture();
+	this->NotifyEventHandlers(DisplayEvent(DisplayEvent::DisplayMinimized));
+	ReleaseCapture();
 }
 
 //------------------------------------------------------------------------------
@@ -289,15 +283,14 @@ Win32DisplayDevice::OnMinimized()
 void
 Win32DisplayDevice::OnRestored()
 {
-    this->NotifyEventHandlers(DisplayEvent(DisplayEvent::DisplayRestored));
-    // as a child window, do not release capture, because it would block
-    // the resizing
-    if (!this->parentWindow)
-    {
-        ReleaseCapture();
-    }
-
-	if (this->hWnd != NULL)
+	this->NotifyEventHandlers(DisplayEvent(DisplayEvent::DisplayRestored));
+	// as a child window, do not release capture, because it would block
+	// the resizing
+	if (!this->parentWindow)
+	{
+		ReleaseCapture();
+	}
+	if (NULL != this->hWnd && this->IsAutoAdjustSize())
 	{
 		this->AdjustSize();
 	}
@@ -309,7 +302,7 @@ Win32DisplayDevice::OnRestored()
 bool
 Win32DisplayDevice::OnSetCursor()
 {
-    return this->NotifyEventHandlers(DisplayEvent(DisplayEvent::SetCursor));
+	return this->NotifyEventHandlers(DisplayEvent(DisplayEvent::SetCursor));
 }
 
 //------------------------------------------------------------------------------
@@ -318,7 +311,7 @@ Win32DisplayDevice::OnSetCursor()
 void
 Win32DisplayDevice::OnPaint()
 {
-    this->NotifyEventHandlers(DisplayEvent(DisplayEvent::Paint));
+	this->NotifyEventHandlers(DisplayEvent(DisplayEvent::Paint));
 }
 
 //------------------------------------------------------------------------------
@@ -327,8 +320,8 @@ Win32DisplayDevice::OnPaint()
 void
 Win32DisplayDevice::OnSetFocus()
 {
-    this->NotifyEventHandlers(DisplayEvent(DisplayEvent::SetFocus));
-    ReleaseCapture();
+	this->NotifyEventHandlers(DisplayEvent(DisplayEvent::SetFocus));
+	ReleaseCapture();
 }
 
 //------------------------------------------------------------------------------
@@ -337,8 +330,8 @@ Win32DisplayDevice::OnSetFocus()
 void
 Win32DisplayDevice::OnKillFocus()
 {
-    this->NotifyEventHandlers(DisplayEvent(DisplayEvent::KillFocus));
-    ReleaseCapture();
+	this->NotifyEventHandlers(DisplayEvent(DisplayEvent::KillFocus));
+	ReleaseCapture();
 }
 
 //------------------------------------------------------------------------------
@@ -347,7 +340,7 @@ Win32DisplayDevice::OnKillFocus()
 void
 Win32DisplayDevice::OnCloseRequested()
 {
-    this->NotifyEventHandlers(DisplayEvent(DisplayEvent::CloseRequested));
+	this->NotifyEventHandlers(DisplayEvent(DisplayEvent::CloseRequested));
 }
 
 //------------------------------------------------------------------------------
@@ -356,7 +349,7 @@ Win32DisplayDevice::OnCloseRequested()
 void
 Win32DisplayDevice::OnToggleFullscreenWindowed()
 {
-    this->NotifyEventHandlers(DisplayEvent(DisplayEvent::ToggleFullscreenWindowed));
+	this->NotifyEventHandlers(DisplayEvent(DisplayEvent::ToggleFullscreenWindowed));
 }
 
 //------------------------------------------------------------------------------
@@ -365,11 +358,11 @@ Win32DisplayDevice::OnToggleFullscreenWindowed()
 void
 Win32DisplayDevice::OnKeyDown(WPARAM wParam)
 {
-    Input::Key::Code keyCode = this->TranslateKeyCode(wParam);
-    if (Input::Key::InvalidKey != keyCode)
-    {
-        this->NotifyEventHandlers(DisplayEvent(DisplayEvent::KeyDown, keyCode));
-    }
+	Input::Key::Code keyCode = this->TranslateKeyCode(wParam);
+	if (Input::Key::InvalidKey != keyCode)
+	{
+		this->NotifyEventHandlers(DisplayEvent(DisplayEvent::KeyDown, keyCode));
+	}
 }
 
 //------------------------------------------------------------------------------
@@ -378,11 +371,11 @@ Win32DisplayDevice::OnKeyDown(WPARAM wParam)
 void
 Win32DisplayDevice::OnKeyUp(WPARAM wParam)
 {
-    Input::Key::Code keyCode = this->TranslateKeyCode(wParam);
-    if (Input::Key::InvalidKey != keyCode)
-    {
-        this->NotifyEventHandlers(DisplayEvent(DisplayEvent::KeyUp, keyCode));
-    }
+	Input::Key::Code keyCode = this->TranslateKeyCode(wParam);
+	if (Input::Key::InvalidKey != keyCode)
+	{
+		this->NotifyEventHandlers(DisplayEvent(DisplayEvent::KeyUp, keyCode));
+	}
 }
 
 //------------------------------------------------------------------------------
@@ -391,38 +384,38 @@ Win32DisplayDevice::OnKeyUp(WPARAM wParam)
 void
 Win32DisplayDevice::OnChar(WPARAM wParam)
 {
-    Input::Char chr = (Input::Char) wParam;
-    this->NotifyEventHandlers(DisplayEvent(DisplayEvent::Character, chr));
+	Input::Char chr = (Input::Char) wParam;
+	this->NotifyEventHandlers(DisplayEvent(DisplayEvent::Character, chr));
 }
 
 //------------------------------------------------------------------------------
-/**    
+/**
 */
 float2
 Win32DisplayDevice::ComputeAbsMousePos(LPARAM lParam) const
 {
-    return float2(float(short(LOWORD(lParam))), float(short(HIWORD(lParam))));
+	return float2(float(short(LOWORD(lParam))), float(short(HIWORD(lParam))));
 }
 
 //------------------------------------------------------------------------------
-/**    
+/**
 */
 float2
 Win32DisplayDevice::ComputeNormMousePos(const float2& absMousePos) const
 {
-    float2 normMousePos;
-    RECT clientRect = { 0 };
-    if ((0 != this->hWnd) && GetClientRect(this->hWnd, &clientRect))
-    {
-        LONG w = n_max(clientRect.right - clientRect.left, 1);
-        LONG h = n_max(clientRect.bottom - clientRect.top, 1);
-        normMousePos.set(absMousePos.x() / float(w), absMousePos.y() / float(h));
-    }
-    else
-    {
-        normMousePos.set(absMousePos.x() / float(this->displayMode.GetWidth()), absMousePos.y() / float(this->displayMode.GetHeight()));
-    }
-    return normMousePos;
+	float2 normMousePos;
+	RECT clientRect = { 0 };
+	if ((0 != this->hWnd) && GetClientRect(this->hWnd, &clientRect))
+	{
+		LONG w = n_max(clientRect.right - clientRect.left, 1);
+		LONG h = n_max(clientRect.bottom - clientRect.top, 1);
+		normMousePos.set(absMousePos.x() / float(w), absMousePos.y() / float(h));
+	}
+	else
+	{
+		normMousePos.set(absMousePos.x() / float(this->displayMode.GetWidth()), absMousePos.y() / float(this->displayMode.GetHeight()));
+	}
+	return normMousePos;
 }
 
 //------------------------------------------------------------------------------
@@ -431,52 +424,52 @@ Win32DisplayDevice::ComputeNormMousePos(const float2& absMousePos) const
 void
 Win32DisplayDevice::OnMouseButton(UINT uMsg, LPARAM lParam)
 {
-    float2 absMousePos = this->ComputeAbsMousePos(lParam);
-    float2 normMousePos = this->ComputeNormMousePos(absMousePos);
-    switch (uMsg)
-    {
-        case WM_LBUTTONDBLCLK:
-            this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonDoubleClick, Input::MouseButton::LeftButton, absMousePos, normMousePos));
-            break;
+	float2 absMousePos = this->ComputeAbsMousePos(lParam);
+	float2 normMousePos = this->ComputeNormMousePos(absMousePos);
+	switch (uMsg)
+	{
+	case WM_LBUTTONDBLCLK:
+		this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonDoubleClick, Input::MouseButton::LeftButton, absMousePos, normMousePos));
+		break;
 
-        case WM_RBUTTONDBLCLK:
-            this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonDoubleClick, Input::MouseButton::RightButton, absMousePos, normMousePos));
-            break;
+	case WM_RBUTTONDBLCLK:
+		this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonDoubleClick, Input::MouseButton::RightButton, absMousePos, normMousePos));
+		break;
 
-        case WM_MBUTTONDBLCLK:
-            this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonDoubleClick, Input::MouseButton::MiddleButton, absMousePos, normMousePos));
-            break;
+	case WM_MBUTTONDBLCLK:
+		this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonDoubleClick, Input::MouseButton::MiddleButton, absMousePos, normMousePos));
+		break;
 
-        case WM_LBUTTONDOWN:
-            this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonDown, Input::MouseButton::LeftButton, absMousePos, normMousePos));
-            SetCapture(this->hWnd);
-            break;
+	case WM_LBUTTONDOWN:
+		this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonDown, Input::MouseButton::LeftButton, absMousePos, normMousePos));
+		SetCapture(this->hWnd);
+		break;
 
-        case WM_RBUTTONDOWN:
-            this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonDown, Input::MouseButton::RightButton, absMousePos, normMousePos));
-            SetCapture(this->hWnd);
-            break;
+	case WM_RBUTTONDOWN:
+		this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonDown, Input::MouseButton::RightButton, absMousePos, normMousePos));
+		SetCapture(this->hWnd);
+		break;
 
-        case WM_MBUTTONDOWN:
-            this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonDown, Input::MouseButton::MiddleButton, absMousePos, normMousePos));
-            SetCapture(this->hWnd);
-            break;
+	case WM_MBUTTONDOWN:
+		this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonDown, Input::MouseButton::MiddleButton, absMousePos, normMousePos));
+		SetCapture(this->hWnd);
+		break;
 
-        case WM_LBUTTONUP:
-            this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonUp, Input::MouseButton::LeftButton, absMousePos, normMousePos));
-            ReleaseCapture();
-            break;
+	case WM_LBUTTONUP:
+		this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonUp, Input::MouseButton::LeftButton, absMousePos, normMousePos));
+		ReleaseCapture();
+		break;
 
-        case WM_RBUTTONUP:
-            this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonUp, Input::MouseButton::RightButton, absMousePos, normMousePos));
-            ReleaseCapture();
-            break;
+	case WM_RBUTTONUP:
+		this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonUp, Input::MouseButton::RightButton, absMousePos, normMousePos));
+		ReleaseCapture();
+		break;
 
-        case WM_MBUTTONUP:
-            this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonUp, Input::MouseButton::MiddleButton, absMousePos, normMousePos));
-            ReleaseCapture();
-            break;
-    }
+	case WM_MBUTTONUP:
+		this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseButtonUp, Input::MouseButton::MiddleButton, absMousePos, normMousePos));
+		ReleaseCapture();
+		break;
+	}
 }
 
 //------------------------------------------------------------------------------
@@ -485,9 +478,9 @@ Win32DisplayDevice::OnMouseButton(UINT uMsg, LPARAM lParam)
 void
 Win32DisplayDevice::OnMouseMove(LPARAM lParam)
 {
-    float2 absMousePos = this->ComputeAbsMousePos(lParam);
-    float2 normMousePos = this->ComputeNormMousePos(absMousePos);
-    this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseMove, absMousePos, normMousePos));
+	float2 absMousePos = this->ComputeAbsMousePos(lParam);
+	float2 normMousePos = this->ComputeNormMousePos(absMousePos);
+	this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseMove, absMousePos, normMousePos));
 }
 
 //------------------------------------------------------------------------------
@@ -496,15 +489,15 @@ Win32DisplayDevice::OnMouseMove(LPARAM lParam)
 void
 Win32DisplayDevice::OnMouseWheel(WPARAM wParam)
 {
-    int zDelta = GET_WHEEL_DELTA_WPARAM(wParam);
-    if (zDelta > 0)
-    {
-        this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseWheelForward));
-    }
-    else
-    {
-        this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseWheelBackward));
-    }
+	int zDelta = GET_WHEEL_DELTA_WPARAM(wParam);
+	if (zDelta > 0)
+	{
+		this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseWheelForward));
+	}
+	else
+	{
+		this->NotifyEventHandlers(DisplayEvent(DisplayEvent::MouseWheelBackward));
+	}
 }
 
 //------------------------------------------------------------------------------
@@ -514,115 +507,115 @@ Win32DisplayDevice::OnMouseWheel(WPARAM wParam)
 LRESULT CALLBACK
 Win32DisplayDevice::WinProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
-    Win32DisplayDevice* self = Win32DisplayDevice::Instance();    
-    switch (uMsg)
-    {
-        case WM_SYSCOMMAND:
-            // prevent moving/sizing and power loss in fullscreen mode
-            if (self->IsFullscreen())
-            {
-                switch (wParam)
-                {
-                    case SC_MOVE:
-                    case SC_SIZE:
-                    case SC_MAXIMIZE:
-                    case SC_KEYMENU:
-                    case SC_MONITORPOWER:
-                        return 1;
-                        break;
-                }
-            }
-            break;
+	Win32DisplayDevice* self = Win32DisplayDevice::Instance();
+	switch (uMsg)
+	{
+	case WM_SYSCOMMAND:
+		// prevent moving/sizing and power loss in fullscreen mode
+		if (self->IsFullscreen())
+		{
+			switch (wParam)
+			{
+			case SC_MOVE:
+			case SC_SIZE:
+			case SC_MAXIMIZE:
+			case SC_KEYMENU:
+			case SC_MONITORPOWER:
+				return 1;
+				break;
+			}
+		}
+		break;
 
-        case WM_ERASEBKGND:
-            // prevent Windows from erasing the background
-            return 1;
+	case WM_ERASEBKGND:
+		// prevent Windows from erasing the background
+		return 1;
 
-        case WM_SIZE:
-            {
-                // inform input server about focus change
-                if ((SIZE_MAXHIDE == wParam) || (SIZE_MINIMIZED == wParam))
-                {
-                    self->OnMinimized();
-                }
-                else
-                {
-                    self->OnRestored();
-                }
-                // manually change window size in child mode
-                if (self->parentWindow)
-                {
-                    WORD newWidth = LOWORD(lParam);
-                    WORD newHeight = HIWORD(lParam);
-                    MoveWindow(hWnd, 0, 0, newWidth, newHeight, TRUE);
-                }
-            }
-            break;
+	case WM_SIZE:
+		{
+			// inform input server about focus change
+			if ((SIZE_MAXHIDE == wParam) || (SIZE_MINIMIZED == wParam))
+			{
+				self->OnMinimized();
+			}
+			else
+			{
+				self->OnRestored();
+			}
+			// manually change window size in child mode
+			if (self->parentWindow)
+			{
+				WORD newWidth = LOWORD(lParam);
+				WORD newHeight = HIWORD(lParam);
+				MoveWindow(hWnd, 0, 0, newWidth, newHeight, TRUE);
+			}
+		}
+		break;
 
-        case WM_SETCURSOR:
-            if (self->OnSetCursor())
-            {
-                return TRUE;
-            }
-            break;
+	case WM_SETCURSOR:
+		if (self->OnSetCursor())
+		{
+			return TRUE;
+		}
+		break;
 
-        case WM_PAINT:
-            self->OnPaint();
-            break;
+	case WM_PAINT:
+		self->OnPaint();
+		break;
 
-        case WM_SETFOCUS:
-            self->OnSetFocus();
-            break;
+	case WM_SETFOCUS:
+		self->OnSetFocus();
+		break;
 
-        case WM_KILLFOCUS:
-            self->OnKillFocus();
-            break;
+	case WM_KILLFOCUS:
+		self->OnKillFocus();
+		break;
 
-        case WM_CLOSE:
-            self->OnCloseRequested();
-            self->hWnd = 0;
-            break;
+	case WM_CLOSE:
+		self->OnCloseRequested();
+		self->hWnd = 0;
+		break;
 
-        case WM_COMMAND:
-            if (LOWORD(wParam) == AccelToggleFullscreen)
-            {
-                self->OnToggleFullscreenWindowed();
-            }
-            break;
+	case WM_COMMAND:
+		if (LOWORD(wParam) == AccelToggleFullscreen)
+		{
+			self->OnToggleFullscreenWindowed();
+		}
+		break;
 
-        case WM_KEYDOWN:
-            self->OnKeyDown(wParam);
-            break;
+	case WM_KEYDOWN:
+		self->OnKeyDown(wParam);
+		break;
 
-        case WM_KEYUP:
-            self->OnKeyUp(wParam);
-            break;
+	case WM_KEYUP:
+		self->OnKeyUp(wParam);
+		break;
 
-        case WM_CHAR:
-            self->OnChar(wParam);
-            break;
+	case WM_CHAR:
+		self->OnChar(wParam);
+		break;
 
-        case WM_LBUTTONDBLCLK:
-        case WM_RBUTTONDBLCLK:
-        case WM_MBUTTONDBLCLK:
-        case WM_LBUTTONDOWN:
-        case WM_RBUTTONDOWN:
-        case WM_MBUTTONDOWN:
-        case WM_LBUTTONUP:
-        case WM_RBUTTONUP:
-        case WM_MBUTTONUP:
-            self->OnMouseButton(uMsg, lParam);
-            break;
+	case WM_LBUTTONDBLCLK:
+	case WM_RBUTTONDBLCLK:
+	case WM_MBUTTONDBLCLK:
+	case WM_LBUTTONDOWN:
+	case WM_RBUTTONDOWN:
+	case WM_MBUTTONDOWN:
+	case WM_LBUTTONUP:
+	case WM_RBUTTONUP:
+	case WM_MBUTTONUP:
+		self->OnMouseButton(uMsg, lParam);
+		break;
 
-        case WM_MOUSEMOVE:
-            self->OnMouseMove(lParam);
-            break;
+	case WM_MOUSEMOVE:
+		self->OnMouseMove(lParam);
+		break;
 
-        case WM_MOUSEWHEEL:
-            self->OnMouseWheel(wParam);
-            break;
-    }
-    return DefWindowProc(hWnd, uMsg, wParam, lParam);
+	case WM_MOUSEWHEEL:
+		self->OnMouseWheel(wParam);
+		break;
+	}
+	return DefWindowProc(hWnd, uMsg, wParam, lParam);
 }
 
 //------------------------------------------------------------------------------
@@ -633,8 +626,8 @@ Win32DisplayDevice::WinProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 Input::Key::Code
 Win32DisplayDevice::TranslateKeyCode(WPARAM wParam)
 {
-    switch (wParam)
-    {
+	switch (wParam)
+	{
         case VK_BACK:                   return Input::Key::Back;
         case VK_TAB:                    return Input::Key::Tab;
         case VK_CLEAR:                  return Input::Key::Clear;
@@ -771,7 +764,7 @@ Win32DisplayDevice::TranslateKeyCode(WPARAM wParam)
         case 'Y':                       return Input::Key::Y;
         case 'Z':                       return Input::Key::Z;
         default:                        return Input::Key::InvalidKey;
-    }
+	}
 }
 
 //------------------------------------------------------------------------------

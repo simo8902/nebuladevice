@@ -1,0 +1,3 @@
+Compiling 'file:///../render/debugrender/debugrenderprotocol.nidl'
+Compiling 'file:///../render/graphics/graphicsprotocol.nidl'
+Compiling 'file:///../render/visibility/visibilityprotocol.nidl'

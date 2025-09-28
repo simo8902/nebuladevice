@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{832A854F-2030-4EA4-86FE-EDEEC017E78E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlite_win32_tools", "sqlite_win32_tools.vcproj", "{A836A3C3-79EE-4800-90F4-A40A5E886CDE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlite_win32_tools", "extlibs_win32_tools.sqlite_win32_tools.vcproj", "{A836A3C3-79EE-4800-90F4-A40A5E886CDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

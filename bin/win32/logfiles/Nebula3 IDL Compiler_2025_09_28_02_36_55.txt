@@ -1,0 +1,3 @@
+Compiling 'file:///../addons/network/distributionprotocol.nidl'
+Compiling 'file:///../addons/network/multiplayerprotocol.nidl'
+Compiling 'file:///../addons/network/notificationprotocol.nidl'

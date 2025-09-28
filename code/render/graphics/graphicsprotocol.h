@@ -133,6 +133,18 @@ public:
 private:
     bool fullscreen;
 public:
+    void SetAutoAdjustSize(bool val)
+    {
+        n_assert(!this->handled);
+        this->autoadjustsize = val;
+    };
+    bool GetAutoAdjustSize() const
+    {
+        return this->autoadjustsize;
+    };
+private:
+    bool autoadjustsize;
+public:
     void SetDisplayModeSwitchEnabled(bool val)
     {
         n_assert(!this->handled);
@@ -216,18 +228,6 @@ public:
     };
 private:
     void* parentwindow;
-public:
-    void SetExternalWindow(void* val)
-    {
-        n_assert(!this->handled);
-        this->externalwindow = val;
-    };
-    void* GetExternalWindow() const
-    {
-        return this->externalwindow;
-    };
-private:
-    void* externalwindow;
 public:
     void SetResourceMappers(const Util::Array<Ptr<Resources::ResourceMapper> >& val)
     {

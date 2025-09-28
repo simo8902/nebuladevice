@@ -19,7 +19,7 @@ InternalGlobalLightEntity::InternalGlobalLightEntity() :
     backLightColor(0.0f, 0.0f, 0.0f, 0.0f),
     ambientLightColor(0.0f, 0.0f, 0.0f, 0.0f),
     lightDir(0.0f, 0.0f, -1.0f),
-    backLightOffset(0.3)
+    backLightOffset(0.3f)
 {
     this->SetLightType(LightType::Global);
 }

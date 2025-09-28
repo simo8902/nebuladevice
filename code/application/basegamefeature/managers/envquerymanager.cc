@@ -10,7 +10,6 @@
 #include "graphicsfeature/graphicsfeatureunit.h"
 #include "renderutil/mouserayutil.h"
 
-
 #if __USE_PHYSICS__
 #include "physics/physicsserver.h"
 #endif
@@ -253,53 +252,45 @@ EnvQueryManager::OnFrame()
   //      }
 
 #if __USE_PHYSICS__
-    if (InputServer::HasInstance())
-    {
-        float2 mousePos = InputServer::Instance()->GetDefaultMouse()->GetScreenPosition();
-        float length = 1000;
-        line worldRay = this->ComputeMouseWorldRay(mousePos, length, GraphicsFeature::GraphicsFeatureUnit::Instance()->GetDefaultView());
+    //if (InputServer::HasInstance())
+    //{
+    //    float2 mousePos = InputServer::Instance()->GetDefaultMouse()->GetScreenPosition();
+    //    float length = 1000;
+    //    line worldRay = this->ComputeMouseWorldRay(mousePos, length, GraphicsFeature::GraphicsFeatureUnit::Instance()->GetDefaultView());
 
-        // do the actual picking
-        const Physics::ContactPoint* contact = 0;
-        contact = Physics::PhysicsServer::Instance()->GetClosestContactUnderMouse(worldRay, this->mouseExcludeSet);
-        if (0 != contact)
-        {
-            // store intersection position
-            this->mousePos3d = contact->GetPosition();
-            this->upVector = contact->GetUpVector();
-            this->mouseIntersection = true;
+    //    // do the actual picking
+    //    const Physics::ContactPoint* contact = 0;
+    //    contact = Physics::PhysicsServer::Instance()->GetClosestContactUnderMouse(worldRay, this->mouseExcludeSet);
+    //    if (0 != contact)
+    //    {
+    //        // store intersection position
+    //        this->mousePos3d = contact->GetPosition();
+    //        this->upVector = contact->GetUpVector();
+    //        this->mouseIntersection = true;
 
-            // new entity under mouse?
-            Physics::PhysicsEntity* physicsEntity = Physics::PhysicsServer::Instance()->GetEntityByUniqueId(contact->GetPhysicsEntityId());
-            Game::Entity::EntityId gameEntityUnderMouse = 0;
-            if (physicsEntity)
-            {
-                // user data of physics entity is unique id of game entity which owns the
-                // physics entity
-                gameEntityUnderMouse = physicsEntity->GetUserData();
-                this->materialUnderMouse = contact->GetMaterial();
-            }
-            if (gameEntityUnderMouse != this->entityUnderMouse)
-            {
-                this->entityUnderMouse = gameEntityUnderMouse;
-            }
-        } 
+    //        // new entity under mouse?
+    //        Physics::PhysicsEntity* physicsEntity = Physics::PhysicsServer::Instance()->GetEntityByUniqueId(contact->GetPhysicsEntityId());
+    //        Game::Entity::EntityId gameEntityUnderMouse = 0;
+    //        if (physicsEntity)
+    //        {
+    //            // user data of physics entity is unique id of game entity which owns the
+    //            // physics entity
+    //            gameEntityUnderMouse = physicsEntity->GetUserData();
+    //            this->materialUnderMouse = contact->GetMaterial();
+    //        }
+    //        if (gameEntityUnderMouse != this->entityUnderMouse)
+    //        {
+    //            this->entityUnderMouse = gameEntityUnderMouse;
+    //        }
+    //    }    
 
-		// intersect with the ground plane //add by xiongyouyi[05/18/2011]
-		Math::float4 intersectPoint;
-		Math::plane groundPlane(0.0f, 1.0f, 0.0f, 0.0f);
-		if (groundPlane.intersectline(worldRay.start(), worldRay.end(), intersectPoint))
-		{
-			this->mousePos3d = intersectPoint;
-		}
-
-        //// send a EndPicking message to all interested entities
-        //Ptr<Messaging::EndPicking> endPickingMsg = Messaging::EndPicking::Create();
-        //for (i = 0; i < this->pickingEntities.Size(); i++)
-        //{
-        //    this->pickingEntities[i]->SendSync(endPickingMsg);
-        //}  
-    }
+    //    //// send a EndPicking message to all interested entities
+    //    //Ptr<Messaging::EndPicking> endPickingMsg = Messaging::EndPicking::Create();
+    //    //for (i = 0; i < this->pickingEntities.Size(); i++)
+    //    //{
+    //    //    this->pickingEntities[i]->SendSync(endPickingMsg);
+    //    //}  
+    //}
 #endif
 }
 

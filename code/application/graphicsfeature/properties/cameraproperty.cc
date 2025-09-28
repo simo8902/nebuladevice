@@ -82,7 +82,8 @@ CameraProperty::OnStart()
 {
     Property::OnStart();
 
-    if (this->entity->GetBool(Attr::CameraFocus))
+	/// default value is True
+    if ( this->entity->GetBool(Attr::CameraFocus) )
     {
         FocusManager::Instance()->SetCameraFocusEntity(this->entity);
     }
@@ -223,6 +224,6 @@ CameraProperty::UpdateAudioListenerPosition() const
         const matrix44& enityTransform = this->GetEntity()->GetMatrix44(Attr::Transform);
         transform.translate((enityTransform.get_position() - transform.get_position()) * 0.5f);
     }
-    //Audio2::Audio2Listener::Instance()->SetTransform(transform);//removed by xiongyouyi[05/07/2011]
+    Audio2::Audio2Listener::Instance()->SetTransform(transform);
 }
 }; // namespace GraphicsFeature

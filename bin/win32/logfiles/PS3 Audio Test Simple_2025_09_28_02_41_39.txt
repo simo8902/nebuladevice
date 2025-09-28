@@ -1,0 +1,6 @@
+ListenerThread started!
+ListenerThread listening...
+[ERROR] *** NEBULA ASSERTION ***
+expression: 0 != Singleton
+file: c:\nebula3\code\render\graphics/display.h
+line: 25

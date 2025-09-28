@@ -39,7 +39,7 @@ void
 D3D9IndexBuffer::Unload()
 {
 	this->Discard();
-	IndexBufferBase::Unload();
+    IndexBufferBase::Unload();
 }
 
 //------------------------------------------------------------------------------

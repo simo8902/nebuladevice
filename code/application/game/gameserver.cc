@@ -10,7 +10,6 @@
 #include "input/keyboard.h"
 #include "input/gamepad.h"
 #include "debugrender/debugrender.h"
-#include "basegamefeature/basegamefeatureunit.h"
 
 namespace Game
 {
@@ -115,20 +114,6 @@ GameServer::Start()
         this->gameFeatures[i]->OnStart();
     }
     
-	// add by xiongyouyi[05/16/2011]
-	i = 0;
-	for (; i < this->gameFeatures.Size(); ++i)
-	{
-		if (this->gameFeatures[i]->HasRenderDebug() &&
-			this->gameFeatures[i]->IsInstanceOf(BaseGameFeature::BaseGameFeatureUnit::RTTI))
-		{                
-			this->debugRenderFeature = this->gameFeatures[i];
-			this->debugRenderFeature->StartRenderDebug();
-			break;
-		}
-	}
-	//
-
     this->isStarted = true;
     return true;
 }
@@ -188,7 +173,7 @@ GameServer::OnFrame()
 	if(this->debugRenderFeature.isvalid())
 	{
 		// set render info
-		//_debug_text(this->debugRenderFeature->GetRtti()->GetName(), Math::float2(0.5f, 0.004f), Math::float4(1.0f, 1.0f, 0.0f, 1.0f));
+		_debug_text(this->debugRenderFeature->GetRtti()->GetName(), Math::float2(0.5f, 0.004f), Math::float4(1.0f, 1.0f, 0.0f, 1.0f));
 		this->debugRenderFeature->OnRenderDebug();
 	}
 

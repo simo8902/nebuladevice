@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="testnetworkgame"
-	ProjectGUID="{191891AE-C6A4-41E8-910E-565BB5000D04}"
+	ProjectGUID="{DCCE6652-E7F7-4B4B-B07E-8C9B4FED2027}"
 	>
 	<Platforms>
 		<Platform
@@ -44,13 +44,13 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions=""
 				Optimization="0"
-				AdditionalIncludeDirectories="..;../application;../application/basegamefeature;../application/corefeature;../application/graphicsfeature;../application/physicsfeature;../foundation;../render;../extlibs;../network;../tools;../addons;../extlibs/ode;;../addons/network ;"
+				AdditionalIncludeDirectories="..;../application;../application/basegamefeature;../application/corefeature;../application/graphicsfeature;../application/physicsfeature;../foundation;../render;../extlibs;../network;../tools;../addons;../extlibs/ode;;../addons/network ;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Include"
 				PreprocessorDefinitions="__WIN32__;WIN32;_DEBUG;NT_PLUGIN;_HAS_EXCEPTIONS=0;"
 				StringPooling="true"
 				MinimalRebuild="true"
 				ExceptionHandling="0"
 				BasicRuntimeChecks="3"
-				RuntimeLibrary="1"
+				RuntimeLibrary="3"
 				BufferSecurityCheck="true"
 				EnableFunctionLevelLinking="true"
 				EnableEnhancedInstructionSet="0"
@@ -83,15 +83,15 @@
 				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib ws2_32.lib  "
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Win32\Debug,..\..\bin\win32,..\lib\win32_vc9_i386;../extlibs/raknet/Lib "
+				AdditionalLibraryDirectories=".\Win32\Debug,..\..\bin\win32,..\lib\win32_vc9_i386;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Lib\x86;../extlibs/raknet/Lib "
 				OutputFile="..\..\bin\win32\testnetworkgame.debug.exe"
+				GenerateManifest="true"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="..\..\bin\win32\testnetworkgame.debug.pdb"
 				GenerateMapFile="true"
 				MapFileName="..\..\bin\win32\testnetworkgame.debug.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -142,11 +142,11 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="..;../application;../application/basegamefeature;../application/corefeature;../application/graphicsfeature;../application/physicsfeature;../foundation;../render;../extlibs;../network;../tools;../addons;../extlibs/ode;;../addons/network ;"
+				AdditionalIncludeDirectories="..;../application;../application/basegamefeature;../application/corefeature;../application/graphicsfeature;../application/physicsfeature;../foundation;../render;../extlibs;../network;../tools;../addons;../extlibs/ode;;../addons/network ;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Include"
 				PreprocessorDefinitions="__WIN32__;WIN32;NT_PLUGIN;_HAS_EXCEPTIONS=0;"
 				StringPooling="true"
 				ExceptionHandling="0"
-				RuntimeLibrary="0"
+				RuntimeLibrary="2"
 				BufferSecurityCheck="false"
 				EnableFunctionLevelLinking="true"
 				EnableEnhancedInstructionSet="0"
@@ -179,304 +179,15 @@
 				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib ws2_32.lib  "
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Win32\Release,..\..\bin\win32,..\lib\win32_vc9_i386;../extlibs/raknet/Lib "
+				AdditionalLibraryDirectories=".\Win32\Release,..\..\bin\win32,..\lib\win32_vc9_i386;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Lib\x86;../extlibs/raknet/Lib "
 				OutputFile="..\..\bin\win32\testnetworkgame.exe"
+				GenerateManifest="true"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="..\..\bin\win32\testnetworkgame.pdb"
 				GenerateMapFile="true"
 				MapFileName="..\..\bin\win32\testnetworkgame.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Programming|Win32"
-			OutputDirectory=".\Win32\Programming"
-			IntermediateDirectory=".\Win32\Programming\testnetworkgame"
-			ConfigurationType="1"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			WholeProgramOptimization="0"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions=""
-				Optimization="4"
-				InlineFunctionExpansion="2"
-				EnableIntrinsicFunctions="true"
-				FavorSizeOrSpeed="1"
-				OmitFramePointers="true"
-				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="..;../application;../application/basegamefeature;../application/corefeature;../application/graphicsfeature;../application/physicsfeature;../foundation;../render;../extlibs;../network;../tools;../addons;../extlibs/ode;;../addons/network ;"
-				PreprocessorDefinitions="__WIN32__;WIN32;NT_PLUGIN;_HAS_EXCEPTIONS=0;"
-				StringPooling="true"
-				ExceptionHandling="0"
-				RuntimeLibrary="0"
-				BufferSecurityCheck="false"
-				EnableFunctionLevelLinking="true"
-				EnableEnhancedInstructionSet="0"
-				FloatingPointModel="2"
-				RuntimeTypeInfo="false"
-				WarningLevel="3"
-				WarnAsError="true"
-				SuppressStartupBanner="true"
-				Detect64BitPortabilityProblems="false"
-				DebugInformationFormat="3"
-				CallingConvention="0"
-				CompileAs="0"
-				UsePrecompiledHeader="2"
-				PrecompiledHeaderThrough="stdneb.h"
-				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLinkerTool"
-				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib ws2_32.lib  "
-				LinkIncremental="0"
-				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Win32\Programming,..\..\bin\win32,..\lib\win32_vc9_i386;../extlibs/raknet/Lib "
-				OutputFile="..\..\bin\win32\testnetworkgame.programming.exe"
-				GenerateDebugInformation="true"
-				ProgramDatabaseFile="..\..\bin\win32\testnetworkgame.programming.pdb"
-				GenerateMapFile="true"
-				MapFileName="..\..\bin\win32\testnetworkgame.programming.map"
-				MapExports="true"
-				TargetMachine="1"
-				GenerateManifest="false"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Public_Build|Win32"
-			OutputDirectory=".\Win32\Public_Build"
-			IntermediateDirectory=".\Win32\Public_Build\testnetworkgame"
-			ConfigurationType="1"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			WholeProgramOptimization="1"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions=""
-				Optimization="4"
-				InlineFunctionExpansion="2"
-				EnableIntrinsicFunctions="true"
-				FavorSizeOrSpeed="1"
-				OmitFramePointers="true"
-				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="..;../application;../application/basegamefeature;../application/corefeature;../application/graphicsfeature;../application/physicsfeature;../foundation;../render;../extlibs;../network;../tools;../addons;../extlibs/ode;;../addons/network ;"
-				PreprocessorDefinitions="__WIN32__;WIN32;NT_PLUGIN;_HAS_EXCEPTIONS=0;PUBLIC_BUILD=1;"
-				StringPooling="true"
-				ExceptionHandling="0"
-				RuntimeLibrary="0"
-				BufferSecurityCheck="false"
-				EnableFunctionLevelLinking="true"
-				EnableEnhancedInstructionSet="0"
-				FloatingPointModel="2"
-				RuntimeTypeInfo="false"
-				WarningLevel="3"
-				WarnAsError="true"
-				SuppressStartupBanner="true"
-				Detect64BitPortabilityProblems="false"
-				DebugInformationFormat="3"
-				CallingConvention="0"
-				CompileAs="0"
-				UsePrecompiledHeader="2"
-				PrecompiledHeaderThrough="stdneb.h"
-				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLinkerTool"
-				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib ws2_32.lib  "
-				LinkIncremental="0"
-				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Win32\Public_Build,..\..\bin\win32,..\lib\win32_vc9_i386;../extlibs/raknet/Lib "
-				OutputFile="..\..\bin\win32\testnetworkgame.public_build.exe"
-				GenerateDebugInformation="true"
-				ProgramDatabaseFile="..\..\bin\win32\testnetworkgame.public_build.pdb"
-				GenerateMapFile="true"
-				MapFileName="..\..\bin\win32\testnetworkgame.public_build.map"
-				MapExports="true"
-				TargetMachine="1"
-				GenerateManifest="false"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Securom|Win32"
-			OutputDirectory=".\Win32\Securom"
-			IntermediateDirectory=".\Win32\Securom\testnetworkgame"
-			ConfigurationType="1"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			WholeProgramOptimization="1"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions=""
-				Optimization="4"
-				InlineFunctionExpansion="2"
-				EnableIntrinsicFunctions="true"
-				FavorSizeOrSpeed="1"
-				OmitFramePointers="true"
-				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="..;../application;../application/basegamefeature;../application/corefeature;../application/graphicsfeature;../application/physicsfeature;../foundation;../render;../extlibs;../network;../tools;../addons;../extlibs/ode;;../addons/network ;"
-				PreprocessorDefinitions="__WIN32__;WIN32;NT_PLUGIN;_HAS_EXCEPTIONS=0;PUBLIC_BUILD=1;SECUROM=1;"
-				StringPooling="true"
-				ExceptionHandling="0"
-				RuntimeLibrary="0"
-				BufferSecurityCheck="false"
-				EnableFunctionLevelLinking="true"
-				EnableEnhancedInstructionSet="0"
-				FloatingPointModel="2"
-				RuntimeTypeInfo="false"
-				WarningLevel="3"
-				WarnAsError="true"
-				SuppressStartupBanner="true"
-				Detect64BitPortabilityProblems="false"
-				DebugInformationFormat="3"
-				CallingConvention="0"
-				CompileAs="0"
-				UsePrecompiledHeader="2"
-				PrecompiledHeaderThrough="stdneb.h"
-				PrecompiledHeaderFile="$(OutDir)\$(ProjectName).pch"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLinkerTool"
-				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib ws2_32.lib  "
-				LinkIncremental="0"
-				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Win32\Securom,..\..\bin\win32,..\lib\win32_vc9_i386;../extlibs/raknet/Lib "
-				OutputFile="..\..\bin\win32\testnetworkgame.securom.exe"
-				GenerateDebugInformation="true"
-				ProgramDatabaseFile="..\..\bin\win32\testnetworkgame.securom.pdb"
-				GenerateMapFile="true"
-				MapFileName="..\..\bin\win32\testnetworkgame.securom.map"
-				MapExports="true"
-				AdditionalOptions="/export:SecuROM,@1"
-				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -557,15 +268,15 @@
 				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib ws2_32.lib  "
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Win32\Maya_Debug,..\..\bin\win32,..\lib\win32_vc9_i386;../extlibs/raknet/Lib "
+				AdditionalLibraryDirectories=".\Win32\Maya_Debug,..\..\bin\win32,..\lib\win32_vc9_i386;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Lib\x86;../extlibs/raknet/Lib "
 				OutputFile="..\..\bin\win32\testnetworkgame.maya_debug.exe"
+				GenerateManifest="true"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="..\..\bin\win32\testnetworkgame.maya_debug.pdb"
 				GenerateMapFile="true"
 				MapFileName="..\..\bin\win32\testnetworkgame.maya_debug.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -644,15 +355,15 @@
 				AdditionalDependencies="dbghelp.lib dxguid.lib wsock32.lib rpcrt4.lib wininet.lib d3d9.lib d3dx9.lib dinput8.lib xinput.lib dxerr.lib x3daudio.lib ../../lib/fmod/win32/fmodex_vc.lib ../../lib/fmoddesignerapi/win32/fmod_event.lib ../../lib/fmoddesignerapi/win32/fmod_event_net.lib ws2_32.lib  "
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Win32\Maya_Release,..\..\bin\win32,..\lib\win32_vc9_i386;../extlibs/raknet/Lib "
+				AdditionalLibraryDirectories=".\Win32\Maya_Release,..\..\bin\win32,..\lib\win32_vc9_i386;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Lib\x86;../extlibs/raknet/Lib "
 				OutputFile="..\..\bin\win32\testnetworkgame.exe"
+				GenerateManifest="true"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="..\..\bin\win32\testnetworkgame.pdb"
 				GenerateMapFile="true"
 				MapFileName="..\..\bin\win32\testnetworkgame.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -675,7 +386,7 @@
 	</References>
 	<Files>
 		<File
-			RelativePath="..\tests\stdneb.cc"
+			RelativePath="..\tools\stdneb.cc"
 			>
 			<FileConfiguration
 				Name="Debug|Win32"
@@ -687,30 +398,6 @@
 			</FileConfiguration>
 			<FileConfiguration
 				Name="Release|Win32"
-				>
-				<Tool
-					Name="VCCLCompilerTool"
-					UsePrecompiledHeader="1"
-				/>
-			</FileConfiguration>
-			<FileConfiguration
-				Name="Programming|Win32"
-				>
-				<Tool
-					Name="VCCLCompilerTool"
-					UsePrecompiledHeader="1"
-				/>
-			</FileConfiguration>
-			<FileConfiguration
-				Name="Public_Build|Win32"
-				>
-				<Tool
-					Name="VCCLCompilerTool"
-					UsePrecompiledHeader="1"
-				/>
-			</FileConfiguration>
-			<FileConfiguration
-				Name="Securom|Win32"
 				>
 				<Tool
 					Name="VCCLCompilerTool"
@@ -739,39 +426,39 @@
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;cc"
 			>
 			<File
-				RelativePath="..\tests\testnetworkgame\lobbygamestate.cc"
+				RelativePath="..\tools\testnetworkgame\lobbygamestate.cc"
 				>
 			</File>
 			<File
-				RelativePath="..\tests\testnetworkgame\lobbygamestate.h"
+				RelativePath="..\tools\testnetworkgame\lobbygamestate.h"
 				>
 			</File>
 			<File
-				RelativePath="..\tests\testnetworkgame\testgamenotificationhandler.cc"
+				RelativePath="..\tools\testnetworkgame\testgamenotificationhandler.cc"
 				>
 			</File>
 			<File
-				RelativePath="..\tests\testnetworkgame\testgamenotificationhandler.h"
+				RelativePath="..\tools\testnetworkgame\testgamenotificationhandler.h"
 				>
 			</File>
 			<File
-				RelativePath="..\tests\testnetworkgame\testgamestate.cc"
+				RelativePath="..\tools\testnetworkgame\testgamestate.cc"
 				>
 			</File>
 			<File
-				RelativePath="..\tests\testnetworkgame\testgamestate.h"
+				RelativePath="..\tools\testnetworkgame\testgamestate.h"
 				>
 			</File>
 			<File
-				RelativePath="..\tests\testnetworkgame\testnetworkgame.cc"
+				RelativePath="..\tools\testnetworkgame\testnetworkgame.cc"
 				>
 			</File>
 			<File
-				RelativePath="..\tests\testnetworkgame\testnetworkgameapplication.cc"
+				RelativePath="..\tools\testnetworkgame\testnetworkgameapplication.cc"
 				>
 			</File>
 			<File
-				RelativePath="..\tests\testnetworkgame\testnetworkgameapplication.h"
+				RelativePath="..\tools\testnetworkgame\testnetworkgameapplication.h"
 				>
 			</File>
 			<Filter
@@ -779,19 +466,19 @@
 				Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;cc"
 				>
 				<File
-					RelativePath="..\tests\testnetworkgame/motion\distributemotionproperty.cc"
+					RelativePath="..\tools\testnetworkgame/motion\distributemotionproperty.cc"
 					>
 				</File>
 				<File
-					RelativePath="..\tests\testnetworkgame/motion\distributemotionproperty.h"
+					RelativePath="..\tools\testnetworkgame/motion\distributemotionproperty.h"
 					>
 				</File>
 				<File
-					RelativePath="..\tests\testnetworkgame/motion\motionobjectview.cc"
+					RelativePath="..\tools\testnetworkgame/motion\motionobjectview.cc"
 					>
 				</File>
 				<File
-					RelativePath="..\tests\testnetworkgame/motion\motionobjectview.h"
+					RelativePath="..\tools\testnetworkgame/motion\motionobjectview.h"
 					>
 				</File>
 			</Filter>

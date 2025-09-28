@@ -508,7 +508,7 @@ D3D9TextureStreamer::BitsPerPixel(D3DFORMAT fmt) const
         return  8;
 
     default:
-        n_assert( FALSE ); // unhandled format
+        n_assert(false); // unhandled format
         return 0;
     }
 }

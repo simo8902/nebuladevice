@@ -398,8 +398,7 @@ D3D9RenderDevice::CloseDirect3DDevice()
     n_assert(0 != this->d3d9Device);
 
     this->UnbindD3D9Resources();   
-    IndexT i;
-    for (i = 1; i < 4; i++)
+    for (IndexT i = 1; i < 4; i++)
     {
         this->d3d9Device->SetRenderTarget(i, NULL);
     }
@@ -417,9 +416,7 @@ D3D9RenderDevice::CloseDirect3DDevice()
 /**
     This catches the lost device state, and tries to restore a lost device.
     The method will send out the events DeviceLost and DeviceRestored.
-    Resources should react to these events accordingly. As long as
-    the device is in an invalid state, the method will return false.
-    This method is called by BeginFrame().
+    Resources should react to these events accordingly. 
 */
 void
 D3D9RenderDevice::ResetDevice()

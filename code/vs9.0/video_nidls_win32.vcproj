@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="video_nidls_win32"
-	ProjectGUID="{ACBD7F98-30CD-4393-8FFD-5D87A09DB7B0}"
+	ProjectGUID="{1D9EFFEC-7681-4D00-990A-D14C03F06284}"
 	>
 	<Platforms>
 		<Platform
@@ -44,13 +44,13 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions=""
 				Optimization="0"
-				AdditionalIncludeDirectories="..;;"
+				AdditionalIncludeDirectories="..;;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Include"
 				PreprocessorDefinitions="__WIN32__;WIN32;_DEBUG;NT_PLUGIN;_HAS_EXCEPTIONS=0;"
 				StringPooling="true"
 				MinimalRebuild="true"
 				ExceptionHandling="0"
 				BasicRuntimeChecks="3"
-				RuntimeLibrary="1"
+				RuntimeLibrary="3"
 				BufferSecurityCheck="true"
 				EnableFunctionLevelLinking="true"
 				EnableEnhancedInstructionSet="0"
@@ -81,7 +81,7 @@
 				AdditionalDependencies=""
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Win32\Debug,..\..\bin\win32,..\lib\win32_vc9_i386;"
+				AdditionalLibraryDirectories=".\Win32\Debug,..\..\bin\win32,..\lib\win32_vc9_i386;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Lib\x86;"
 				OutputFile="..\..\bin\win32\video_nidls_win32.debug.nidl"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="..\..\bin\win32\video_nidls_win32.debug.pdb"
@@ -89,7 +89,6 @@
 				MapFileName="..\..\bin\win32\video_nidls_win32.debug.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -140,11 +139,11 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="..;;"
+				AdditionalIncludeDirectories="..;;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Include"
 				PreprocessorDefinitions="__WIN32__;WIN32;NT_PLUGIN;_HAS_EXCEPTIONS=0;"
 				StringPooling="true"
 				ExceptionHandling="0"
-				RuntimeLibrary="0"
+				RuntimeLibrary="2"
 				BufferSecurityCheck="false"
 				EnableFunctionLevelLinking="true"
 				EnableEnhancedInstructionSet="0"
@@ -175,7 +174,7 @@
 				AdditionalDependencies=""
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Win32\Release,..\..\bin\win32,..\lib\win32_vc9_i386;"
+				AdditionalLibraryDirectories=".\Win32\Release,..\..\bin\win32,..\lib\win32_vc9_i386;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Lib\x86;"
 				OutputFile="..\..\bin\win32\video_nidls_win32.nidl"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="..\..\bin\win32\video_nidls_win32.pdb"
@@ -183,290 +182,6 @@
 				MapFileName="..\..\bin\win32\video_nidls_win32.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Programming|Win32"
-			OutputDirectory=".\Win32\Programming"
-			IntermediateDirectory=".\Win32\Programming\video_nidls_win32"
-			ConfigurationType="10"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			WholeProgramOptimization="0"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions=""
-				Optimization="4"
-				InlineFunctionExpansion="2"
-				EnableIntrinsicFunctions="true"
-				FavorSizeOrSpeed="1"
-				OmitFramePointers="true"
-				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="..;;"
-				PreprocessorDefinitions="__WIN32__;WIN32;NT_PLUGIN;_HAS_EXCEPTIONS=0;"
-				StringPooling="true"
-				ExceptionHandling="0"
-				RuntimeLibrary="0"
-				BufferSecurityCheck="false"
-				EnableFunctionLevelLinking="true"
-				EnableEnhancedInstructionSet="0"
-				FloatingPointModel="2"
-				RuntimeTypeInfo="false"
-				WarningLevel="3"
-				WarnAsError="true"
-				SuppressStartupBanner="true"
-				Detect64BitPortabilityProblems="false"
-				DebugInformationFormat="3"
-				CallingConvention="0"
-				CompileAs="0"
-				UsePrecompiledHeader="0"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLinkerTool"
-				AdditionalDependencies=""
-				LinkIncremental="0"
-				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Win32\Programming,..\..\bin\win32,..\lib\win32_vc9_i386;"
-				OutputFile="..\..\bin\win32\video_nidls_win32.programming.nidl"
-				GenerateDebugInformation="true"
-				ProgramDatabaseFile="..\..\bin\win32\video_nidls_win32.programming.pdb"
-				GenerateMapFile="true"
-				MapFileName="..\..\bin\win32\video_nidls_win32.programming.map"
-				MapExports="true"
-				TargetMachine="1"
-				GenerateManifest="false"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Public_Build|Win32"
-			OutputDirectory=".\Win32\Public_Build"
-			IntermediateDirectory=".\Win32\Public_Build\video_nidls_win32"
-			ConfigurationType="10"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			WholeProgramOptimization="1"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions=""
-				Optimization="4"
-				InlineFunctionExpansion="2"
-				EnableIntrinsicFunctions="true"
-				FavorSizeOrSpeed="1"
-				OmitFramePointers="true"
-				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="..;;"
-				PreprocessorDefinitions="__WIN32__;WIN32;NT_PLUGIN;_HAS_EXCEPTIONS=0;PUBLIC_BUILD=1;"
-				StringPooling="true"
-				ExceptionHandling="0"
-				RuntimeLibrary="0"
-				BufferSecurityCheck="false"
-				EnableFunctionLevelLinking="true"
-				EnableEnhancedInstructionSet="0"
-				FloatingPointModel="2"
-				RuntimeTypeInfo="false"
-				WarningLevel="3"
-				WarnAsError="true"
-				SuppressStartupBanner="true"
-				Detect64BitPortabilityProblems="false"
-				DebugInformationFormat="3"
-				CallingConvention="0"
-				CompileAs="0"
-				UsePrecompiledHeader="0"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLinkerTool"
-				AdditionalDependencies=""
-				LinkIncremental="0"
-				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Win32\Public_Build,..\..\bin\win32,..\lib\win32_vc9_i386;"
-				OutputFile="..\..\bin\win32\video_nidls_win32.public_build.nidl"
-				GenerateDebugInformation="true"
-				ProgramDatabaseFile="..\..\bin\win32\video_nidls_win32.public_build.pdb"
-				GenerateMapFile="true"
-				MapFileName="..\..\bin\win32\video_nidls_win32.public_build.map"
-				MapExports="true"
-				TargetMachine="1"
-				GenerateManifest="false"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Securom|Win32"
-			OutputDirectory=".\Win32\Securom"
-			IntermediateDirectory=".\Win32\Securom\video_nidls_win32"
-			ConfigurationType="10"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			WholeProgramOptimization="1"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions=""
-				Optimization="4"
-				InlineFunctionExpansion="2"
-				EnableIntrinsicFunctions="true"
-				FavorSizeOrSpeed="1"
-				OmitFramePointers="true"
-				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="..;;"
-				PreprocessorDefinitions="__WIN32__;WIN32;NT_PLUGIN;_HAS_EXCEPTIONS=0;PUBLIC_BUILD=1;SECUROM=1;"
-				StringPooling="true"
-				ExceptionHandling="0"
-				RuntimeLibrary="0"
-				BufferSecurityCheck="false"
-				EnableFunctionLevelLinking="true"
-				EnableEnhancedInstructionSet="0"
-				FloatingPointModel="2"
-				RuntimeTypeInfo="false"
-				WarningLevel="3"
-				WarnAsError="true"
-				SuppressStartupBanner="true"
-				Detect64BitPortabilityProblems="false"
-				DebugInformationFormat="3"
-				CallingConvention="0"
-				CompileAs="0"
-				UsePrecompiledHeader="0"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLinkerTool"
-				AdditionalDependencies=""
-				LinkIncremental="0"
-				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Win32\Securom,..\..\bin\win32,..\lib\win32_vc9_i386;"
-				OutputFile="..\..\bin\win32\video_nidls_win32.securom.nidl"
-				GenerateDebugInformation="true"
-				ProgramDatabaseFile="..\..\bin\win32\video_nidls_win32.securom.pdb"
-				GenerateMapFile="true"
-				MapFileName="..\..\bin\win32\video_nidls_win32.securom.map"
-				MapExports="true"
-				AdditionalOptions="/export:SecuROM,@1"
-				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -545,7 +260,7 @@
 				AdditionalDependencies=""
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Win32\Maya_Debug,..\..\bin\win32,..\lib\win32_vc9_i386;"
+				AdditionalLibraryDirectories=".\Win32\Maya_Debug,..\..\bin\win32,..\lib\win32_vc9_i386;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Lib\x86;"
 				OutputFile="..\..\bin\win32\video_nidls_win32.maya_debug.nidl"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="..\..\bin\win32\video_nidls_win32.maya_debug.pdb"
@@ -553,7 +268,6 @@
 				MapFileName="..\..\bin\win32\video_nidls_win32.maya_debug.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -630,7 +344,7 @@
 				AdditionalDependencies=""
 				LinkIncremental="0"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories=".\Win32\Maya_Release,..\..\bin\win32,..\lib\win32_vc9_i386;"
+				AdditionalLibraryDirectories=".\Win32\Maya_Release,..\..\bin\win32,..\lib\win32_vc9_i386;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Lib\x86;"
 				OutputFile="..\..\bin\win32\video_nidls_win32.nidl"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="..\..\bin\win32\video_nidls_win32.pdb"
@@ -638,7 +352,6 @@
 				MapFileName="..\..\bin\win32\video_nidls_win32.map"
 				MapExports="true"
 				TargetMachine="1"
-				GenerateManifest="false"
 			/>
 			<Tool
 				Name="VCALinkTool"

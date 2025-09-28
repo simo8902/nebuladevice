@@ -349,14 +349,6 @@ String::TrimLeft(const String& charSet)
     n_assert(charSet.IsValid());
     if (this->IsValid())
     {
-		// modified by xiongyouyi[08/17/2011]
-		IndexT thisIndex = this->FindStringIndex(charSet, 0);
-		if (thisIndex != InvalidIndex)
-		{
-			String trimmedString(&(this->AsCharPtr()[thisIndex+charSet.strLen]));
-			*this = trimmedString;
-		}
-/*
         SizeT charSetLen = charSet.strLen;
         IndexT thisIndex = 0;
         bool stopped = false;
@@ -386,7 +378,6 @@ String::TrimLeft(const String& charSet)
         }
         String trimmedString(&(this->AsCharPtr()[thisIndex]));
         *this = trimmedString;
-*/
     }
 }
 
